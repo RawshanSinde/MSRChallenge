@@ -1,0 +1,14 @@
+.DS_Store
+.idea/
+.venv/
+
+data/
+data_csv/
+*.parquet
+*.csv.gz
+*.sql.gz
+*.jsonl.gz
+spec_files.csv
+
+exported_specs_sample/
+research_exports/
