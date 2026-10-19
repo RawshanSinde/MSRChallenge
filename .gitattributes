@@ -1,0 +1,4 @@
+data/** filter=lfs diff=lfs merge=lfs -text
+data_csv/** filter=lfs diff=lfs merge=lfs -text
+specmine-mysql.sql.gz filter=lfs diff=lfs merge=lfs -text
+specs.jsonl.gz filter=lfs diff=lfs merge=lfs -text
