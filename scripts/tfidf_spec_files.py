@@ -22,24 +22,28 @@ METADATA_COLUMNS = [
 ]
 
 
-def load_first_rows(path: Path, limit: int) -> pd.DataFrame:
+def load_rows(path: Path, start_row: int, end_row: int) -> pd.DataFrame:
+    start_index = start_row - 1
+    row_count = end_row - start_row + 1
+
     if path.suffix == ".parquet":
         import pyarrow.parquet as parquet
 
         parquet_file = parquet.ParquetFile(path)
         batches = parquet_file.iter_batches(
-            batch_size=limit,
+            batch_size=end_row,
             columns=METADATA_COLUMNS,
         )
         try:
-            return next(batches).to_pandas()
+            return next(batches).slice(start_index, row_count).to_pandas()
         except StopIteration as error:
             raise ValueError(f"No rows found in {path}") from error
 
     return pd.read_csv(
         path,
         compression="infer",
-        nrows=limit,
+        skiprows=range(1, start_row) if start_row > 1 else None,
+        nrows=row_count,
         usecols=METADATA_COLUMNS,
     )
 
@@ -112,6 +116,7 @@ def build_output(
     texts: list[str],
     top_n: int,
     max_features: int | None,
+    row_number_start: int,
 ) -> pd.DataFrame:
     vectorizer = TfidfVectorizer(
         lowercase=True,
@@ -138,7 +143,7 @@ def build_output(
         for score_index in order:
             document_metadata = metadata.iloc[document_index]
             output_row = {
-                "row_number": document_index + 1,
+                "row_number": row_number_start + document_index,
                 "file_url_sha16": document_metadata["file_url_sha16"],
                 "repo_name": document_metadata["repo_name"],
                 "file_path": document_metadata["file_path"],
@@ -163,7 +168,7 @@ def build_output(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Compute top TF-IDF terms for the first rows of spec_files "
+            "Compute top TF-IDF terms for a range of spec_files rows "
             "using their text from specs.jsonl.gz."
         )
     )
@@ -183,7 +188,19 @@ def parse_args() -> argparse.Namespace:
         "--limit",
         type=int,
         default=50,
-        help="number of spec_files rows to analyze",
+        help="number of rows to analyze when --end-row is not provided",
+    )
+    parser.add_argument(
+        "--start-row",
+        type=int,
+        default=1,
+        help="first 1-based spec_files row to analyze",
+    )
+    parser.add_argument(
+        "--end-row",
+        type=int,
+        default=None,
+        help="last 1-based spec_files row to analyze, inclusive",
     )
     parser.add_argument(
         "--top-n",
@@ -222,8 +239,12 @@ def parse_args() -> argparse.Namespace:
     )
     arguments = parser.parse_args()
 
+    if arguments.start_row < 1:
+        parser.error("--start-row must be at least 1")
     if arguments.limit < 1:
         parser.error("--limit must be at least 1")
+    if arguments.end_row is not None and arguments.end_row < arguments.start_row:
+        parser.error("--end-row must be greater than or equal to --start-row")
     if arguments.top_n < 1:
         parser.error("--top-n must be at least 1")
     if not 0 <= arguments.min_language_probability <= 1:
@@ -236,6 +257,9 @@ def parse_args() -> argparse.Namespace:
     if arguments.language is not None:
         arguments.language = arguments.language.lower()
 
+    if arguments.end_row is None:
+        arguments.end_row = arguments.start_row + arguments.limit - 1
+
     return arguments
 
 
@@ -246,7 +270,11 @@ def main() -> None:
         if not input_path.exists():
             raise FileNotFoundError(f"Input file does not exist: {input_path}")
 
-    metadata = load_first_rows(arguments.spec_files, arguments.limit)
+    metadata = load_rows(
+        arguments.spec_files,
+        arguments.start_row,
+        arguments.end_row,
+    )
     file_ids = set(metadata["file_url_sha16"].dropna().astype(str))
     text_by_id = load_spec_texts(arguments.spec_text, file_ids)
     texts = [text_by_id.get(str(file_id), "") for file_id in metadata["file_url_sha16"]]
@@ -282,6 +310,7 @@ def main() -> None:
         texts=texts,
         top_n=arguments.top_n,
         max_features=arguments.max_features,
+        row_number_start=arguments.start_row,
     )
     output.to_csv(arguments.output, index=False)
 

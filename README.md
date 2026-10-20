@@ -89,6 +89,15 @@ The script reads metadata from `data/spec_files.parquet`, joins the matching
 Markdown from `specs.jsonl.gz`, and writes the top terms for each document to
 `tfidf_spec_files_top_terms.csv`.
 
+To analyze rows 150 through 300, inclusive:
+
+```bash
+python scripts/tfidf_spec_files.py \
+  --start-row 150 \
+  --end-row 300 \
+  --output tfidf_spec_files_rows_150_300.csv
+```
+
 To keep only confidently detected English documents in the sample:
 
 ```bash
