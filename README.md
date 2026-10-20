@@ -55,7 +55,7 @@ any row can be re-fetched or joined to external sources.
 ## Quick start
 
 ```bash
-pip install pandas pyarrow            # duckdb optional
+pip install pandas pyarrow scikit-learn langdetect  # duckdb optional
 ```
 
 ```python
@@ -78,6 +78,29 @@ FROM 'data/pull_requests.parquet'
 WHERE touches_code = 1
 GROUP BY tool ORDER BY cochange_prs DESC;
 ```
+
+Sample TF-IDF analysis of the first 50 `spec_files` rows:
+
+```bash
+python scripts/tfidf_spec_files.py --limit 50 --top-n 20
+```
+
+The script reads metadata from `data/spec_files.parquet`, joins the matching
+Markdown from `specs.jsonl.gz`, and writes the top terms for each document to
+`tfidf_spec_files_top_terms.csv`.
+
+To keep only confidently detected English documents in the sample:
+
+```bash
+python scripts/tfidf_spec_files.py \
+  --limit 50 \
+  --language en \
+  --min-language-probability 0.80
+```
+
+Language filtering applies to the selected sample and does not modify the raw
+Parquet or JSONL files. The output includes the detected language and its
+confidence score.
 
 Spec text joins to `spec_files` on `file_url_sha16`:
 
