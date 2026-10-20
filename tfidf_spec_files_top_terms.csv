@@ -1,0 +1,1001 @@
+row_number,file_url_sha16,repo_name,file_path,file_name,spec_tool,spec_role,term,tfidf_score
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,reminder,0.2490592124573374
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,payment,0.21347932496343203
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,notification,0.1785692477126595
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,ana,0.1778994374695267
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,email,0.14880770642721625
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,payment reminder,0.14231954997562135
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,isowedtoyou,0.14231954997562135
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,profileitem,0.14231954997562135
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,notification built,0.14231954997562135
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,shall,0.13249201068320093
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,profile,0.11904616514177302
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,removed,0.11477256294558191
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,luis,0.10673966248171601
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,current user,0.10673966248171601
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,amounteuros,0.10673966248171601
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,owed current,0.10673966248171601
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,profileitem displayname,0.10673966248171601
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,reminders,0.10673966248171601
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,displayname,0.10673966248171601
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,15 50,0.10673966248171601
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,readme,0.2834888088282712
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,feature,0.27391480817439057
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,authoring,0.24175178134597056
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,feature authoring,0.20442386470811577
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,deacon,0.1886989520382607
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,commands,0.18831469118326033
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,features,0.18638740071762638
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,references,0.15040851650724754
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,progress table,0.12579930135884046
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,ci,0.11838088974919948
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,visitor,0.11007438868898542
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,progress,0.10522745755484399
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,consumer,0.09954485114245847
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,reads,0.09860480307070302
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,user,0.09560672528684777
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,authoring commands,0.09434947601913035
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,table,0.09130493605813018
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,priority,0.08861867820388722
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,fr,0.08154448781396154
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,installation,0.07892059316613298
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,competitive multiplayer,0.2818080422514388
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,competitive,0.2818080422514388
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,multiplayer,0.2818080422514388
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,updated,0.18964042342866166
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,multiplayer leaderboards,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,leaderboards,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,matchmaking,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,scoring,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,tech,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,learned,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,lessons learned,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,multiplayer mode,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,mode overview,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,overview implement,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,implement real,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,time competitive,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,learned updated,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,leaderboards matchmaking,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,tests passing,0.1409040211257194
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,updated lessons,0.1409040211257194
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,provider,0.4390130581948232
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,onedrive,0.3936296948412854
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,lattix,0.1968148474206427
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,configuration,0.1465351046673574
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,config json,0.13120989828042848
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,sync target,0.13120989828042848
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,lattix config,0.13120989828042848
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,existing configuration,0.13120989828042848
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,provider onedrive,0.13120989828042848
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,initialization,0.11865857215566207
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,bootstrap,0.11865857215566207
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,persist,0.1097532645487058
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,json,0.10284577132875641
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,metadata,0.10284577132875641
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,sync,0.09720193842393941
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,removed,0.084650612299173
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,shall,0.08143300644074117
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,runs,0.08138913759703377
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,target,0.08138913759703377
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,config,0.0732675523336787
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,com,0.23679124710501764
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,para,0.23332785052763916
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,vue,0.1468121947495881
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,navbar,0.14604521606649207
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,da,0.1327683782422655
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,cor,0.13213097527462928
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,os,0.1265827880983527
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,pagina,0.12280413185665219
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,componente,0.11949154041803899
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,usuario,0.11949154041803899
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,filtros,0.11744975579967049
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,subtema,0.11744975579967049
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,um,0.11507526190759337
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,scenario,0.11133217119023794
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,por,0.11052371867098698
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,que,0.10621470259381242
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,exibido,0.10276853632471168
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,src components,0.10276853632471168
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,badge,0.09824330548532176
+5,0000638f415c1c6f,unb-mds/2026-1-LegisKids,openspec/specs/vue-components-ui/spec.md,spec.md,openspec,living,em,0.09824330548532176
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,skill,0.4614125130614984
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,md,0.32495944328395865
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,skills,0.25722403163003654
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,skill md,0.22122517749523896
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,routing,0.19434704612047204
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,lifecycle,0.17065942263918435
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,claude,0.16349342376398118
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,claude md,0.14275164454907333
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,cortex,0.13273510649714337
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,compression,0.10113150971210924
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,review,0.09413257731865583
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,when_to_use,0.0884900709980956
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,description,0.08757232248693324
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,policies,0.08216935164108875
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,overnight,0.08216935164108875
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,l1,0.07584863228408192
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,combined,0.07430916469312165
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,references,0.07179336537668854
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,surface,0.07023702271550605
+6,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,line,0.07023702271550605
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,application,0.4490702542056444
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,yaml,0.2675927317085854
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,profile,0.23364427535583307
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,dev,0.1879670951786629
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,spring,0.15517858640722404
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,spring_profiles_active,0.15517858640722404
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,docker,0.14033445443926387
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,values,0.1254148448282602
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,spring boot,0.12414286912577925
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,docker compose,0.12414286912577925
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,application yaml,0.12414286912577925
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,dev profile,0.12414286912577925
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,environment,0.11550821838959978
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,compose,0.1122675635514111
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,boot,0.1122675635514111
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,prod,0.1122675635514111
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,dev yaml,0.09310715184433443
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,application dev,0.09310715184433443
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,committed,0.09310715184433443
+7,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,environment specific,0.09310715184433443
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,系统 shall,0.25024109744708234
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,系统,0.25024109744708234
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,requirement budget,0.25024109744708234
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,budget,0.19614555778478607
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,scenario,0.18072901620254897
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,提供预算分析的可视化展示,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,history view,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,budget history,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,支出趋势图 用户查看趋势,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,用户查看趋势,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,支出趋势图,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,显示分类支出占比图表,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,用户查看预算分析,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,分类支出占比,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,用户查看趋势 显示支出趋势曲线与关键峰值,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,显示预算变化与支出差异,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,view 系统,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,历史对比,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,年展示预算与实际支出,0.12512054872354117
+8,0000d1c8176e908e,marovole/HearthBulter,openspec/changes/archive/2026-01-27-update-product-readiness/specs/budget-optimization/spec.md,spec.md,openspec,archived,按周,0.12512054872354117
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,buckets,0.3138655479098819
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,bucket,0.25679908465353973
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,14,0.25060579486574014
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,granularity,0.22826585302536864
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,2025,0.20287135774845627
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,2024,0.19973262139719758
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,commits,0.19352841715966276
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,timeline,0.18546600558311202
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,timeline shall,0.1711993897690265
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,quarterly,0.15693277395494096
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,yearly,0.15693277395494096
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,daily,0.1426661581408554
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,span,0.13126970207253053
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,shall,0.12986324720637635
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,bucket labels,0.12839954232676987
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,granularity selected,0.12839954232676987
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,labels,0.11933609279320956
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,commits span,0.11413292651268432
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,selected,0.10568887942546269
+9,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,contiguous,0.10321515581848681
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,greeting,0.20932017005644676
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,environment,0.19476108524390004
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,given user,0.18929694198218255
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,user,0.1818081048092662
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,api,0.18136390874706135
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,shall,0.17321427707080456
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,given,0.16983689250894687
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,loading indicator,0.15699012754233507
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,environment configuration,0.14197270648663693
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,backend,0.13504377942565826
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,production,0.13131767668063998
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,indicator,0.13131767668063998
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,loading,0.12305299348364507
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,shall use,0.12305299348364507
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,response,0.11630025562494184
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,scenario,0.11338134140911357
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,display,0.10564522581894494
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,environment given,0.10466008502822338
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,user submitted,0.10466008502822338
+10,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,application running,0.10466008502822338
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,transactions,0.353430229751311
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,shall,0.29246661573432176
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,sort,0.228690148662613
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,column,0.228690148662613
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,page,0.2181449798517212
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,account,0.21562103895918733
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,table,0.17436592938781834
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,table shall,0.166320108118264
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,filter,0.15401502782799095
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,date,0.1464541931171503
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,user,0.13543103449117358
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,page number,0.124740081088698
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,account filter,0.124740081088698
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,clicks,0.12173169236574667
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,scenario,0.10510468142073623
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,user clicks,0.10434145059921143
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,date range,0.10434145059921143
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,page shall,0.10395006757391499
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,shall reset,0.10395006757391499
+11,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,column header,0.10395006757391499
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub,0.665138896267322
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,docs,0.2669025868454084
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,documentation,0.19550751426876378
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,installation,0.13909233640216642
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub documentation,0.1385706033890254
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,doc,0.12531516414827457
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub installation,0.11085648271122032
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,vs hub,0.11085648271122032
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub features,0.11085648271122032
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,scenario hub,0.11085648271122032
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,features,0.10265484109438786
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,accessible,0.09272822426811095
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub docs,0.08314236203341525
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,core vs,0.08314236203341525
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,doc accessible,0.08314236203341525
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,accessible user,0.08314236203341525
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,docpage,0.08314236203341525
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,registry,0.08314236203341525
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,docs hub,0.08314236203341525
+12,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,navigates docs,0.08314236203341525
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,source contains,0.32961475291948583
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,let,0.2782120507554325
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,array,0.2415281424915187
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,followed,0.23895140201853798
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,contains let,0.22706794090009022
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,contains,0.21354619312771114
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,evaluates,0.20534698984329539
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,source,0.19632718954676218
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,runtime,0.19534619468068526
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,expression,0.18547470050362164
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,expression evaluates,0.16114499031619306
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,runtime error,0.15382021802909338
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,let followed,0.13184590116779432
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,scenario,0.1269622522785005
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,error,0.12686530514109012
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,raise,0.12452112888069464
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,raise runtime,0.12452112888069464
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,element,0.11260963959148457
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,len,0.11028526247009446
+13,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,execution raise,0.10987158430649527
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,video,0.3785121817994566
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,sectors,0.1674199983012012
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,playback,0.1674199983012012
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,fix video,0.1674199983012012
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,video section,0.1674199983012012
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,divine vertex,0.1674199983012012
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,vision,0.1674199983012012
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,vertex,0.1674199983012012
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,divine,0.1674199983012012
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,messaging,0.15140487271978267
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,fix,0.15140487271978267
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,update,0.14023088556575017
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,overview,0.11793816654059554
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,section,0.09664879669208966
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,users,0.09664879669208966
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,component enable,0.0837099991506006
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,videosection component,0.0837099991506006
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,vision target,0.0837099991506006
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,player videosection,0.0837099991506006
+14,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,video player,0.0837099991506006
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,worktree,0.36513048489364
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,install,0.21435313602121964
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,rust,0.17279932571433446
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,internal,0.16226236519053858
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,release,0.16198622760540465
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,source,0.1615721853490826
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,git,0.15762629761366606
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,rs,0.15575598808211985
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,sh,0.1457994310714697
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,scripts,0.1457994310714697
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,cli,0.14559300766591948
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,substep,0.13778508863910943
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,wtk,0.13778508863910943
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,source internal,0.13089583420715395
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,e2e,0.126778542097108
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,branch,0.11647440613273558
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,completion,0.11339955750003197
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,clipboard,0.1121443114191263
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,internal worktree,0.11022807091128754
+15,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,substep implement,0.10333881647933207
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,image,0.32179379466494085
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,gallery,0.23722141209132594
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,images,0.16089689733247042
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,broken,0.14882160991142468
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,generated,0.12533206317990975
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,assets generated,0.11861070604566297
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,mall,0.11861070604566297
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,broken images,0.11861070604566297
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,image unavailable,0.11861070604566297
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,design shop,0.11861070604566297
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,asset,0.10726459822164693
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,user visible,0.10726459822164693
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,shop,0.10726459822164693
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,hero,0.09921440660761646
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,assets,0.09921440660761646
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,placeholder,0.09297019288166135
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,base,0.08786829878360043
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,unavailable,0.08786829878360043
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,clean,0.08786829878360043
+16,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,load,0.08355470878660651
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,provider,0.35887896534443287
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,gemini,0.2640242336379987
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,adapter,0.23876810353911315
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,geminiprovider,0.2310212044332489
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,playwright,0.1790760776543349
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,shall,0.15020662909925014
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,selection,0.13949289669772977
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,providerfactory,0.13201211681899935
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,provider identity,0.13201211681899935
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,refactor,0.13201211681899935
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,model,0.11624408058144146
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,configuration,0.11057326624524713
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,identity,0.11042429702905626
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,backend,0.1064602086627134
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,unified,0.09900908761424952
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,compatibility,0.09900908761424952
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,geminiprovider shall,0.09900908761424952
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,adapter selection,0.09900908761424952
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,requirement provider,0.09900908761424952
+17,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,providers,0.09900908761424952
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,sites,0.3423147340859206
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,sebn,0.24451052434708612
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,la,0.22112104403929078
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,le,0.2200594719123775
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,adminsebn,0.2200594719123775
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,le systeme,0.1956084194776689
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,avec,0.1956084194776689
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,systeme,0.1956084194776689
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,api sites,0.1711573670429603
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,et,0.1711573670429603
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,morphomanager,0.12225526217354306
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,retourne,0.12225526217354306
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,les,0.12225526217354306
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,retourne http,0.12225526217354306
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,sebn tn01,0.12225526217354306
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,tn01,0.12225526217354306
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,systeme retourne,0.09780420973883446
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,envoie api,0.09780420973883446
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,envoie,0.09780420973883446
+18,000216102831443e,mkorboslioptima-netizen/gestion-repas,OpenSpec/changes/archive/2026-04-16-multi-site-architecture/specs/site-management/spec.md,spec.md,openspec,archived,adminsebn envoie,0.09780420973883446
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,form,0.25035560261003037
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,lead,0.25034201740683987
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,storefront,0.24170953404798334
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,ef,0.21858799193065293
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,leads,0.18991463389484406
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,daniel,0.18991463389484406
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,submit,0.1805205327901328
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,cms_leads,0.1467522171005613
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,api leads,0.12948725038284822
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,supersale,0.12948725038284822
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,email,0.1227539622972903
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,cutover,0.12085476702399167
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,leads submit,0.12085476702399167
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,lead intake,0.11222228366513512
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,intake,0.11222228366513512
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,uat,0.11222228366513512
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,grep,0.10929399596532646
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,prizma,0.10358980030627857
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,db,0.10148728196780313
+19,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,crm_leads,0.09495731694742203
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,official,0.41618924096332177
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,capture time,0.32014556997178595
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,page capture,0.28813101297460736
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,official page,0.28813101297460736
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,published official,0.28813101297460736
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,published,0.2605688674512995
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,capture,0.25093852302866954
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,time,0.16796080690725324
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,page,0.1511647262165279
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,i5,0.0960436709915358
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,https www,0.0960436709915358
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,bmwusa,0.0960436709915358
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,bmwusa com,0.0960436709915358
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,www bmwusa,0.0960436709915358
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,www,0.08685628915043317
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,https,0.07528155690860086
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,html,0.07528155690860086
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,charging,0.06402911399435719
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,horsepower,0.06402911399435719
+20,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,torque,0.06402911399435719
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,ito,0.6513268891574512
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,project,0.16834011285549155
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,config,0.1666961370019637
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,ito directory,0.1628317222893628
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,crate,0.15890466762658972
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,directory,0.1407324126660656
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,configuration,0.13638774845615212
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,ito dir,0.13569310190780232
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,crate shall,0.13569310190780232
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,dir,0.12271291979314221
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,resolved,0.12062778228519908
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,no_color,0.10855448152624185
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,itocontext,0.10855448152624185
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,config key,0.10855448152624185
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,key,0.09966582403831996
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,global,0.09131356613018304
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,scenario,0.08820019156369688
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,ito config,0.0814158611446814
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,directory ito,0.0814158611446814
+21,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,key project,0.0814158611446814
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,job,0.3287783966804428
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queue,0.30570881081749274
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,jobs,0.17115900805051476
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,conversion,0.15798011523046354
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,submission,0.15798011523046354
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,retry header,0.13101806177892547
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,client submits,0.13101806177892547
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queued failed_retryable,0.13101806177892547
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queue capacity,0.13101806177892547
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,capacity,0.13101806177892547
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queue_max_depth,0.13101806177892547
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,failed_retryable,0.13101806177892547
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,503,0.13101806177892547
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queue depth,0.13101806177892547
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queued,0.11848508642284766
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,status queued,0.11848508642284766
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,jobs status,0.11848508642284766
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,retry,0.11848508642284766
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,submits,0.10959279889348092
+22,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,client,0.10269540483030887
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,sss,0.25886283071807176
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,sss extension,0.22188242632977576
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,extension,0.1855981976575699
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,symbol,0.15049313489170799
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,説明,0.14792161755318384
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,必要,0.14792161755318384
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,トークン投票,0.14792161755318384
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,その小説の作者のみ,0.14792161755318384
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,ロクインユーサー全員,0.12943141535903588
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,ロクイン不要,0.12943141535903588
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,投票承認,0.11094121316488788
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,ハッシか表示されます,0.11094121316488788
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,お気に入り,0.09245101097073989
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,モサイク,0.09245101097073989
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,作者承認,0.09245101097073989
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,投票,0.07396080877659192
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,サムネイル,0.07396080877659192
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,削除,0.07396080877659192
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,独自トークン,0.07396080877659192
+23,0002e5528924bb60,yamasaw/nobel-chain-spec,Spec.md,Spec.md,root_bare,na,必要票数,0.07396080877659192
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,cline,0.6303831989187872
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,openspec,0.3362043727566865
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,clinerules,0.16810218637834326
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,workflow,0.16470364704480037
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,md,0.15074010865928367
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,proposal,0.12607663978375744
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,clinerules openspec,0.12607663978375744
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,scenario cline,0.12607663978375744
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,configured clinerules,0.12607663978375744
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,md contains,0.11401635284367774
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,contains,0.10427332203450068
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,root,0.093399156142673
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,instructions,0.093399156142673
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,configured,0.08881404784716675
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,rules,0.08881404784716675
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,rules configured,0.08405109318917163
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,cline specific,0.08405109318917163
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,workflow instructions,0.08405109318917163
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,cline md,0.08405109318917163
+24,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,instructions cline,0.08405109318917163
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,concept,0.40529798778217263
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,body,0.285965565909938
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,bodyparagraphs,0.2701986585214484
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,migrated,0.22601332093124088
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,unit json,0.1576158841375116
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,unit,0.15012491651944845
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,concepts,0.14253860422052542
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,given,0.1339751724252356
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,json,0.12354347797100775
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,chunk,0.12217594647473608
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,theory,0.11258277438393684
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,350,0.11258277438393684
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,migration,0.11103170816792252
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,concept migrated,0.09006621950714948
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,u1,0.09006621950714948
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,u2,0.09006621950714948
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,katex,0.09006621950714948
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,concept body,0.09006621950714948
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,migrated concept,0.09006621950714948
+25,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,scenario,0.08944043040760585
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,priority,0.21405125771318212
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,independently,0.20333473793191228
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,user,0.1979402750390649
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,action,0.18008148329050003
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,fr,0.15757129787918753
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,story,0.1429031613309628
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,users,0.12278855918029329
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,action expected,0.12154321965103858
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,expected outcome,0.12154321965103858
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,state action,0.12154321965103858
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,given initial,0.12154321965103858
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,metric,0.12154321965103858
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,initial state,0.12154321965103858
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,measurable,0.11255092705656253
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,tested,0.11255092705656253
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,journey,0.10991659233033245
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,represents,0.10991659233033245
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,tested independently,0.10991659233033245
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,outcome,0.10166736896595614
+26,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,feature,0.09801764290567987
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,gherkin,0.39737298107670554
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,safeword,0.2869915974442873
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,feature,0.25636683360121393
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,vitest,0.24283904399132006
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,cucumber js,0.2207627672648364
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,cucumber,0.2207627672648364
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,js,0.15551520891071594
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,bdd,0.13245766035890186
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,typescript,0.11978697533683974
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,slice,0.11079698124452889
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,gherkin typescript,0.1103813836324182
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,codify,0.1103813836324182
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,arcade,0.08830510690593457
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,dogfood,0.08830510690593457
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,foundation,0.08830510690593457
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,safeword repo,0.08830510690593457
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,lineage,0.08830510690593457
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,format gherkin,0.08830510690593457
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,tests,0.08545561120040465
+27,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,ac,0.07985798355789316
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,und,0.3292627257007912
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,kind,0.2838932685882091
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,das,0.26798938850643506
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,tab,0.22033495651452542
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,kontakt,0.19755763542047472
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,account,0.14635317430304273
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,zeigt,0.1317050902803165
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,hat,0.1317050902803165
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,kontakt tab,0.1317050902803165
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,das kind,0.1317050902803165
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,und das,0.1317050902803165
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,user_id,0.11910639489174892
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,user account,0.11910639489174892
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,aus,0.09877881771023736
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,profil,0.09877881771023736
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,strang,0.09877881771023736
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,sofort,0.09877881771023736
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,telefonnummern,0.09877881771023736
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,members,0.09877881771023736
+28,000377cefdad37ce,UlrichFrank/TeamWERK,openspec/changes/archive/2026-06-06-kind-profil-user-strang-sync/specs/kind-profil/spec.md,spec.md,openspec,archived,user_id hat,0.09877881771023736
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,type,0.3045178822705187
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,tile,0.22314659903674708
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,color,0.21154306021586314
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,style,0.19911301697005473
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,js,0.1781537520258384
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,block,0.15719448708162215
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,style tile,0.14876439935783137
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,default,0.13679733333338825
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,tiles,0.13453383812300385
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,type string,0.13388795942204823
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,string default,0.13388795942204823
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,value,0.12883022283096282
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,json,0.12826599638136613
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,fonts,0.12108045431070347
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,wordpress,0.11901151948626511
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,style tiles,0.11901151948626511
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,typography,0.10762707049840307
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,design,0.10150596075683957
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,brand,0.09954967539570031
+29,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,theme,0.09954967539570031
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,shell,0.37815997031886556
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,pub,0.37046247365679846
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,blacklist,0.2197658742031855
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,command,0.20704551349399625
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,darkmatter,0.14441757447637907
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,executable,0.14195959071927813
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,whitelist,0.1381385494991452
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,shell expansion,0.13185952452191133
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,directive,0.11930147456744356
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,stage,0.11930147456744356
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,usize,0.11930147456744356
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,expansion,0.11924605620419365
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,line,0.11628951153803746
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,approval,0.11302244959020968
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,compose,0.10221090531788028
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,timeout,0.08517575443156689
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,policy,0.08366830538296345
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,rust,0.08366830538296345
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,string,0.08179209896083034
+30,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,directives,0.08162732470404033
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,game,0.41483445192823654
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,robux,0.24796704892803598
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,stripe,0.24796704892803598
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,page,0.23850410815116121
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,99,0.20741722596411827
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,code,0.13846469643268297
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,game catalog,0.12398352446401799
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,balance,0.12398352446401799
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,launch,0.12398352446401799
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,new project,0.12398352446401799
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,robux balance,0.12398352446401799
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,game code,0.11212346154163128
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,games,0.11212346154163128
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,avatar,0.11212346154163128
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,catalog,0.11212346154163128
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,copy,0.10370861298205913
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,search,0.09184855005967242
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,games page,0.08265568297601199
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,game page,0.08265568297601199
+31,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,home page,0.08265568297601199
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,device,0.2875429910921648
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,tenant,0.2690198779363544
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,thingsboard,0.22010717285701722
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,scenario,0.21195427511254533
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,rule,0.20673783835141196
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,administrator,0.17119446777768008
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,user,0.14869346672180583
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,devices,0.14319919424921343
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,role,0.13166162368085352
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,logs,0.1227421664993258
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,management,0.1227421664993258
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,audit,0.10336891917570598
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,telemetry,0.09782541015867433
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,audit logs,0.09782541015867433
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,created,0.09260179884319036
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,action,0.09058786359830631
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,api,0.08476010102790012
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,shall,0.08095138512079496
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,documentation,0.07667813095791061
+32,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,quotas,0.07336905761900575
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,reviewer,0.3229737793258338
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,role,0.2340612296821238
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,code review,0.22467587020592097
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,correctness,0.2235972318409619
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,code,0.22196729024289538
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,review flow,0.19875309496974392
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,review,0.1947348830388307
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,security,0.1840484821648753
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,shall,0.17474930034073255
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,verdict,0.17390895809852594
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,style security,0.17390895809852594
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,correctness reviewer,0.14906482122730794
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,logic correctness,0.14906482122730794
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,security reviewer,0.14906482122730794
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,style,0.14001060717268135
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,flow,0.14001060717268135
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,scenario,0.1166289909856245
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,logic,0.11042908929892516
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,output,0.10396476018696969
+33,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,reviewer role,0.09937654748487196
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,cockpit,0.3252486131646521
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,data cockpit,0.19514916789879128
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,hierarchy,0.19514916789879128
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,contrast,0.1764815149139564
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,shell,0.16323660433818532
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,token,0.13132404077757942
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,cockpit token,0.13009944526586084
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,status accents,0.13009944526586084
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,requirement data,0.13009944526586084
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,status,0.12882708498184112
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,data,0.12105048998754168
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,operational,0.10882440289212354
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,accents,0.10882440289212354
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,shall,0.10765843230951812
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,shared,0.1019753690320984
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,visual,0.08754936051838627
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,ui,0.08070032665836112
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,tokens,0.08070032665836112
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,key,0.06825522466847118
+34,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,backgrounds panel,0.06504972263293042
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,reanalysis,0.42650797219239905
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,tool,0.315962455528774
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,job,0.28165382889899104
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,admin,0.23471152408249252
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,reanalysis job,0.15713451607088388
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,data,0.13924300918216104
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,detected_tool_ids,0.1346867280607576
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,sentiment_scores,0.1346867280607576
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,sentiment,0.13195304853961046
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,tools,0.12472202191925288
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,fr,0.12472202191925288
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,documents,0.12180281403656351
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,jobs,0.1055710020104578
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,progress,0.10327307059629671
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,sc,0.08314801461283526
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,historical,0.08120187602437566
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,statistics,0.07856725803544194
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,reanalysis jobs,0.07856725803544194
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,posts,0.07510768770639761
+35,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,results,0.07510768770639761
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,req,0.40099555957828564
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,req id,0.29560772911907274
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,rule,0.20823936173270358
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,ac,0.20049777978914282
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,id,0.16506723233015566
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,deployed,0.16424243517471712
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,deployed consumer,0.14780386455953637
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,id naming,0.14780386455953637
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,consumer,0.13366518652609521
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,naming,0.13366518652609521
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,given,0.11992417668510202
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,rules,0.10411968086635179
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,testing,0.09946340507363548
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,project,0.0916823290594976
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,format,0.08835883729999643
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,test,0.07529317533068504
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,consumer project,0.07390193227976818
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,web module,0.07390193227976818
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,module planning_rules,0.07390193227976818
+36,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,planning_rules txt,0.07390193227976818
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,id,0.3372743653378784
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,turboserializableid,0.32523175078948574
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,identifier,0.2787700721052735
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,class extends,0.18584671473684897
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,class,0.17209697171182464
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,extends,0.1680689193384163
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,instance,0.15545537276789237
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,typed,0.15545537276789237
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,string,0.14410025497224907
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,type,0.14410025497224907
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,id getter,0.13938503605263675
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,serialization,0.13938503605263675
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,extends turboserializableid,0.13938503605263675
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,getter,0.13938503605263675
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,turboserializableid instance,0.09292335736842448
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,string id,0.09292335736842448
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,int,0.09292335736842448
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,numeric,0.09292335736842448
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,turboserializableid string,0.09292335736842448
+37,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,id used,0.09292335736842448
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,fixture,0.4163917549424427
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,pitch sh,0.19921110673146394
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,pitch,0.19921110673146394
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,sh,0.15614690810341603
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,change,0.14831919826356282
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,test,0.13530757427893128
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,spec proof,0.1328074044876426
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,small change,0.1328074044876426
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,test pitch,0.1328074044876426
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,tests test,0.1328074044876426
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,solution,0.1328074044876426
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,proof,0.1328074044876426
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,proof implementation,0.1328074044876426
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,implementation notes,0.1328074044876426
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,problem,0.12010326350930298
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,spec,0.11123939869767212
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,assert,0.11108953203825028
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,small,0.11108953203825028
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,present,0.09838539105991065
+38,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,notes,0.08568125008157101
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,networksiteid,0.33919297044270813
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,null,0.2950740588795757
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,kind,0.28713784693216177
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,network,0.2658683767890387
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,task,0.23312720385379207
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,string,0.19356842592440265
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,yes,0.18994806344791657
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,null yes,0.18994806344791657
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,string null,0.17638034463020824
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,kind network,0.17638034463020824
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,scheduling,0.1492449069947916
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,customer,0.14753702943978786
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,network networksiteid,0.13567718817708324
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,customerid,0.13567718817708324
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,contractid,0.1085417505416666
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,networksite,0.1085417505416666
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,api scheduling,0.09497403172395828
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,network task,0.09497403172395828
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,requirement req,0.08140631290624996
+39,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,id,0.07576208514394984
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,expect,0.28579860237207627
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,bff,0.22084437456024075
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,express,0.19486268343550656
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,response,0.18285184542142774
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,给定,0.15589014674840523
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,那么,0.15589014674840523
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,expect response,0.15589014674840523
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,questions,0.15273849948640106
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,tobe,0.14289930118603814
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,typescript,0.1409779480719371
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,const,0.1303975747321067
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,tdd,0.129908455623671
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,request app,0.11691761006130393
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,async,0.11691761006130393
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,await request,0.11691761006130393
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,await,0.11691761006130393
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,test,0.10588324093267956
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,typescript test,0.10392676449893683
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,cors,0.10392676449893683
+40,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,app,0.0962378133796988
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,room,0.4385860729428392
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,memory,0.35496147361722163
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,admin,0.25354390972658686
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,governance,0.18186686696732005
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,room memory,0.12124457797821336
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,admin governance,0.12124457797821336
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,memory admin,0.12124457797821336
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,wizard,0.12124457797821336
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,provenance,0.12124457797821336
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,setup,0.12124457797821336
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,scoped memory,0.12124457797821336
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,private,0.1096465182357098
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,scoped,0.1096465182357098
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,semantics,0.10141756389063475
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,public,0.09503469101811568
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,audit,0.08541012647732273
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,scope,0.07248139262805543
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,validation scope,0.06062228898910668
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,memory internals,0.06062228898910668
+41,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,setup governance,0.06062228898910668
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op1,0.531521275688607
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op2,0.39864095676645517
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op1 op2,0.37649423694609657
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,instruction,0.20028200511205163
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,address,0.1667257842637323
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,operation,0.1602256040896413
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,operand,0.15502703874251036
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,result address,0.1107335991017931
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,stores,0.1107335991017931
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,address op1,0.1107335991017931
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,ahead,0.10014100255602582
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op2 skip,0.0885868792814345
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,denoted,0.0885868792814345
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,instruction op1,0.0885868792814345
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,skip instruction,0.0885868792814345
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,jmp,0.0885868792814345
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op2 stores,0.0885868792814345
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,stores result,0.0885868792814345
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,skip,0.08011280204482064
+42,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,result,0.0745172723023539
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flags,0.5769443689143767
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,bits,0.3823125336179604
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,rust,0.24518178424244189
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flags value,0.22243638319590425
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,const,0.1802471425158301
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flag,0.16890300692257107
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,0b0000_0001,0.1668272873969282
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,following,0.15179748604545887
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,bit,0.13902273949744015
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flags values,0.12512046554769615
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,value,0.12039392882530575
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,following flags,0.11816932857282414
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,0b0000_0010,0.10426705462308013
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,0b0000_0011,0.10426705462308013
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,0b1111_1111,0.09731591764820813
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,defined,0.08717574550842377
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,type,0.08623542143056061
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,values,0.08426830517670295
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flags type,0.07646250672359209
+43,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,const 0b0000_0001,0.07646250672359209
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,invite,0.5347908486382213
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,invite code,0.5050802459360979
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,code,0.364988538754843
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,room,0.26868534620638274
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,characters,0.09940822090414003
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,device provides,0.08913180810637022
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,requirement invite,0.08913180810637022
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,scenario,0.0858303140758091
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,device,0.0698638568794142
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,provides,0.0698638568794142
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,code room,0.05942120540424682
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,code does,0.05942120540424682
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,alphanumeric,0.05942120540424682
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,scenario invite,0.05942120540424682
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,valid invite,0.05942120540424682
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,room created,0.05942120540424682
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,provides invite,0.05942120540424682
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,generate unique,0.05942120540424682
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,room invite,0.05942120540424682
+44,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,rooms,0.05942120540424682
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,data,0.26672395457027326
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,della,0.2457107315818422
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,video,0.22220644139599535
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,date,0.21636209440445742
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,seduta,0.18428304868638165
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,della data,0.18428304868638165
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,ancora,0.18428304868638165
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,la,0.16665483104699652
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,dell,0.1228553657909211
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,delle,0.1228553657909211
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,anchors,0.1228553657909211
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,titolo,0.1228553657909211
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,titolo della,0.1228553657909211
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,hash dell,0.1228553657909211
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,url,0.11889097630668155
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,hash,0.11110322069799768
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,pagina,0.1027649410569679
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,seduta page,0.06142768289546055
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,cambiare,0.06142768289546055
+45,000485c6ffc0b6aa,aborruso/ars_sicilia,openspec/specs/seduta-page-navigation/spec.md,spec.md,openspec,living,clicca,0.06142768289546055
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,em,0.3599222976120186
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,nao,0.2242138903156837
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,um,0.1990446051231868
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,para,0.18291133157332093
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,header,0.15901023759333893
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,analise,0.1551853607778324
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,com,0.1501777226627618
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,sem,0.14034058078456385
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,que,0.13396146347617457
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,card,0.13064007019141258
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,uma,0.12696984063640832
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,playwright,0.11482411155100679
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,investigador,0.1128620805656963
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,busca,0.10844499424261753
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,suite,0.10620657962321861
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,fr,0.10451205615313008
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,jogador,0.09875432049498427
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,marca,0.09875432049498427
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,viewport,0.08464656042427222
+46,000487514a4113ae,wellingtonpoll/clean-match-chess,specs/006-frontend-ux-improvements/spec.md,spec.md,speckit,feature,frontend,0.08313454385664834
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,design,0.3044475705132446
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,design md,0.27608015596696794
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,color,0.23093302252037723
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,md,0.22005849130344712
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,accent,0.2052737977958909
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,agent,0.19418838124440108
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,reference,0.16504386847758534
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,hover,0.12829612362243178
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,bokushi,0.12270229154087466
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,section,0.10625100599498473
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,component,0.10321438281877031
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,border,0.10263689889794544
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,scenario,0.09969524488579994
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,include,0.0965615855549271
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,example prompts,0.092026718655656
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,stylings,0.092026718655656
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,section shall,0.092026718655656
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,prompt guide,0.092026718655656
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,repos bokushi,0.092026718655656
+47,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,component stylings,0.092026718655656
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,ai,0.39473850275430594
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,migration,0.3490558968284288
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,ai sandbox,0.25955017788037654
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,sandbox,0.25955017788037654
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,paths,0.2049068746459196
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,shall,0.18549186068045162
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,old,0.1578954011017224
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,exists shall,0.14936856371881607
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,new paths,0.14157282429838722
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,scenario migrate,0.14157282429838722
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,marker,0.14157282429838722
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,migrate,0.1381584759640071
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,new,0.12763163794099758
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,scenario,0.11928777395242565
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,shall ai,0.11797735358198932
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,old paths,0.11797735358198932
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,paths exist,0.11797735358198932
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,git,0.11114865691322913
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,exists,0.10897020070544015
+48,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,file,0.09956874932566792
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,tuk_matrix,0.4611670762826514
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,compile error,0.31804625950527676
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,compile,0.27933827021788427
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,gguf,0.25443700760422144
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,error,0.16201682446911572
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,tuk,0.14312081677737457
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,int32_t,0.12721850380211072
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,tuk_matrix tuk_matrix,0.12721850380211072
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,qwen3,0.11131619082684689
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,ollama,0.11131619082684689
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,qwen3 8b,0.09541387785158305
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,zig,0.09541387785158305
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,8b,0.09541387785158305
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,self,0.08628674100109684
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,nao,0.07981093434796692
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,em,0.07981093434796692
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,loader,0.07981093434796692
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,gguf loader,0.07951156487631919
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,fase,0.07951156487631919
+49,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,tukllm,0.07951156487631919
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,maplewood,0.35068010950533784
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,game,0.24000031179344278
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,homepage,0.15940004977515354
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,touch,0.14415209946613045
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,mobile,0.14170266749146745
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,embeds,0.12752003982012286
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,3d,0.12752003982012286
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,trxgaming,0.12752003982012286
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,ships 3d,0.12752003982012286
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,js,0.11228855457960185
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,buttons,0.10666680524153012
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,vehicle,0.09564002986509214
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,screen,0.09564002986509214
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,city,0.09564002986509214
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,hud,0.09564002986509214
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,improved,0.09564002986509214
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,ships,0.09446844499431165
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,style,0.08983084366368148
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,play,0.08649125967967829
+50,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,better,0.08649125967967829

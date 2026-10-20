@@ -1,0 +1,861 @@
+row_number,file_url_sha16,repo_name,file_path,file_name,spec_tool,spec_role,term,tfidf_score,detected_language,language_probability
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,reminder,0.24826851383022955,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,payment,0.2128015832830539,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,ana,0.17733465273587826,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,notification,0.17674651439706449,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,email,0.14728876199755375,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,profileitem,0.14186772218870258,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,payment reminder,0.14186772218870258,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,notification built,0.14186772218870258,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,isowedtoyou,0.14186772218870258,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,shall,0.13573701738243546,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,profile,0.12780714668255463,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,removed,0.11213732323218387,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,50,0.11009291650637687,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,reminders,0.10640079164152695,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,luis,0.10640079164152695,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,profileitem displayname,0.10640079164152695,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,15 50,0.10640079164152695,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,owed current,0.10640079164152695,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,displayname,0.10640079164152695,en,0.9999975392502353
+1,00001a8d79a8d283,naigel89/CuentaMorosos,openspec/changes/payment-only-reminders/specs/local-notification-triggers/spec.md,spec.md,openspec,change_proposal,amounteuros,0.10640079164152695,en,0.9999975392502353
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,feature,0.2797707503718182,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,readme,0.2797366204240055,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,authoring,0.24003035721432234,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,feature authoring,0.2037459848153804,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,deacon,0.18807321675265884,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,commands,0.18484844430242073,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,features,0.1834238170824421,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,references,0.14627015379128538,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,ci,0.1270748949958177,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,progress table,0.12538214450177254,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,visitor,0.10970937643905099,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,progress,0.10413859082448897,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,consumer,0.09883602944119155,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,user,0.09867308855251322,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,reads,0.09729969406052365,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,authoring commands,0.09403660837632942,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,table,0.09325691679060606,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,priority,0.09171190854122105,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,fr,0.0851372323029582,en,0.9999972290548788
+2,00001b3c90f61e5c,get2knowio/deacon,specs/011-update-readme-scope/spec.md,spec.md,speckit,feature,links,0.08024791997356842,en,0.9999972290548788
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,competitive multiplayer,0.2821469858712993,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,competitive,0.2821469858712993,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,multiplayer,0.2821469858712993,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,updated,0.18653840200063526,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,multiplayer leaderboards,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,leaderboards,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,matchmaking,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,scoring,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,tech,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,learned,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,lessons learned,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,multiplayer mode,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,mode overview,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,overview implement,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,implement real,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,time competitive,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,learned updated,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,leaderboards matchmaking,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,tests passing,0.14107349293564966,en,0.9999977614529878
+3,00001d57c25efd70,bodangren/advantage-games,measure/archive/competitive_multiplayer_20260425/spec.md,spec.md,adhoc_other,na,updated lessons,0.14107349293564966,en,0.9999977614529878
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,provider,0.4359313646130638,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,onedrive,0.39364376537576135,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,lattix,0.19682188268788067,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,configuration,0.14749271069764658,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,config json,0.1312145884585871,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,existing configuration,0.1312145884585871,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,sync target,0.1312145884585871,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,bootstrap,0.1312145884585871,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,lattix config,0.1312145884585871,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,provider onedrive,0.1312145884585871,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,initialization,0.11820984995946561,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,persist,0.10898284115326595,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,json,0.10182581709724665,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,metadata,0.10182581709724665,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,sync,0.09597810265414446,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,shall,0.08369616710389709,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,removed,0.08297336415502297,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,runs,0.0795940697919255,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,target,0.0795940697919255,en,0.9999975616976355
+4,000030918a44726f,daomar-dev/agentfleet,openspec/changes/archive/2026-04-03-merge-init-watch-into-run/specs/provider-selection/spec.md,spec.md,openspec,archived,config,0.07374635534882329,en,0.9999975616976355
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,skill,0.4610080581025304,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,md,0.3294448300902865,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,skills,0.25601753615090234,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,skill md,0.2210312607340899,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,routing,0.19343547175845952,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,lifecycle,0.1705098297091551,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,claude,0.16172433628614175,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,claude md,0.1416202718353088,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,cortex,0.13261875644045396,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,compression,0.10104286204986969,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,review,0.09311401180111191,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,when_to_use,0.08841250429363597,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,description,0.08840705566734701,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,policies,0.08209732541551912,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,overnight,0.08209732541551912,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,l1,0.07578214653740226,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,combined,0.0739606215547051,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,line,0.07351106194824625,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,references,0.06998891906998304,en,0.9999959921563901
+5,00007385b604a02a,charleshall888/cortex-command,cortex/lifecycle/reduce-boot-context-surface-claudemd-skillmd/spec.md,spec.md,adhoc_other,na,surface,0.06928942434260837,en,0.9999959921563901
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,application,0.4455856667152874,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,yaml,0.2638810189951923,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,profile,0.25064193752734915,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,dev,0.193020469437982,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,spring_profiles_active,0.15456447765652606,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,spring,0.15456447765652606,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,docker,0.13924552084852732,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,spring boot,0.12365158212522084,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,dev profile,0.12365158212522084,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,docker compose,0.12365158212522084,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,application yaml,0.12365158212522084,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,values,0.1216175262099407,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,environment,0.11250958570810593,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,boot,0.11139641667882184,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,prod,0.11139641667882184,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,compose,0.11139641667882184,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,base,0.0959567341800699,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,application starts,0.09273868659391564,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,committed,0.09273868659391564,en,0.9999967496060691
+6,00008fcb0efcd430,psyPrashant/musical-goggles,openspec/changes/archive/2026-05-28-ep-07-infrastructure/specs/environment-config/spec.md,spec.md,openspec,archived,yaml file,0.09273868659391564,en,0.9999967496060691
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,buckets,0.3128943807422532,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,bucket,0.2560044933345707,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,14,0.24806779174414006,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,granularity,0.22755954963072955,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,2025,0.21781889360100287,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,2024,0.19911460592688834,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,commits,0.1921931414126496,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,timeline,0.18489213407496774,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,timeline shall,0.17066966222304716,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,yearly,0.1564471903711266,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,quarterly,0.1564471903711266,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,daily,0.14222471851920596,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,shall,0.13305461780386957,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,span,0.12994027186597812,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,bucket labels,0.12800224666728535,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,granularity selected,0.12800224666728535,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,labels,0.11812751987816195,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,commits span,0.11377977481536478,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,selected,0.10403156230072236,en,0.9999951837087478
+7,0000de2cb6f4731e,jim60105/contribution-showcase,openspec/changes/archive/2026-05-13-extended-timeline-granularity/specs/adaptive-timeline-granularity/spec.md,spec.md,openspec,archived,contiguous,0.10250300875341312,en,0.9999951837087478
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,greeting,0.20699928820949154,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,api,0.19650664468825754,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,environment,0.1883469969250999,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,given user,0.18648349309637163,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,user,0.18617605676712246,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,shall,0.1760479757613471,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,given,0.1684342668756493,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,loading indicator,0.15524946615711865,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,backend,0.15141150969944017,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,environment configuration,0.1398626198222787,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,indicator,0.12894547860942004,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,loading,0.12894547860942004,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,production,0.12894547860942004,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,shall use,0.12047748601024856,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,response,0.12047748601024856,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,scenario,0.1188030366313597,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,loads shall,0.10349964410474577,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,api returns,0.10349964410474577,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,remove loading,0.10349964410474577,en,0.9999972222428687
+8,0000e04195681f23,kapoc3/cide_devops,openspec/changes/create-frontend-app/specs/frontend-hello/spec.md,spec.md,openspec,change_proposal,scenario user,0.10349964410474577,en,0.9999972222428687
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,transactions,0.3476371621082199,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,shall,0.29565714557739786,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,page,0.22986122100539247,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,sort,0.22494169312884818,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,column,0.22494169312884818,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,account,0.2221677881706034,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,table,0.1757573370199657,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,filter,0.16984519992638633,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,table shall,0.1635939586391623,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,date,0.14957785887526276,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,user,0.13794104556687073,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,clicks,0.12895757507348052,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,account filter,0.12269546897937172,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,page number,0.12269546897937172,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,user clicks,0.11053506434869759,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,scenario,0.10954000100107959,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,column header,0.10224622414947643,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,page shall,0.10224622414947643,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,shall reset,0.10224622414947643,en,0.9999951714516534
+9,0001522cc6ed3cc7,rutrum/pipances,openspec/changes/archive/2026-03-19-view-all-transactions/specs/transaction-browsing/spec.md,spec.md,openspec,archived,number shall,0.10224622414947643,en,0.9999951714516534
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub,0.6658389731116926,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,docs,0.26381006449725464,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,documentation,0.1937654140311772,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub documentation,0.13871645273160263,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,installation,0.13825639338721032,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,doc,0.12496820099761503,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub installation,0.1109731621852821,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,vs hub,0.1109731621852821,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,scenario hub,0.1109731621852821,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub features,0.1109731621852821,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,features,0.10146540942202101,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,accessible,0.09217092892480688,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,hub docs,0.08322987163896158,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,doc accessible,0.08322987163896158,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,registry,0.08322987163896158,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,docs hub,0.08322987163896158,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,docpage,0.08322987163896158,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,accessible user,0.08322987163896158,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,docs registry,0.08322987163896158,en,0.99999801121186
+10,00016311f451eb47,fjpulidop/specrails-web,openspec/specs/hub-docs/spec.md,spec.md,openspec,living,core vs,0.08322987163896158,en,0.99999801121186
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,source contains,0.3286215509074982,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,let,0.27631493599192114,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,array,0.2617397268560932,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,followed,0.2365506453393261,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,contains let,0.22638373506960988,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,contains,0.20819963988767412,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,evaluates,0.20394673847022748,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,runtime,0.19229857483304805,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,source,0.19014946331817817,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,expression,0.1842099573279474,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,expression evaluates,0.16065942488811025,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,runtime error,0.15335672375683249,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,scenario,0.13411958311725708,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,let followed,0.13144862036299926,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,error,0.12600418659972237,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,raise runtime,0.12414591923172154,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,raise,0.12414591923172154,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,element,0.11184175980625378,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,error source,0.10954051696916607,en,0.9999962465876543
+11,00016edacf437d7f,lucassus/lucky-script,openspec/changes/archive/2026-05-21-add-arrays/specs/arrays/spec.md,spec.md,openspec,archived,execution raise,0.10954051696916607,en,0.9999962465876543
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,video,0.41251452269338523,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,sectors,0.1650058090773541,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,playback,0.1650058090773541,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,fix video,0.1650058090773541,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,video section,0.1650058090773541,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,divine vertex,0.1650058090773541,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,vision,0.1650058090773541,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,vertex,0.1650058090773541,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,divine,0.1650058090773541,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,messaging,0.14865200708708062,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,fix,0.14865200708708062,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,update,0.13426438671634583,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,overview,0.11447757096800955,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,section,0.09624745678942687,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,users,0.09624745678942687,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,component enable,0.08250290453867705,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,videosection component,0.08250290453867705,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,vision target,0.08250290453867705,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,player videosection,0.08250290453867705,en,0.9999956361897603
+12,000187486c567d11,caffeinepub/divine-vertex,src/spec.md,spec.md,caffeine,na,video player,0.08250290453867705,en,0.9999956361897603
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,worktree,0.36354328200065283,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,install,0.21072670775073163,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,rust,0.17033583093726654,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,git,0.1618006801651829,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,release,0.16066643061013255,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,internal,0.15872346482185476,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,source,0.1562787338143155,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,rs,0.15448695250974284,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,scripts,0.15382255516191135,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,sh,0.14372085735331863,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,cli,0.14276530602810253,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,substep,0.13718614415118974,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,wtk,0.13718614415118974,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,e2e,0.13594851820857373,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,source internal,0.13032683694363026,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,branch,0.12041526157184666,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,completion,0.11178288905258117,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,clipboard,0.11123060580701485,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,internal worktree,0.10974891532095178,en,0.9999954290661759
+13,00018e6bb25e37ef,nettee/worktree-kit,specs/change/20260522-rust-rewrite-wtk/spec.md,spec.md,specs_generic,na,substep implement,0.1028896081133923,en,0.9999954290661759
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,image,0.31861765804409825,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,gallery,0.23578004083546333,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,images,0.1768350306265975,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,broken,0.14687379108912013,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,generated,0.12934758948457178,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,mall,0.11789002041773167,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,assets generated,0.11789002041773167,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,design shop,0.11789002041773167,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,image unavailable,0.11789002041773167,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,broken images,0.11789002041773167,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,shop,0.10620588601469944,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,user visible,0.10620588601469944,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,asset,0.10620588601469944,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,assets,0.10620588601469944,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,hero,0.10620588601469944,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,base,0.09148561754957074,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,placeholder,0.09148561754957074,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,fallback,0.08623172632304785,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,unavailable,0.08623172632304785,en,0.9999957545600896
+14,0001a1098b3d241b,caffeinepub/downtown-mall-barwala,src/spec.md,spec.md,caffeine,na,clean,0.08623172632304785,en,0.9999957545600896
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,provider,0.3521290817421041,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,gemini,0.260899066911116,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,adapter,0.260899066911116,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,geminiprovider,0.2282866835472265,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,playwright,0.195674300183337,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,shall,0.15254831401088778,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,selection,0.13575472712813633,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,provider identity,0.130449533455558,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,refactor,0.130449533455558,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,providerfactory,0.130449533455558,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,backend,0.11927312027822226,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,model,0.11312893927344694,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,configuration,0.10997455880073163,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,identity,0.10834740976680127,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,unified,0.0978371500916685,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,geminiprovider shall,0.0978371500916685,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,providers,0.0978371500916685,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,adapter selection,0.0978371500916685,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,requirement provider,0.0978371500916685,en,0.9999979580887753
+15,0001e61fef32a0bb,Amm1rr/WebAI-to-API,openspec/changes/refactor-provider-architecture/specs/provider-adapter-framework/spec.md,spec.md,openspec,change_proposal,compatibility,0.0978371500916685,en,0.9999979580887753
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,lead,0.24841373687914733,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,form,0.2459546938951236,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,ef,0.2398477459522802,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,storefront,0.2398477459522802,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,submit,0.1929252901895686,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,daniel,0.1884518003910773,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,leads,0.1884518003910773,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,cms_leads,0.14562184575674153,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,api leads,0.12848986390300726,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,supersale,0.12848986390300726,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,email,0.120949070305252,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,leads submit,0.1199238729761401,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,cutover,0.1199238729761401,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,uat,0.11135788204927294,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,lead intake,0.11135788204927294,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,intake,0.11135788204927294,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,grep,0.10803816250615843,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,prizma,0.1027918911224058,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,db,0.10032115089857567,en,0.9999949276070154
+16,00021634808f8749,OpticaLis/opticup-monorepo,apps/erp/modules/Module 4 - CRM/go-live/specs/P5_7_STOREFRONT_FORM_REWIRE/SPEC.md,SPEC.md,specs_generic,na,crm_leads,0.09422590019553866,en,0.9999949276070154
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,official,0.4154993149338477,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,capture time,0.31961485764142133,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,published official,0.2876533718772792,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,page capture,0.2876533718772792,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,official page,0.2876533718772792,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,published,0.259143913259915,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,capture,0.24802915909026,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,time,0.16758959699843726,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,page,0.16166943042651272,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,https www,0.0958844572924264,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,bmwusa,0.0958844572924264,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,www bmwusa,0.0958844572924264,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,i5,0.0958844572924264,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,bmwusa com,0.0958844572924264,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,www,0.08638130441997165,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,html,0.07963871015352601,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,https,0.07963871015352601,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,com,0.06652262623843155,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,charging,0.06392297152828426,en,0.9999974723216124
+17,000216bf59e34660,Waleeeeed88/car-retrieval-gemini-embedding2,dataset/bmw_i5_2026/specs.md,specs.md,adhoc_other,na,horsepower,0.06392297152828426,en,0.9999974723216124
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,ito,0.6517831232329908,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,config,0.16789702215741073,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,project,0.1647367364953834,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,ito directory,0.1629457808082477,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,crate,0.15789410370348436,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,directory,0.1390528667941872,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,configuration,0.13737029085606334,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,ito dir,0.13578815067353975,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,crate shall,0.13578815067353975,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,dir,0.12233012430975607,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,resolved,0.11918817153787475,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,config key,0.1086305205388318,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,no_color,0.1086305205388318,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,itocontext,0.1086305205388318,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,key,0.09968045372816033,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,scenario,0.09351942093006733,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,global,0.0897748546171522,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,directory ito,0.08147289040412385,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,ito common,0.08147289040412385,en,0.9999938656393144
+18,00022faca36ba505,withakay/ito,docs/ito/changes/archive/2026-02-05-000-05_crate-architecture-refactor/specs/ito-config-crate/spec.md,spec.md,specs_generic,na,key project,0.08147289040412385,en,0.9999938656393144
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,job,0.35058274639455694,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queue,0.3026735886620458,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,jobs,0.1677730776809378,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,conversion,0.15581455395313643,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,submission,0.15581455395313643,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,503,0.12971725228373393,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queue capacity,0.12971725228373393,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queue_max_depth,0.12971725228373393,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,failed_retryable,0.12971725228373393,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,retry header,0.12971725228373393,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queued failed_retryable,0.12971725228373393,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,capacity,0.12971725228373393,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,client submits,0.12971725228373393,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queue depth,0.12971725228373393,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,queued,0.1168609154648523,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,status queued,0.1168609154648523,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,retry,0.1168609154648523,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,jobs status,0.1168609154648523,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,submits,0.10773919932643838,en,0.999994473923219
+19,0002b04a9ca7c407,ahgraber/ai-zettelkasten,.specs/changes/archive/2026-03-30-queue-backpressure/specs/conversion-api/spec.md,spec.md,dot_specs,na,client,0.10773919932643838,en,0.999994473923219
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,cline,0.6298637004055448,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,openspec,0.33592730688295724,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,workflow,0.1743818692110615,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,clinerules,0.16796365344147862,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,md,0.15282878502584213,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,proposal,0.12597274008110895,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,clinerules openspec,0.12597274008110895,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,scenario cline,0.12597274008110895,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,configured clinerules,0.12597274008110895,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,md contains,0.11348752359704649,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,contains,0.10188585668389474,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,root,0.09214390504257444,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,instructions,0.09214390504257444,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,configured,0.08739724603216385,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,rules,0.08739724603216385,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,rules configured,0.08398182672073931,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,cline specific,0.08398182672073931,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,workflow instructions,0.08398182672073931,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,cline md,0.08398182672073931,en,0.9999977582509859
+20,0003354744e25d55,linweishan80-oss/HW_1,OpenSpec/openspec/changes/add-cline-support/specs/cli-init/spec.md,spec.md,openspec,na,instructions cline,0.08398182672073931,en,0.9999977582509859
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,concept,0.4050659486165582,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,body,0.2887792211328215,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,bodyparagraphs,0.27004396574437217,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,migrated,0.22429029400496434,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,unit json,0.1575256466842171,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,unit,0.14814458382532908,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,concepts,0.14191320704546606,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,given,0.1342815222177785,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,json,0.12224385928288044,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,chunk,0.12163989175325661,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,migration,0.11522356519747817,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,theory,0.11251831906015507,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,350,0.11251831906015507,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,scenario,0.09471381862415923,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,concept migrated,0.09001465524812405,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,migrated concept,0.09001465524812405,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,concept body,0.09001465524812405,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,u1,0.09001465524812405,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,u2,0.09001465524812405,en,0.9999958327589644
+21,00033c038809f1cc,Teksi75/pre_utn,openspec/changes/archive/2026-06-18-migrate-all-theory-paragraphs/specs/theory-paragraph-model/spec.md,spec.md,openspec,archived,katex,0.09001465524812405,en,0.9999958327589644
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,priority,0.2197694355669198,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,user,0.20267187907150533,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,independently,0.1996380159590354,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,action,0.17581554845353584,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,fr,0.16321162027102434,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,story,0.14972851196927656,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,users,0.12267761490965123,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,initial state,0.12018139657377003,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,state action,0.12018139657377003,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,action expected,0.12018139657377003,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,expected outcome,0.12018139657377003,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,metric,0.12018139657377003,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,given initial,0.12018139657377003,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,measurable,0.11657972876501738,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,tested,0.1098847177834599,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,represents,0.10827016282102024,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,journey,0.10827016282102024,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,tested independently,0.10827016282102024,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,initial,0.0998190079795177,en,0.9999964715675683
+22,00035d641e23cf3f,chunchiehdev/grading,specs/007-specify-scripts-bash/spec.md,spec.md,speckit,feature,user story,0.0998190079795177,en,0.9999964715675683
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,gherkin,0.39569619398010336,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,safeword,0.28578058454118577,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,feature,0.26161022232734854,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,vitest,0.24181434076561878,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,cucumber,0.21983121887783524,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,cucumber js,0.21983121887783524,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,js,0.16079754194939733,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,bdd,0.13189873132670113,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,typescript,0.1188261871117642,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,gherkin typescript,0.10991560943891762,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,codify,0.10991560943891762,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,slice,0.10955106938457533,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,format gherkin,0.08793248755113409,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,foundation,0.08793248755113409,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,lineage,0.08793248755113409,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,arcade,0.08793248755113409,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,dogfood,0.08793248755113409,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,safeword repo,0.08793248755113409,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,tests,0.08720340744244952,en,0.9999943840466106
+23,0003760bcab86e2f,ArcadeAI/safeword,.project/tickets/102a-gherkin-typescript/spec.md,spec.md,adhoc_other,na,scenarios,0.08039877097469866,en,0.9999943840466106
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,type,0.29684902967647686,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,tile,0.2224407567797403,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,color,0.2093861874646798,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,style,0.19547799583280673,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,js,0.18440048710587986,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,block,0.15432473355221585,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,style tile,0.1482938378531602,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,default,0.13675473292990722,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,tiles,0.13359636705386613,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,string default,0.13346445406784416,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,fonts,0.13346445406784416,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,type string,0.13346445406784416,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,value,0.1279365270502942,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,json,0.12658771807309727,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,style tiles,0.11863507028252815,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,wordpress,0.11863507028252815,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,brand,0.10687709364309289,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,typography,0.10687709364309289,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,design,0.10315074436575762,en,0.9999969047197271
+24,00038afd4ff53e9f,mikezielonkadotcom/style-tiles,SPEC.md,SPEC.md,root_bare,na,theme,0.09853467645396696,en,0.9999969047197271
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,shell,0.37595955895976746,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,pub,0.37092375158849944,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,blacklist,0.22003951365419458,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,command,0.20366741391269985,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,darkmatter,0.14459739468704216,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,executable,0.14159378269363623,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,whitelist,0.13831055143977947,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,shell expansion,0.13202370819251677,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,line,0.12196870754521236,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,stage,0.11945002169799136,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,directive,0.11945002169799136,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,usize,0.11945002169799136,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,expansion,0.11893877746265445,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,approval,0.11316317845072864,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,compose,0.10194752353941809,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,timeout,0.09430264870894055,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,string,0.08728603453401423,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,rust,0.0829387211307444,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,policy,0.0829387211307444,en,0.9999987152329727
+25,0003b0579a71090d,yankeeinlondon/rusty-biscuit,darkmatter/features/_completed/shell-expansion/spec.md,spec.md,adhoc_other,na,std,0.08172896221441514,en,0.9999987152329727
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,game,0.4372862836995511,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,page,0.2500714946464881,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,robux,0.24269694857872126,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,stripe,0.24269694857872126,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,99,0.21864314184977554,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,code,0.13165418090856243,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,new project,0.12134847428936063,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,robux balance,0.12134847428936063,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,balance,0.12134847428936063,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,launch,0.12134847428936063,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,game catalog,0.12134847428936063,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,games,0.10932157092488777,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,avatar,0.10932157092488777,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,catalog,0.10932157092488777,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,game code,0.10932157092488777,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,copy,0.10078834718780148,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,search,0.09416946463935454,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,robux shop,0.08089898285957375,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,studio page,0.08089898285957375,en,0.9999948229556115
+26,0003b848e3d6d5bc,caffeinepub/robiox,spec.md,spec.md,caffeine,na,nav,0.08089898285957375,en,0.9999948229556115
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,device,0.301410705244658,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,tenant,0.26612403292048337,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,scenario,0.2221621568584358,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,thingsboard,0.2177378451167591,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,rule,0.20141593605018682,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,administrator,0.16935165731303486,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,user,0.1523156144073743,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,role,0.14157006639652006,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,devices,0.14065832911417372,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,logs,0.12056428209786321,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,management,0.12056428209786321,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,audit,0.10070796802509341,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,audit logs,0.0967723756074485,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,telemetry,0.0967723756074485,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,created,0.09186705419917247,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,api,0.09186705419917247,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,action,0.08848129149782503,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,shall,0.08230260588174762,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,documentation,0.07509779464636375,en,0.9999953154522604
+27,0003bed208ad9600,crtx-sg/iotix,openspec/changes/archive/2025-12-14-add-iot-simulation-platform/specs/management/spec.md,spec.md,openspec,archived,quotas,0.07257928170558638,en,0.9999953154522604
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,reviewer,0.3212508597388592,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,role,0.25305738718850046,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,code review,0.22262426044110442,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,correctness,0.22240444135767173,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,code,0.21448220628944947,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,review flow,0.1976928367623749,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,review,0.19176825986040005,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,security,0.1807552765632146,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,shall,0.178641376198932,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,verdict,0.17298123216707803,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,style security,0.17298123216707803,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,correctness reviewer,0.14826962757178117,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,security reviewer,0.14826962757178117,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,logic correctness,0.14826962757178117,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,flow,0.14460422125057168,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,style,0.13715514548777122,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,scenario,0.1229169368569242,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,logic,0.10845316593792878,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,analysis,0.10262353103753942,en,0.9999955471783379
+28,0003c866df4c13e0,feimacode/feima-copilot-ai-flow,openspec/changes/archive/2026-06-13-add-p1-flow-library/specs/code-review/spec.md,spec.md,openspec,archived,output,0.10089950021442984,en,0.9999955471783379
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,cockpit,0.32412967162829387,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,data cockpit,0.1944778029769763,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,hierarchy,0.1944778029769763,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,contrast,0.17520301805168978,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,shell,0.16152734050882822,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,token,0.13492462245109452,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,status,0.13159255134315356,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,cockpit token,0.12965186865131753,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,requirement data,0.12965186865131753,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,status accents,0.12965186865131753,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,data,0.12857687804068013,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,shall,0.11026583341021322,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,accents,0.10768489367255214,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,operational,0.10768489367255214,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,shared,0.10061310726719985,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,visual,0.09483503705569447,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,ui,0.08571791869378675,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,tokens,0.0819851804388368,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,key,0.06798277332196428,en,0.9999985350021774
+29,0003cc15fb2e074f,zzulfy/TwinOps,openspec/changes/archive/2026-04-02-frontend-ui-data-cockpit-refresh/specs/frontend-ui-data-cockpit-theme/spec.md,spec.md,openspec,archived,set shell,0.06482593432565877,en,0.9999985350021774
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,reanalysis,0.4227733044621578,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,tool,0.30924137393387036,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,job,0.30068845806676936,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,admin,0.23101488915227208,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,reanalysis job,0.1557585858544792,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,data,0.1471115571372365,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,sentiment_scores,0.13350735930383928,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,detected_tool_ids,0.13350735930383928,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,sentiment,0.13029833182893338,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,fr,0.12950633109194748,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,tools,0.12206896339494883,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,documents,0.12027538322670774,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,jobs,0.10360506487355801,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,progress,0.10164655122699971,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,sc,0.08633755406129832,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,historical,0.08018358881780517,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,statistics,0.0778792929272396,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,reanalysis jobs,0.0778792929272396,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,results,0.07392476452872707,en,0.9999973366662578
+30,0003d22449d88b65,AndrewMFlick/SentimentAgent,specs/013-admin-feature-to/spec.md,spec.md,speckit,feature,posts,0.07392476452872707,en,0.9999973366662578
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,req,0.3992073818405886,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,req id,0.2954171886454736,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,rule,0.20495425201956388,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,ac,0.1996036909202943,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,id,0.1791984916235391,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,deployed,0.1620641896074084,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,id naming,0.1477085943227368,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,deployed consumer,0.1477085943227368,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,consumer,0.1330691272801962,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,naming,0.1330691272801962,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,given,0.12018973113957833,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,rules,0.10247712600978194,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,testing,0.10247712600978194,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,project,0.08959924581176955,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,format,0.0861580366715448,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,test,0.07745079180119131,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,consumer project,0.0738542971613684,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,web module,0.0738542971613684,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,module planning_rules,0.0738542971613684,en,0.9999978057388705
+31,0003d343e4280a54,tatargabor/set-core,openspec/specs/req-id-enforcement/spec.md,spec.md,openspec,living,planning_rules txt,0.0738542971613684,en,0.9999978057388705
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,id,0.3617083462070455,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,turboserializableid,0.3210810161685406,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,identifier,0.27521229957303484,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,class extends,0.1834748663820232,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,class,0.17797638210074176,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,extends,0.16529058758734838,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,typed,0.1523886364574438,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,instance,0.1523886364574438,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,string,0.15162800816608046,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,type,0.13911859469501753,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,getter,0.13760614978651742,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,serialization,0.13760614978651742,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,extends turboserializableid,0.13760614978651742,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,id getter,0.13760614978651742,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,turboserializableid instance,0.0917374331910116,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,string id,0.0917374331910116,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,typed identifier,0.0917374331910116,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,identifier support,0.0917374331910116,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,id used,0.0917374331910116,en,0.9999974757106818
+32,0003e37aa9e01d2d,appboypov/turbo_serializable,workspace/specs/typed-identifiers/spec.md,spec.md,specs_generic,na,turboserializableid string,0.0917374331910116,en,0.9999974757106818
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,fixture,0.436509996843038,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,pitch sh,0.19708313364188917,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,pitch,0.19708313364188917,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,sh,0.15294146294948735,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,change,0.14768848471856766,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,test,0.13778701522605258,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,spec proof,0.13138875576125947,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,small change,0.13138875576125947,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,test pitch,0.13138875576125947,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,tests test,0.13138875576125947,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,solution,0.13138875576125947,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,proof,0.13138875576125947,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,proof implementation,0.13138875576125947,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,implementation notes,0.13138875576125947,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,problem,0.11836675546028377,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,spec,0.11076636353892576,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,assert,0.1091274992107595,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,small,0.1091274992107595,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,present,0.0961054989097838,en,0.9999957850728305
+33,0003f194fb9999d3,dwarvesf/dwarves-kit,tests/fixtures/pitch/no-implnotes/spec.md,spec.md,adhoc_other,na,tests,0.08686624266025952,en,0.9999957850728305
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,networksiteid,0.33241593362462146,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,null,0.3114488382998379,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,kind,0.29818211512858905,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,network,0.27609455104498987,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,task,0.2275972279883431,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,string,0.20219131498812962,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,null yes,0.18615292282978801,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,yes,0.18615292282978801,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,string null,0.17285628548480314,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,kind network,0.17285628548480314,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,scheduling,0.14626301079483345,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,customer,0.14356916654339474,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,network networksiteid,0.13296637344984857,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,customerid,0.13296637344984857,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,contractid,0.10637309875987887,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,networksite,0.10637309875987887,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,network task,0.09307646141489401,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,api scheduling,0.09307646141489401,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,id,0.0806566932280301,en,0.9999966963948892
+34,0004430437e332ad,rhernandezbas/ipnext-backend,openspec/changes/archive/2026-06-08-network-node-task/specs/scheduling/spec.md,spec.md,openspec,archived,requirement req,0.07977982406990915,en,0.9999966963948892
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,expect,0.28460581163046955,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,bff,0.21992267262354462,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,express,0.1940494170207747,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,response,0.1907438153397092,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,expect response,0.15523953361661974,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,那么,0.15523953361661974,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,给定,0.15523953361661974,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,questions,0.1505872226366125,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,tobe,0.14230290581523478,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,typescript,0.13985367170045868,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,tdd,0.12936627801384978,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,const,0.1289372289437681,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,await,0.11642965021246479,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,request app,0.11642965021246479,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,await request,0.11642965021246479,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,async,0.11642965021246479,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,test,0.10853283884244133,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,cors,0.10349302241107983,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,typescript test,0.10349302241107983,en,0.9999957727161712
+35,0004472c5abf25b1,EnZ0cez/BaguZhan,openspec/changes/archive/2026-01-28-add-m2-bff-postgresql/specs/bff/spec.md,spec.md,openspec,archived,app,0.10039148175774168,en,0.9999957727161712
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,room,0.4377345295009472,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,memory,0.3531208154246639,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,admin,0.25222915387475997,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,governance,0.18220929610225595,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,memory admin,0.12147286406817062,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,admin governance,0.12147286406817062,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,wizard,0.12147286406817062,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,provenance,0.12147286406817062,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,setup,0.12147286406817062,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,room memory,0.12147286406817062,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,scoped memory,0.12147286406817062,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,private,0.1094336323752368,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,scoped,0.1094336323752368,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,semantics,0.10089166154990398,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,public,0.0942659942327074,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,audit,0.08427532639491703,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,scope,0.07085480384516805,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,memory internals,0.06073643203408531,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,memory setup,0.06073643203408531,en,0.9999970097492934
+36,000458957d2fed70,clankercode/clawq,docs/ultra-plans/claude-tag-parity-next/nodes/04-memory-admin-governance/SPEC.md,SPEC.md,docs_embedded,na,setup governance,0.06073643203408531,en,0.9999970097492934
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op1,0.5307169914003442,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op2,0.39803774355025817,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op1 op2,0.37592453557524386,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,instruction,0.19921557713637258,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,address,0.17929401942273532,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,operation,0.15937246170909805,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,operand,0.15479245582510043,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,address op1,0.11056603987507173,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,stores,0.11056603987507173,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,result address,0.11056603987507173,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,ahead,0.09960778856818629,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,jmp,0.08845283190005739,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,denoted,0.08845283190005739,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,stores result,0.08845283190005739,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op2 stores,0.08845283190005739,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,op2 skip,0.08845283190005739,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,skip instruction,0.08845283190005739,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,instruction op1,0.08845283190005739,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,skip,0.07968623085454903,en,0.9999945619531464
+37,00045c493acf081b,dora-explora/wrap,docs/spec.md,spec.md,docs_embedded,na,result,0.07309953118989675,en,0.9999945619531464
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flags,0.5783006049539862,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,bits,0.38321124424661734,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,rust,0.2433121795663599,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flags value,0.22295926937985008,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,const,0.17939620477832377,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flag,0.16761505703460347,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,0b0000_0001,0.16721945203488756,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,following,0.14985057713837402,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,bit,0.1393495433624063,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flags values,0.12541458902616565,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,value,0.12022007712474023,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,following flags,0.11844711185804535,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,0b0000_0011,0.10451215752180473,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,0b0000_0010,0.10451215752180473,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,0b1111_1111,0.09754468035368441,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,defined,0.08651099717915017,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,type,0.0845286900652887,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,values,0.08223435455144419,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,flags type,0.07664224884932347,en,0.9999988020144643
+38,0004630fee98d24f,peixuanthomas/rustclock,.cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.10.0/spec.md,spec.md,adhoc_other,na,const 0b0000_0001,0.07664224884932347,en,0.9999988020144643
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,invite,0.5367322410018199,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,invite code,0.5069137831683855,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,code,0.3558592006622091,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,room,0.26863136697833095,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,characters,0.09906521193021732,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,scenario,0.0912730568668363,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,requirement invite,0.08945537350030333,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,device provides,0.08945537350030333,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,device,0.07429890894766299,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,provides,0.06941961718900365,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,generate unique,0.05963691566686889,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,code resolves,0.05963691566686889,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,scenario invite,0.05963691566686889,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,room invite,0.05963691566686889,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,provides invite,0.05963691566686889,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,valid invite,0.05963691566686889,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,rooms,0.05963691566686889,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,code does,0.05963691566686889,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,abc123,0.05963691566686889,en,0.9999977794265767
+39,00046a13f8b7df01,moncalvillo/cvs-openspec,openspec/changes/archive/rooms/specs/room-invite-codes/spec.md,spec.md,openspec,archived,code generated,0.05963691566686889,en,0.9999977794265767
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,design,0.309234697311392,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,design md,0.27507692952311374,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,color,0.22847052044527247,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,md,0.22248026517794756,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,accent,0.2030849070624644,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,agent,0.1927441661594606,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,reference,0.16045165340592654,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,hover,0.13767440439961473,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,bokushi,0.12225641312138388,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,section,0.10696776893728437,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,scenario,0.10524987732164888,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,border,0.1015424535312322,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,card,0.1015424535312322,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,component,0.10103561742635066,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,include,0.09306479818643562,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,design reference,0.09169230984103792,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,example prompts,0.09169230984103792,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,prompt guide,0.09169230984103792,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,component stylings,0.09169230984103792,en,0.99999537255163
+40,0004a8f1aa2f2405,niracler/nini-dev,openspec/changes/archive/2026-04-10-bokushi-design-system-docs/specs/agent-design-reference/spec.md,spec.md,openspec,archived,bokushi design,0.09169230984103792,en,0.99999537255163
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,ai,0.39072050552856047,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,migration,0.3613013113941411,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,ai sandbox,0.25873363536869615,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,sandbox,0.25873363536869615,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,paths,0.19975001936046774,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,shall,0.19004042567193719,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,old,0.15628820221142417,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,exists shall,0.14833027058252415,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,marker,0.14112743747383424,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,new paths,0.14112743747383424,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,scenario migrate,0.14112743747383424,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,migrate,0.13675217693499614,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,scenario,0.12599568485094323,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,new,0.12333328591270125,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,shall ai,0.11760619789486186,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,old paths,0.11760619789486186,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,paths exist,0.11760619789486186,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,git,0.11422980025670133,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,exists,0.10575688039646083,en,0.9999948131234987
+41,0004b40966b97181,nano-step/ai-sandbox-wrapper,openspec/changes/consolidate-config-directories/specs/config-migration/spec.md,spec.md,openspec,change_proposal,exist,0.09603914261374447,en,0.9999948131234987
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,tuk_matrix,0.45956682817729777,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,compile error,0.31694264012227436,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,compile,0.27640504992130827,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,gguf,0.2535541120978195,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,error,0.16084338419869426,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,tuk,0.14262418805502344,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,int32_t,0.12677705604890974,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,tuk_matrix tuk_matrix,0.12677705604890974,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,ollama,0.11092992404279602,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,qwen3,0.11092992404279602,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,nao,0.09508279203668231,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,qwen3 8b,0.09508279203668231,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,zig,0.09508279203668231,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,em,0.09508279203668231,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,8b,0.09508279203668231,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,self,0.08565909257819054,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,fase,0.07923566003056859,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,gguf loader,0.07923566003056859,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,tukllm,0.07923566003056859,en,0.9999954568300354
+42,0005170c06bcd295,KaioH3/Tuk,SPEC.md,SPEC.md,root_bare,na,loader,0.07897287140608808,en,0.9999954568300354
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,maplewood,0.34719426868490566,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,game,0.25591392349351405,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,touch,0.1578155766749571,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,homepage,0.1578155766749571,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,mobile,0.15729217422838176,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,ships 3d,0.12625246133996568,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,embeds,0.12625246133996568,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,3d,0.12625246133996568,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,trxgaming,0.12625246133996568,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,js,0.11543563712286885,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,buttons,0.10486144948558784,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,hud,0.09468934600497425,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,improved,0.09468934600497425,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,vehicle,0.09468934600497425,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,city,0.09468934600497425,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,screen,0.09468934600497425,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,ships,0.09234850969829508,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,style,0.08759131077716334,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,play,0.08530464116450467,en,0.9999971402471661
+43,0005410c94064b5b,caffeinepub/maplewood,spec.md,spec.md,caffeine,na,better,0.08530464116450467,en,0.9999971402471661
