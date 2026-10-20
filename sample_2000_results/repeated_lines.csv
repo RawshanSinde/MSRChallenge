@@ -1,0 +1,736 @@
+line,number_of_proposals
+| risk | likelihood | mitigation |,42
+| area | impact | description |,40
+describe the background and motivation.,26
+- goal 2: ...,25
+- goal 1: ...,25
+- affected code: none (documentation only),21
+- track material updates via openspec proposals (no functional code changes).,20
+- affected specs: project-documentation,20
+- clean separation of concerns,9
+| **file operations** | read/edit/create files with small patches | manual editing |,8
+"- git hygiene: prepare commits with conventional commits, stage, and help",8
+- **standard changes**: automated quality gates reduce manual validation by 50%,8
+"- file operations: read/edit/create files and folders with small, focused",8
+- **data supporting need**:,8
+**quality gates** (enforced automatically):,8
+- **contributors**: all users of the openspec workflow (local development and ci/cd),8
+"| **documentation** | draft/update readmes, openspec artifacts | manual writing |",8
+**decision**: ❌ **rejected** - maintenance burden too high,8
+- significant code duplication (3 copies of 13 stages),8
+⚡ stage 2-4: documentation generation (parallel) [3 min],8
+- unit tests: 85%+ coverage for new modules,8
+- workflow execution logs (status.json per change),8
+- `refactor`: code refactoring (no behavior change),8
+"- **lane**: a workflow execution path that determines which stages are executed (docs, standard, heavy)",8
+- **training**: examples for each lane in `project_workflow.md`,8
+"| **quality gate reliability** | manual (100% human error risk) | 100% automated, 0% false positives | audit quality_metrics.json results |",8
+- ✅ 100% automated quality gate validation,8
+- replacing the 13-stage model entirely,8
+and validate environment readiness.,8
+- **agent-assisted**: optional ai assistant integration for automated workflow tasks with audit trail,8
+- **parallelization**: default safe parallel execution for stages 2-6 (documentation generation),8
+| standard lane | executes all 13 stages | ✅ all stages in status.json |,8
+pytest tests/workflow/ -v --cov=scripts,8
+- easy to understand each workflow independently,8
+"- integrate quality gates into stage 8: ruff, mypy, pytest, bandit with a single pass/fail summary",8
+- [ ] lane-to-stage mapping functional and tested,8
+- quality metrics (quality_metrics.json per change),8
+⚠️  2 medium-severity issues (acceptable),8
+**standard change with quality gates**:,8
+9. [methodology and approach](#methodology-and-approach),8
+results['ruff']['errors'] == 0 and,8
+"- **environment validation**: pre-step hooks to validate git state, gh cli, and other dependencies",8
+"| **day 6-7: testing & documentation** | integration tests, docs updates, manual validation | 2 days | all features complete | ✅ all tests pass, docs updated, user feedback incorporated |",8
+📋 mypy (type checking),8
+13. [evaluation plan and success metrics](#evaluation-plan-and-success-metrics),8
+- risk: developer friction from commit enforcement,8
+- **scalability**: parallelization enables faster execution as project grows,8
+"→ mitigation: cap workers, deterministic file writes, and idempotent generators",8
+- ✅ `fix(quality-gates): correct pytest coverage threshold calculation`,8
+2. project workflow guide: `openspec/project_workflow.md`,8
+"requirements, testable acceptance criteria, security and",8
+- lane plumbing + mapping (day 1–2),8
+construct pr descriptions linking to openspec artifacts.,8
+- enforce conventional commits at stage 10,8
+patches and lint-aware formatting.,8
+| 9 | documentation update | ✅ | ✅ | ✅ | 1-2 min |,8
+- parse `--lane` flag (default: standard),8
+| **code review** | @undifined | 4 hours | $0 (volunteer) | $0 |,8
+- interactive fixer for malformed messages,8
+│  4. generate final summary report                               │,8
+- [ ] lane selection flag implemented in python and powershell,8
+✅ status: status.json written,8
+- add pre-step hooks for environment checks (gh cli before pr; git cleanliness before stage 10),8
+"when `--use-agent` flag is enabled, the following capabilities are available:",8
+**decision**: ❌ **rejected** - does not address core problems,8
+| **bandit** | medium-severity issues | ≤5 | medium |,8
+- **structure**: provide implementation roadmap with clear milestones and acceptance criteria,8
+4. **unified quality gates** (stage 8):,8
+| **implementation** | @kdejo | 40 hours (5 days × 8 hrs) | $0 (volunteer) | $0 |,8
+10. bandit security scanner: https://bandit.readthedocs.io/,8
+| feature | description | fallback |,8
+- git (version control),8
+16. [timeline and milestones](#timeline-and-milestones),8
+"- all assistant actions are logged to the change directory (e.g.,",8
+6. **conventional commits enforcement** (stage 10):,8
+"- user feedback (github discussions, issue reports)",8
+- would require significant refactoring of all stages,8
+"- **dependencies**: python tooling, powershell scripts, git, github cli (optional)",8
+- ✅ integration tests pass for all 3 lanes,8
+5. conventional commits specification: https://www.conventionalcommits.org/,8
+- @kdejo for implementation and rollout,8
+if any(keyword in doc.content for keyword in keywords):,8
+- **docs lane**: ~5-8 minutes (7 stages),8
+"- 🔄 backward compatible (default ""standard"" lane = current behavior)",8
+**acceptance criteria for merge**:,8
+| **mypy** | type errors | 0 | high |,8
+✅ commit message validated (conventional commits),8
+"| **reviewer** | @undifined | code review, architecture validation, quality assurance | review prs, weekly sync |",8
+**background**: the workflow is defined in `the_workflow_process.md` with 13,8
+**critical path**: lane plumbing → parallelization → testing & documentation → rollout,8
+"| pre-step hook failure (stage 10) | blocks execution, shows remediation | ✅ error message, no progress |",8
+"- add lane selection to the orchestrators (`workflow.py`, `workflow.ps1`): `--lane [docs|standard|heavy]`",8
+│  (workflow.py / workflow.ps1)                                   │,8
+- `docs`: documentation only,8
+- parallelization defaults for 2–6 (day 2–3),8
+- **commit enforcement**: validate conventional commits at stage 10 with interactive fixer,8
+- **qualitative**: survey contributors after 1 month for feedback on ux improvements,8
+"- breaks stage dependencies (e.g., spec generation requires proposal first)",8
+"| **keep single path, manual step selection** | no code changes | error-prone, slow | ❌ rejected - too much friction |",8
+"- opt-in via a flag (e.g., `--use-agent`) or environment variable.",8
+⚡ stage 12: pull request [<1 min],8
+- [ ] code reviewed and approved by @undifined,8
+4. guidance notes: `openspec/changes/workflow-improvements/workflow_improvements.txt`,8
+- **persuasion**: demonstrate 60% time savings for docs-only changes with zero quality compromise,8
+"→ mitigation: ""docs lane"" fallbacks when code changes are detected; warning and opt-in confirmation",8
+- warn users when docs lane detects code modifications,8
+"| parallel execution (stages 2-6) | deterministic output, faster than serial | ✅ file comparison, timing |",8
+- a mapping defines which stages run per lane; orchestrators consult mapping prior to executing steps,8
+- [ ] all tests passing,8
+- **rollout**: immediate upon merge,8
+- [ ] documentation updated in `the_workflow_process.md`,8
+- [x] @kdejo (project owner),8
+"- @kdejo: implementation, testing, documentation, rollout",8
+"- quality automation: run linters, type checks, security scans, and tests;",8
+| 3 | specification generation | ✅ | ✅ | ✅ | 1-2 min (parallel) |,8
+- **predictability**: status tracking enables workflow resumption and debugging,8
+| **lane adoption rate** | n/a | 80%+ within 1 month | track `--lane` flag usage in logs |,8
+- maximum speed improvement,8
+"- `chore`: maintenance tasks (build, dependencies)",8
+- provide `--no-parallel` flag to disable for debugging,8
+"2. **peer review**: @undifined reviews for architecture, edge cases, usability",8
+- [ ] pre-step hooks validate environment correctly,8
+"| **developer friction from commit enforcement** | medium | low | interactive fixer, clear error messages | `--no-verify` escape hatch with warning |",8
+"- **mitigate**: auto-detection, warnings, and fallback mechanisms",8
+- enables future lane additions,8
+- integration tests: all 3 lanes tested end-to-end,8
+python scripts/workflow.py --change-id test-standard --lane standard --dry-run,8
+"| docs lane with docs-only changes | skips stages 1, 5-8; completes <5 min | ✅ timing, stage execution log |",8
+- `fix`: bug fix,8
+"- write `openspec/changes/<id>/status.json` at each stage with step, timestamp, and metrics",8
+"- gh cli (optional - for pr creation, fallback available)",8
+- **accept**: minor friction risks acceptable given significant benefits,8
+- no implementation effort required,8
+- 🔒 zero compromise on governance or quality standards,8
+│     c. write status.json update                                 │,8
+"$ python scripts/workflow.py --lane standard --change-id add-parallel --title ""add parallelization""",8
+"- parallel pool for stages 2–6 guarded by a concurrency limit (e.g., max_workers=3)",8
+- none other - all execution is local,8
+"futures = [executor.submit(stage, change_dir) for stage in stages_2_6]",8
+| **documentation** | @kdejo | 8 hours (1 day) | $0 (volunteer) | $0 |,8
+🔗 pull request: https://github.com/user/repo/pull/123,8
+- log all agent actions to `assistant_logs/` with audit trail,8
+python scripts/workflow.py --change-id test-heavy --lane heavy --dry-run,8
+- centralized hook registry for extensibility,8
+"when available, the assistant can accelerate and standardize workflow steps.",8
+| 1 | increment version | ❌ | ✅ | ✅ | <1 min |,8
+- **quality assurance**: pass/fail metrics in `quality_metrics.json` enable ci/cd integration,8
+"| **dependencies** | git/github cli | version control, pr creation | optional (fallback provided) |",8
+| **total** | | **68 hours** | | **$0** |,8
+"'ruff': run_ruff(codebase_root),        # linting",8
+- **target completion**: 1 week,8
+2. fix (bug fix),8
+6. python threadpoolexecutor: https://docs.python.org/3/library/concurrent.futures.html,8
+from concurrent.futures import threadpoolexecutor,8
+print_summary(metrics)  # color-coded console output,8
+"timeline, and budget/effort justification.",8
+**pass criteria**: all critical and high thresholds must be met. medium/low issues generate warnings.,8
+- users already familiar with current approach,8
+- **guidance notes**: `openspec/changes/workflow-improvements/workflow_improvements.txt`,8
+⚡ stage 8: testing & quality gates [3 min],8
+"- **quantitative**: track workflow execution times, lane usage, failure rates via status.json logs",8
+- no conditional logic complexity,8
+"| **day 2-3: parallelization** | threadpoolexecutor for stages 2-6, deterministic output | 1.5 days | lane plumbing complete | ✅ parallel execution faster than serial, consistent results |",8
+- ⚡ 67% faster docs-only changes (<5 min vs. 15 min),8
+"and environment assumptions (e.g., github cli availability) that can interrupt",8
+"| **users affected** | all contributors | adopt new workflow lanes, provide feedback | documentation, announcements |",8
+"✅ 0 errors, 0 warnings",8
+- quality gates integration + status.json (day 3–4),8
+"- include: step_id, start_time, end_time, result (success/failure), metrics",8
+"✅ required tools available: pytest, ruff, mypy, bandit, gh",8
+"| docs lane with code changes | warns user, offers to switch lanes | ✅ warning message displayed |",8
+"| **quality automation** | run linters, aggregate results, suggest fixes | manual tool execution |",8
+- **pre-step hook**: validation logic executed before a stage to ensure prerequisites are met,8
+"this project enhances the openspec workflow orchestration system by introducing three execution lanes (docs, standard, heavy) that intelligently select which of the 13 workflow stages to execute based on change type. the implementation includes:",8
+"**current state**: all changes follow the same path, even when only docs are",8
+"- orchestrators parse `--lane`, default to `standard`",8
+documentation-only or low-risk changes. there are also repetitive manual steps,8
+- **workflow documentation**: `docs/the_workflow_process.md` (current 13-stage process),8
+- **no additional infrastructure**: uses existing python tooling,8
+- backward compatible (default lane = standard),8
+5. [introduction and background](#introduction-and-background),8
+- building a new workflow orchestration system (use existing python tooling),8
+- **review**: 0.5 days (4 hours),8
+"- documentation and specs: draft/update readmes, api docs, openspec",8
+- **week 3-4**: weekly review of metrics and user feedback,8
+✅ branch: update-readme pushed,8
+- **announcement**: update `readme.md` and `changelog.md` with new feature,8
+**slack time**: 1 day (contingency for unexpected issues or feedback incorporation),8
+**next review**: upon implementation completion (2025-10-30),8
+"- @undifined: code review, validation testing, documentation review",8
+... (stages 0-7 execute) ...,8
+**trade-offs**: minimal effort vs. no improvement,8
+- **stage**: a discrete step in the 13-stage openspec workflow (0-12),8
+- **developer productivity**: reduce context switching with automated environment checks,8
+- ✅ manual validation completed,8
+│     a. execute pre-step validation hooks                        │,8
+- difficult to keep lanes in sync,8
+- **reviewers**: machine-readable quality metrics simplify pr review,8
+"- **testing**: pytest (80%+ pass rate, 70%+ coverage)",8
+- **test plan**: [test_plan.md](./test_plan.md),8
+"keywords = ['backend/', 'plugin/', 'tests/', '.py', '.js']",8
+- **avoid**: extensive testing in dry-run mode before production use,8
+"❌ invalid commit message: ""added new feature""",8
+"**purpose**: reduce cycle time for low-risk changes without compromising governance, quality, or traceability.",8
+- **week 1**: daily review during implementation,8
+| lane | stages executed | use case |,8
+"| **dependencies** | python tooling | pytest, ruff, mypy, bandit | existing integrations |",8
+- **time savings**: 67% reduction for docs-only changes (10 min saved per change),8
+**audit trail**: status.json includes `agent_enabled: true` and links to agent logs for transparency.,8
+| conventional commit valid | stage 10 completes | ✅ commit created |,8
+7. pytest documentation: https://docs.pytest.org/,8
+- **users affected**: contributors using the openspec workflow (local and ci),8
+"**decision**: ✅ **selected** - best balance of benefits, maintainability, and risk",8
+- console summary with color-coded output and links to detailed reports,8
+- add `--use-agent` flag for ai-assisted workflow execution,8
+- [ ] `status.json` written reliably at each stage,8
+- template files (`openspec/templates/*.md`),8
+the current 13-stage openspec workflow is comprehensive but can be heavy for,8
+- docs lane completes in <5 minutes (currently ~15 minutes),8
+| 4 | task breakdown | ✅ | ✅ | ✅ | 1-2 min (parallel) |,8
+- **feedback**: github discussions thread for user feedback and questions,8
+"- **none** - all execution is local, no cloud services required",8
+"| **separate workflow files per lane** | clean separation | code duplication, maintenance burden | ❌ rejected - hard to maintain |",8
+| 10 | git operations | ✅ | ✅ | ✅ | <1 min |,8
+"- add pre-step validation hooks (e.g., gh presence before stage 12)",8
+| **environment validation failures** | n/a | <5% false positives | track pre-step hook failures vs. actual issues |,8
+- **security**: bandit (zero high/critical issues),8
+| role | name | responsibilities | communication |,8
+summarize pass/fail with suggested fixes.,8
+| heavy lane | all stages + verbose logging + strict gates | ✅ extra logs present |,8
+│     d. validate stage outputs                                   │,8
+"- introduce workflow lanes (docs-only, standard, heavy) with conditional execution",8
+"- execute ruff (linting), mypy (type checking), pytest (with coverage), bandit (security)",8
+7. **optional agent integration**:,8
+"- tighter quality gates for code changes (ruff, mypy, bandit integrated into stage 8 with clear pass/fail)",8
+results['pytest']['pass_rate'] >= 0.80 and,8
+- **linting**: ruff (zero errors required),8
+results['mypy']['errors'] == 0 and,8
+"- stage 12: verify gh cli availability and authentication, provide fallback instructions",8
+| 8 | testing & quality gates | ❌ | ✅ | ✅ (strict) | 2-5 min |,8
+- `status.json` writer utility called at step start/end with success and metrics,8
+4. refactor (code refactoring),8
+"performance notes, and migration/compatibility details.",8
+- manual fallback is required; the assistant must never be the only path.,8
+- very high risk of race conditions,8
+- aggregate results into `quality_metrics.json` with pass/fail decision,8
+2. **feature developer**: implements new feature with tests → uses standard lane → gets automated quality report,8
+- **heavy changes**: enhanced logging and stricter gates for critical changes,8
+| risk | likelihood | impact | mitigation | contingency |,8
+"- ❌ `added new feature` (missing type, subject not descriptive)",8
+"| **owner** | @kdejo | overall project direction, final decisions, implementation | daily check-ins |",8
+- validate commit message format: `type(scope): subject`,8
+**trade-offs**: speed vs. correctness,8
+| metric | baseline | target | measurement |,8
+"$ python scripts/workflow.py --lane docs --change-id update-readme --title ""update readme examples""",8
+- [ ] quality gates emit pass/fail with correct thresholds,8
+| **codebase search** | symbol and content search | manual grep/search |,8
+"- **unit tests**: test lane selection logic, hook execution, quality gate thresholds",8
+"- **similar projects**: reviewed github actions workflow optimization, terraform workspace strategies",8
+- implement lane-to-stage mapping with auto-detection of code changes,8
+🚀 openspec workflow v2.0,8
+"- more predictable execution by surfacing pre-flight validation (e.g., github cli, git state) before costly steps",8
+- **status tracking**: write `status.json` at each stage for observability and resumption,8
+"- **clarity**: define lane-to-stage mappings, parallelization strategy, and validation hooks",8
+these integrations are optional and must always have a manual fallback.,8
+| **bandit** | low-severity issues | ≤20 | low |,8
+│  1. parse --lane flag (docs/standard/heavy)                     │,8
+✅ pr created: #123,8
+3. **pre-step validation hooks**:,8
+9. mypy type checker: https://mypy.readthedocs.io/,8
+"this proposal significantly improves the openspec workflow by introducing intelligent lane selection, automated quality gates, and better developer ergonomics—all while maintaining backward compatibility and governance standards. the implementation requires only 7 days of effort with zero financial cost, delivering immediate value through 67% time savings for documentation-only changes and eliminating manual quality gate interpretation errors.",8
+| 6 | script generation | ❌ | ✅ | ✅ | <1 min (parallel) |,8
+"| **orchestration** | run tasks, validate environment | manual command execution |",8
+"| **make all stages parallel** | maximum speed | breaks stage dependencies (e.g., spec depends on proposal) | ❌ rejected - not feasible |",8
+- **month 2+**: monthly review with continuous improvement,8
+- **integration tests**: test full workflow execution for each lane,8
+- need to maintain mapping as stages evolve,8
+"- proposal essentials: clear purpose and audience, objectives, methods,",8
+17. [alternatives and trade-offs analysis](#alternatives-and-trade-offs-analysis),8
+✅ new message: feat(workflow): add lane selection for faster docs-only changes,8
+ergonomics by validating environment readiness early.,8
+8. [statement of work](#statement-of-work),8
+- **type checking**: mypy (zero errors required),8
+**trade-offs**: slight complexity increase vs. significant flexibility and benefits,8
+**total budget**: **$0** (volunteer open-source project),8
+"- `style`: code style changes (formatting, no logic change)",8
+- lane selection used by 80%+ of changes within one month,8
+- **status tracking**: writing `status.json` at each stage to enable observability and resumption,8
+"objectives, methodology, timeline, acceptance criteria, and appendices.",8
+│  workflow orchestrator                                          │,8
+"warn(""code changes detected in docs lane. switch to standard lane? [y/n]"")",8
+"| **day 7: rollout** | merge pr, announcement, monitoring | 0.5 days | all acceptance criteria met | ✅ pr merged, changelog updated, users notified |",8
+2. make all stages parallel — rejected due to ordering and dependency constraints,8
+| milestone | description | duration | dependencies | completion criteria |,8
+"| **performance degradation from parallelization overhead** | low | low | measure actual timings, compare to baseline | disable parallelization by default if overhead > benefit |",8
+- **parallelization**: executing multiple stages concurrently to reduce total workflow time,8
+"1. **self-review**: @kdejo reviews own code for quality, tests, documentation",8
+| **pytest** | pass rate | ≥80% | critical |,8
+5. **status tracking system**:,8
+- default safe parallelization for documentation generation steps (2–6),8
+"1. keep a single path and rely on manual step selection — rejected, too error-prone and slow",8
+return true  # code changes detected,8
+✅ 0 high-severity issues,8
+- no quality gate automation benefits,8
+- enable parallel execution for stages 2–6 by default with a max worker cap and deterministic ordering for outputs,8
+- enable ci/cd integration with machine-readable metrics,8
+- faster iteration for documentation-only and minor changes (skip unnecessary heavy stages),8
+- specification best practices: functional and non-functional,8
+- bandit (security scanning),8
+- commit enforcement + docs (day 4–5),8
+"| 1 | `validate_version_files` | pyproject.toml, package.json exist and parseable | block with error message |",8
+**recommendation**: **approve** - this enhancement significantly improves developer experience while strengthening quality gates with no breaking changes and minimal implementation risk.,8
+- [ ] conventional commit validation working with fixer,8
+- simplest parallelization logic,8
+"- checklists: basic tests (existence, comments, functions), security",8
+**quality gates architecture** (stage 8):,8
+- enforce quality gates programmatically as part of stage 8 and record results,8
+- use `threadpoolexecutor` for stages 2-6 with `max_workers=3` default,8
+- **standard lane**: ~12-20 minutes (13 stages),8
+- **quality gates**: unified quality gate execution in stage 8 with `quality_metrics.json` output,8
+- write `openspec/changes/<id>/status.json` at step start/end,8
+- docs-only changes complete in <5 minutes locally (no testing pipeline invoked unnecessarily),8
+12. [quality assurance plan](#quality-assurance-plan),8
+**interactive fixer** (stage 10):,8
+| **bandit** | high-severity issues | 0 | critical |,8
+- reduce docs-only change cycle time from 15 min to <5 min (67% improvement),8
+"'pytest': run_pytest(codebase_root),    # tests + coverage",8
+⚡ stage 9: documentation update [1 min],8
+- **development**: 7 days (40 hours implementation + 16 testing + 8 docs),8
+- commit message validation utility invoked in stage 10,8
+estimated time: 5-8 minutes,8
+"**proposed solution**: introduce three workflow lanes (docs, standard, heavy) with intelligent stage selection, parallel execution for documentation generation stages, automated environment validation, and integrated quality gates that emit machine-readable results.",8
+✅ 142/142 tests passed (100%),8
+"**decision**: ❌ **rejected** - too risky, breaks dependencies",8
+- flexible and maintainable (single source of truth),8
+**parallelization strategy** (stages 2-6):,8
+| quality gates pass | all metrics within thresholds | ✅ quality_metrics.json result=pass |,8
+3. **testing**: both manual and automated tests must pass,8
+with threadpoolexecutor(max_workers=3) as executor:,8
+14. [budget and resources](#budget-and-resources),8
+- ✅ zero ruff/mypy/bandit errors,8
+| tool | metric | threshold | severity if failed |,8
+`assistant_logs/` and status.json updates) and are reviewable.,8
+governance. make success/failure criteria explicit and automated. improve,8
+- manual validation: each lane tested with real project changes,8
+- **technical**: automated testing validates all quality gates and lane behaviors,8
+- **regression tests**: ensure backward compatibility (standard lane = current behavior),8
+- **week 2**: post-rollout monitoring (daily),8
+"layers. however, selection of which stages to execute is manual and repeated.",8
+- [ ] parallelization working with deterministic output,8
+"the flow. this proposal streamlines the workflow by adding fast lanes, enabling",8
+"for doc in [proposal, spec, tasks]:",8
+- zero risk of introducing bugs,8
+│     b. run stage (parallel for 2-6 if enabled)                  │,8
+- **primary**: contributors using the openspec workflow (local and ci/cd),8
+- `test`: adding or updating tests,8
+- replacing the 13-stage model,8
+"- **quality gates**: automated checks (ruff, mypy, pytest, bandit) that enforce quality standards",8
+| quality gates fail | at least one metric failed | ✅ quality_metrics.json result=fail |,8
+- better resilience via status.json progress tracking and conventional commit enforcement,8
+- **manual tests**: validate docs/standard/heavy lanes with real changes,8
+| 0 | setup & initialization | ✅ | ✅ | ✅ | <1 min |,8
+| **workflow completion rate** | ~85% (15% interrupted) | 95%+ (better error handling) | track workflow status.json final states |,8
+please select a type:,8
+- ✅ `docs(workflow): update the_workflow_process.md with lane examples`,8
+1. feat (new feature),8
+⚡ stage 11: archive [<1 min],8
+"- **transfer**: n/a (internal project, no external dependencies)",8
+- lane adoption reaches 80%+ within 1 month of release,8
+results['pytest']['coverage'] >= 0.70 and,8
+"- existing openspec workflow scripts (`workflow.py`, `workflow.ps1`)",8
+- high maintenance burden (changes must be applied to all 3 files),8
+- maintain manual fallbacks for all agent-enabled features,8
+- ✅ code coverage ≥ 70%,8
+"- ci/cd integration metrics (build times, failure rates)",8
+✅ python 3.11.5 detected,8
+1. **documentation writer**: updates openspec template documentation → uses docs lane → completes in <5 minutes,8
+| stage # | stage name | docs lane | standard lane | heavy lane | duration estimate |,8
+- continues current pain points (slow docs-only changes),8
+"**problem statement**: the current 13-stage openspec workflow treats all changes equally, resulting in unnecessary overhead for documentation-only changes and repetitive manual validation steps that interrupt workflow execution.",8
+- stage 8 emits a machine-readable summary and the overall quality gate result is pass for green merges,8
+"the openspec 13-stage workflow provides comprehensive governance for changes but lacks flexibility for documentation-only or low-risk modifications. this proposal introduces workflow lanes (docs, standard, heavy) to enable conditional stage execution, safe parallelization of documentation generation (stages 2-6), and automated quality gates. by adding pre-flight validation hooks and status tracking via `status.json`, we reduce cycle time for small changes by 60% (from ~15 minutes to <5 minutes for docs-only changes) while maintaining governance integrity. implementation will take 7 days with immediate impact on contributor productivity and workflow predictability.",8
+- @undifined for code review (blocking for merge),8
+"- **secondary**: @kdejo (project owner), @undifined (reviewer)",8
+- ❌ `feat: stuff` (subject too vague),8
+- **conventional commits**: standardized commit message format: `type(scope): subject`,8
+this is a process improvement with zero financial cost and significant time savings (10 min per docs-only change × 10+ changes/month = 100+ minutes/month saved). roi is infinite.,8
+"**approvers**: @kdejo (owner), @undifined (reviewer)",8
+"- orchestration helpers: run tasks/commands, wire simple vs code tasks,",8
+"| 10 | `validate_git_state` | clean working directory, feature branch checked out | block with git status and remediation steps |",8
+- altering repo semantics or branching strategies beyond lane-based conditions,8
+"| **flaky parallel generation** | low | medium | cap workers at 3, deterministic writes, idempotent generators | disable parallelization via `--no-parallel` flag |",8
+- **development time**: 7 days (1 developer),8
+- [ ] @undifined (technical reviewer),8
+- **quality improvement**: automated quality gates eliminate human error,8
+| 12 | `validate_gh_cli` | gh cli installed and authenticated | warn and provide manual pr instructions |,8
+- workflow documentation (`the_workflow_process.md`),8
+- create `scripts/quality_gates.py` module,8
+"- stage 10: check git state (clean working directory, feature branch exists)",8
+| **ruff** | linting errors | 0 | critical |,8
+- improve developer experience with clear environment validation and error messages,8
+if lane == 'docs' and detect_code_changes(change_dir):,8
+- **heavy lane**: ~15-25 minutes (13 stages + verbose logging),8
+| scenario | expected result | validation |,8
+python scripts/workflow.py --change-id test-docs --lane docs --dry-run,8
+✅ workflow complete! (total: 4m 32s),8
+4. **documentation**: all changes documented in relevant files,8
+| conventional commit invalid | interactive fixer prompts user | ✅ user prompted for correction |,8
+- manual step selection error-prone,8
+- pytest (testing framework),8
+"- centralized `quality_gates.py` module invoked in stage 8 to run ruff, mypy, pytest, bandit and emit json",8
+- mypy (type checking),8
+| 2 | proposal creation | ✅ | ✅ | ✅ | 1-2 min (parallel) |,8
+- enforce conventional commit format during stage 10 (reject or rewrite with confirmation),8
+- **documentation writers**: primary beneficiaries of docs-only fast lane,8
+- codebase search: symbol and content search to trace definitions and usages.,8
+- **dry-run**: execute workflow without making actual changes (validation only),8
+... (stages 9-12 execute) ...,8
+**auto-detection logic** (docs lane):,8
+| 11 | archive | ✅ | ✅ | ✅ | <1 min |,8
+"| **day 1-2: lane plumbing** | implement `--lane` flag, lane-to-stage mapping | 2 days | none | ✅ lane selection functional in both python and powershell |",8
+│  3. for each stage in mapping:                                  │,8
+- developer feedback: 75% report frustration with manual quality gate validation,8
+| **gh cli not available** | high | low | fallback to manual pr instructions | pre-step hook detects and provides manual steps |,8
+- balances speed improvement with safety,8
+"| **heavy** | 0-12 (all) + verbose logging + stricter gates | critical changes, production hotfixes |",8
+**logging**: all agent actions logged to `<change-dir>/assistant_logs/` with timestamps and results.,8
+| alternative | pros | cons | decision |,8
+⚡ stage 0: setup & initialization [<1 min],8
+"- structure patterns: executive summary, introduction/background,",8
+| 7 | implementation | ❌ | ✅ | ✅ | variable |,8
+| role | person | estimated hours | hourly rate | total |,8
+"| **current approach: lane parameter** | flexible, maintainable | requires mapping logic | ✅ **selected** |",8
+8. ruff linter: https://docs.astral.sh/ruff/,8
+- **developers**: benefit from automated quality gates and environment validation,8
+- risk: flaky parallel generation,8
+`workflow_improvements.txt` for improving proposal and specification,8
+| **testing** | @kdejo | 16 hours (2 days) | $0 (volunteer) | $0 |,8
+"- implement conditional step execution based on lane (e.g., docs lane skips 1, 6–8 unless docs include code)",8
+supported capabilities to leverage:,8
+| **incorrectly skipping necessary steps** | medium | high | auto-detect code changes in docs lane; warn user | fallback to standard lane on detection |,8
+| 12 | pull request creation | ✅ | ✅ | ✅ | <1 min |,8
+accept this message? [y/n]: y,8
+"'mypy': run_mypy(codebase_root),        # type checking",8
+- `feat`: new feature,8
+"| **day 3-4: quality gates** | unified quality_gates.py module, status.json tracking | 1.5 days | none (parallel track) | ✅ quality_metrics.json emitted with pass/fail, thresholds enforced |",8
+- ✅ `feat(workflow): add lane selection for faster docs-only changes`,8
+"enter scope (optional, press enter to skip): workflow",8
+- **none** - all tools are open-source and already in use,8
+results = [f.result() for f in futures]  # wait for completion,8
+| stage | hook name | checks | failure action |,8
+"- stage 0: validate python environment, required tools (pytest, ruff, mypy, bandit, gh)",8
+- ✅ all unit tests pass,8
+| 5 | test plan generation | ❌ | ✅ | ✅ | 1-2 min (parallel) |,8
+- current average: 15 minutes for docs-only changes (8 unnecessary stages),8
+- enable workflow resumption and debugging,8
+- `--no-verify` escape hatch with warning,8
+"- @kdejo: ""need faster iteration for documentation improvements""",8
+✅ git state: clean,8
+- **documentation**: comprehensive guide in `docs/the_workflow_process.md`,8
+proposals/specs/tasks/test plans and keep links consistent.,8
+✅ committed: docs(readme): update readme examples,8
+**target completion**: 2025-10-30 (7 days),8
+- **openspec overview**: `openspec/project_workflow.md`,8
+"- **backward compatible**: default ""standard"" lane maintains current behavior",8
+- automate quality gate validation to eliminate manual interpretation errors,8
+| **pytest** | code coverage | ≥70% | high |,8
+📊 view status: openspec/changes/update-readme/status.json,8
+described but not centrally orchestrated in a consistent way.,8
+✅ created change directory,8
+"**call to action**: **approve** this proposal to proceed with implementation. all stakeholders have been consulted, risks are well-mitigated, and the return on investment is substantial.",8
+"stages: 0, 2, 3, 4, 9, 10, 11, 12 (7 stages)",8
+**trade-offs**: simplicity vs. maintainability,8
+- risk: incorrectly skipping necessary steps,8
+"- **approvers**: @kdejo, @undifined",8
+- quality gates emit pass/fail with 100% reliability,8
+**context**: the workflow is defined in `the_workflow_process.md` with 13,8
+**motivation**: reduce cycle time for small changes without compromising,8
+enter subject (concise description): add lane selection for faster docs-only changes,8
+"1. **lane selection logic** (`workflow.py`, `workflow.ps1`):",8
+✅ quality gates: pass,8
+✅ coverage: 87.3% (target: ≥70%),8
+"| **breaking changes to existing workflows** | low | critical | default lane is ""standard"" (current behavior), extensive testing | rollback plan: revert commit, no data loss |",8
+"safe defaults for parallelization, and reinforcing quality gates as first-class,",8
+4. **ci/cd pipeline**: automated change validation → uses standard lane with json metrics for gating,8
+**severity/priority**: **high** - significant productivity improvement with broad impact,8
+"input validation, and operational steps (add/commit/push/pr).",8
+"| **docs** | 0, 2, 3, 4, 9, 10, 11, 12 | documentation-only changes (skips versioning, testing, scripts) |",8
+| **docs-only change time** | 15 minutes | <5 minutes (67% reduction) | time from workflow start to pr creation |,8
+"| 0 | `validate_environment` | python 3.11+, pytest, ruff, mypy, bandit installed | block with installation instructions |",8
+| **standard** | 0-12 (all) | normal development workflow |,8
+"stages, parallelization hints (stages 2–6), dry-run mode, and validation",8
+⚡ stage 10: git operations [<1 min],8
+- 📊 machine-readable metrics enable ci/cd integration,8
+- zero regressions in governance or quality standards,8
+- ✅ documentation updated,8
+→ mitigation: provide an interactive fixer and a `--no-verify` escape hatch for emergencies,8
+3. template files: `openspec/templates/*.md`,8
+"- contributors: ""want clear pass/fail from quality checks, not manual interpretation""",8
+│  2. load lane-to-stage mapping                                  │,8
+- validation and polish (day 6–7),8
+15. [risks & mitigation](#risks--mitigation),8
+this change incorporates high-level guidance from,8
+- requires conditional logic for lane-to-stage mapping,8
+touched. step gating is possible but not standardized. quality gates are,8
+- **docs-only changes**: complete in <5 minutes (67% faster than current ~15 min),8
+'bandit': run_bandit(codebase_root)     # security scan,8
+- ensure deterministic output ordering despite parallel execution,8
+- changing test frameworks or ci providers,8
+"- github (repository hosting, pr creation) - ✅ already configured",8
+"| **git hygiene** | prepare commits, construct pr descriptions | manual git operations |",8
+- **lane selection**: enable `--lane [docs|standard|heavy]` flag with intelligent stage execution,8
+- persist workflow progress in `status.json` for resumption/observability,8
+3. **critical hotfix**: urgent production bug fix → uses heavy lane → enhanced validation and logging,8
+"'overall_result': 'pass' if passed else 'fail',",8
+"| **day 4-5: hooks & commit enforcement** | pre-step validation, conventional commits fixer | 1.5 days | quality gates complete | ✅ hooks block invalid states, commit validation working |",8
+1. openspec workflow documentation: `docs/the_workflow_process.md`,8
+- affected code (expected):,5
+| risk | mitigation |,5
+- no new dependencies,5
+- **last synced status**: proposed,4
+list the proposed changes at a high level.,4
+- no breaking changes,4
+<!-- no existing specs to modify -->,4
+- no new dependencies required,4
+- **dependencies**: none added.,3
+| risk | impact | mitigation |,3
+- `make check` passes.,3
+| risk | severity | mitigation |,3
+| area | impact |,3
+"if scope changes after proposal approval, update `proposal.md`, `design.md`,",3
+- no new external dependencies,3
+- update docs and openspec with the writer-routing contract,3
+- **dependencies**: none new.,3
+"- docs: `readme.md`, `docs/architecture.md`, `docs/progress.md`, `docs/feature_list.json`, `handoff_to_next_chat.md`",3
+- affected specs: `web-ui`,3
+"`specs/**/*.md`, and `tasks.md` before implementation starts.",3
+- `bun run openspec:validate`,3
+- `git diff --check`,3
+- affected code: none (documentation-only),3
+_add steering notes here as the loop runs._,3
+<!-- source_repo: nold-ai/specfact-cli -->,3
+- implement project-documentation capability requirements,3
+"- add documentation for change proposals, tasks, and capability specs",3
+this change implements the project-documentation capability as required by openspec governance.,3
+"- add automated frontend tests that validate class attachment, close behavior, and responsive width expectations.",2
+- `edit-interview`: validate edit interview modal layering and usability over wider candidate details pane.,2
+- `delete-interviews`: validate delete interview modal layering over wider candidate details pane.,2
+- new component stylesheet: `frontend/src/components/candidatedetails.css`,2
+- add a dedicated css class to the candidate details offcanvas container and apply responsive width rules by breakpoint.,2
+"recruiters use the candidate details offcanvas to review dense interview and application data, but the current fixed width causes cramped layouts and excessive wrapping on tablet and desktop screens. expanding the pane responsively improves readability and efficiency without changing business logic.",2
+"- no backend, api contract, or data model changes",2
+"1. extend the `openspec init` selection flow with an ""agents.md standard"" option that creates or refreshes a root `agents.md` file wrapped in openspec markers, mirroring the existing claude integration.",2
+"the readme now points teams to agents.md-compatible assistants, but the cli only manages `claude.md`. projects must hand-roll a root `agents.md` file to benefit from the standard, and updates will drift unless maintainers remember to copy content manually. extending `init` and `update` closes that gap so openspec actually delivers on the promise of first-class agents support.",2
+- **risk:** accidentally overwriting user-edited content surrounding the managed block.,2
+3. update `openspec update` so it always refreshes the root `agents.md` (creating it if missing) alongside `openspec/agents.md` and any other configured assistants.,2
+- allow `openspec update` to refresh or scaffold that root `agents.md` so agents-compatible tools always receive current instructions.,2
+- non-interactive flags or bulk configuration for multiple standards in one run.,2
+- adding additional agents-specific prompts or workflows beyond the shared instructions block.,2
+"4. document the new behavior in cli specs and verify marker handling (no duplicates, preserve user content outside the block) with tests for both commands.",2
+- keep the existing `openspec/agents.md` template as the canonical source while ensuring assistants that read `agents.md` opt-in instructions get the latest guidance automatically.,2
+- teach `openspec init` to manage a root-level `agents.md` file using the same marker system as `claude.md`.,2
+**root cause**: [analysis of why the bug occurs],2
+- **reporter**: [who found the bug],2
+- **build**: must remain green.,2
+- **monitoring**: [metrics to watch post-deploy],2
+[explanation of why this fix is the best solution],2
+- update tests to prevent regression,2
+- add validation for [edge case],2
+- tests: add [test cases] to cover [scenarios],2
+- **manual testing**: [user-facing validation steps],2
+- affected users: [number/percentage],2
+- **regression tests**: [existing functionality verification],2
+- not refactoring unrelated code,2
+- **pre-deployment**: [validation steps],2
+- not changing public apis unless absolutely necessary,2
+5. **actual**: [what actually happens],2
+- **integration tests**: [end-to-end scenarios],2
+- add logging/monitoring for [diagnostic capability],2
+- not addressing [other known issues in this area - file separately],2
+- [file/component 1]: change [what] to fix [issue],2
+- no api changes,2
+- **no new dependencies**,2
+- maintain existing functionality for non-affected cases,2
+- fix [specific code/component] to correct [behavior],2
+2. [alternative 2]: rejected because [reason],2
+- **target fix**: [urgency-based estimate],2
+4. **expected**: [what should happen],2
+- prevent similar bugs in related code,2
+ensure `.claude/commands/openspec/apply.md` is governed by openspec so material updates are reviewed and stay consistent with project standards.,2
+- add a documentation governance requirement for `.claude/commands/openspec/apply.md` under the `project-documentation` capability.,2
+- workaround available: [yes/no - describe if yes],2
+- [file/component 2]: add [validation/check],2
+- resolve the reported issue completely,2
+- **deployment**: [release process],2
+- **affected users**: [who needs to be notified],2
+1. [alternative 1]: rejected because [reason],2
+- efficient implementation and maintenance,2
+- client/src/app.tsx (add route),2
+- implement unified scoring system across all modes,2
+- implement mode selection ui,2
+- implement multi-mode architecture with mode switching,2
+- no new dependencies.,2
+- affected specs: `vibescore-tracker`,2
+- no new runtime dependency is expected.,2
+- replaces: 15-30 individual game proposals,2
+- add progressive difficulty within each mode,2
+- affected frontend code:,2
+"- performance target: 60 fps on modern browsers, <100ms audio latency",2
+- add a documentation governance requirement for `docs/data_models_specification.md` under the `project-documentation` capability.,2
+ensure `docs/data_models_specification.md` is governed by openspec so material updates are reviewed and stay consistent with project standards.,2
+"- implement accessibility features (aria, keyboard nav, screen reader)",2
+- non-goals for this change:,2
+- add 3 distinct game modes:,2
+this consolidated game replaces 15-30 individual games while maintaining full pedagogical coverage through 3 distinct modes.,2
+- client/src/config/games.ts (add consolidated game registration),2
+- progressive difficulty from beginner to advanced,2
+- implement mode persistence (save progress per mode),2
+- dependencies and systems:,2
+- implement shared game component following existing patterns,2
+- add mode-specific logic and audio synthesis,2
+- add comprehensive test coverage for all modes,2
+| option | description | pros | cons | decision |,2
+"- new dependencies: none (uses existing web audio api, react, tailwind)",2
+- multiple learning modes within a single interface,2
+- reduced cognitive load through consistent ui/ux,2
+- add state management for multi-mode gameplay,2
+"- bundle size impact: ~30-40kb per game (lazy loaded, includes all modes)",2
+- no new runtime dependencies are expected.,2
+- **rollback plan**: [if issues are discovered],2
+- add test coverage for this scenario,2
+**bug description**: clear description of the incorrect behavior.,2
+- `skills-invocable`: skills are directly invocable as commands,2
+capability values use kebab-case string tokens for consistency with serialized metadata conventions.,2
+- add test coverage for:,2
+- `delivery=commands` can remove skills,2
+update `init` and `update` to compute effective artifact actions per tool from:,2
+- `update` with trae configured under `delivery=commands`,2
+- install scope (`global | project`),2
+- `docs/supported-tools.md` and `docs/cli.md` - document delivery behavior and compatibility notes,2
+- `skills-invocable`: generate (or keep if up-to-date) skills as command surface; do not remove them,2
+- `supported-tools-docs`: documents command-surface semantics for non-adapter tools,2
+- delivery mode (`both | skills | commands`),2
+- **unit tests**: [specific test cases],2
+- interactive flow: show clear compatibility note before confirmation,2
+- add a documentation governance requirement for `docs/tasks.md` under the `project-documentation` capability.,2
+_(none — no existing spec-level behavior changes)_,2
+"before writing/removing artifacts, validate selected/configured tools against delivery mode:",2
+- document capability model and trae behavior under delivery modes,2
+- `src/core/update.ts` - capability-aware sync/removal planning + compatibility validation + summary messaging,2
+ensure `docs/tasks.md` is governed by openspec so material updates are reviewed and stay consistent with project standards.,2
+"- if this change merges first, the `simplify-skill-installation` branch should be rebased to avoid re-introducing a global ""commands-only means no skills for all tools"" assumption.",2
+- `none`: no openspec command surface,2
+- non-interactive flow: fail with deterministic error listing incompatible tools and supported alternatives,2
+- global delivery (`both | skills | commands`),2
+- `bun openspec/changes/habitat-grit-proof-repair/workstream/run-injected-probes.ts --require-clean-start`,2
+- scoped modularity improvement:,2
+- `bun run openspec -- validate habitat-grit-proof-repair --strict`,2
+"- this change is intended to stack safely with `simplify-skill-installation` by introducing additive, capability-specific requirements for init/update.",2
+"- if this change merges first, `add-global-install-scope` should be rebased to preserve section 5 composition rules (`install scope` + `delivery mode` + `command surface capability`) without overriding capability-aware command-surface outcomes.",2
+- command surface capability (`adapter | skills-invocable | none`),2
+- generate command files only for `adapter` tools,2
+- `bun run habitat:check -- --json --tool grit-check`,2
+add an optional field in tool metadata to describe how a tool exposes commands:,2
+- `adapter`: command files are generated through a command adapter,2
+"- `tool-command-surface`: capability model that classifies tools as `adapter`, `skills-invocable`, or `none` to drive delivery behavior",2
+- `cli-update`: delivery sync becomes tool-capability-aware with consistent compatibility validation and messaging,2
+"when combined with `add-global-install-scope`, init/update planning must compose:",2
+"- `src/core/shared/tool-detection.ts` - include capability-aware detection so `skills-invocable` tools remain detectable under `delivery=commands`, and `none` tools are excluded from command-surface artifact detection",2
+"trae is a concrete example: it invokes openspec workflows via skill entries (for example `/openspec-new-change`) rather than adapter-generated command files. in this model, skills are the command surface.",2
+- `test/core/init.test.ts` and `test/core/update.test.ts` - add coverage for skills-invocable behavior and mixed-tool delivery scenarios,2
+- generate skills for all tools with `skillsdir` (including `skills-invocable`),2
+"today, this creates a behavior gap:",2
+- strive to write code in packages and only consume it from apps,2
+"- if `simplify-skill-installation` merges first, this change should be rebased and keep the capability-aware rule as the source of truth for `delivery=commands` behavior on `skills-invocable` tools.",2
+"update summaries to show effective delivery outcomes per tool (for example, when commands mode still installs skills for skills-invocable tools).",2
+<!-- no existing spec-level requirements are changing -->,2
+field should be optional. default behavior is inferred from adapter registry presence: tools with a registered adapter resolve to `adapter`; tools with no adapter registration and no explicit annotation resolve to `none`.,2
+- `src/core/init.ts` - capability-aware generation/removal planning + compatibility validation + summary messaging,2
+- architecture phase: `evolve_modularity`.,2
+- mixed selections (`claude + trae`) across all delivery modes,2
+- `grit_telemetry_disabled=true bunx grit patterns test --json`,2
+- use bun-native apis (bun.spawn / bun.file) — never node:fs sync,2
+"never modify: dist/**, .claude/worktrees/**.",2
+- never reduce coverage threshold,2
+- frontend tests: candidate details component tests and cypress candidate pane e2e coverage,2
+- `none`: fail fast with clear error,2
+- affected specs: `specs/cli/spec.md`,2
+- explicit error path for tools with no command surface under `delivery=commands`,2
+- `src/core/command-generation/registry.ts` (or shared helper) - capability inference from adapter presence,2
+- `none`: no artifact action; may emit compatibility warning,2
+- remove adapter-generated command files,2
+- `cli-init`: delivery handling becomes tool-capability-aware with preflight compatibility validation,2
+- tools without adapters skip command generation,2
+"- `adapter`: generate commands, remove skills",2
+this is more than a prompt ux issue because non-interactive and ci flows bypass interactive guidance. we need a capability-aware model in core generation logic.,2
+openspec currently assumes command delivery maps directly to command adapters. that assumption does not hold for all tools.,2
+"- **mitigation:** reuse the existing marker-update helper shared with `claude.md`, and add tests that cover files containing custom text before and after the block.",2
+- result: selected tools like trae can end up with no invocable workflow artifacts,2
+- **mitigation:** source the root file content from the canonical template rather than duplicating strings inline.,2
+- trae -> `skills-invocable`,2
+"2. when generating the file, pull the managed content from the same template used in `openspec/agents.md`, ensuring both locations stay in sync.",2
+"- **mitigation:** log creation vs update, and ensure help text references the agents option during `init`.",2
+- broader restructuring of how templates are stored or loaded.,2
+- **risk:** divergence between `openspec/agents.md` and the root file.,2
+- `src/core/config.ts` - add optional command-surface metadata and trae override,2
+- `init --tools trae` with `delivery=commands`,2
+- **risk:** confusion about when the file is created.,2
+- ensure cli docs and supported-tools docs reflect effective behavior,2
+"- if `add-global-install-scope` merges first, this change should be rebased to compose capability-aware behavior on top of scope-resolved path decisions from that change.",2
+- tool command surface capability,2
+- **tests**: no tests exist today.,2
+implementation tests should cover mixed-tool matrices to ensure deterministic behavior when both changes are active.,2
+- edge cases considered:,2
+- keep mobile behavior full-width while widening tablet and desktop widths using `min()` and `clamp()` constraints.,2
+- frontend component: `frontend/src/components/candidatedetails.js`,2
+**impact**: who is affected? how severe is the issue?,2
+| risk | likelihood | impact | mitigation |,2
+update `agents.md` for openspec governance and compliance. this proposal covers changes to agent documentation under the project-documentation capability.,2
+- **out of scope:**,2
+"- preserve existing offcanvas behavior (placement, close mechanics, focus trap, accessibility semantics, and nested modal behavior).",2
+- `candidate-details-pane-width`: responsive candidate details pane width adapts per viewport while preserving existing interactions.,2
+- revise agents.md for openspec compliance,2
+"improves governance, auditability, and compliance of agent documentation. enables automated validation and change tracking for agent files under the project-documentation capability.",2
+"agent documentation needs to comply with openspec governance to ensure consistent change tracking, validation, and auditability. the current documentation lacks proper openspec structure and references.",2
+| file | change |,2
+- **breaking changes**: none,2
+- no cli change.,2
+<!-- no existing spec-level requirement changes -->,2
+- archive the completed change after sync,2
+"- wire the page into the architecture landing page, track page, and docs navigation",2
+- sync the openspec requirements for docs and meta tools,2
+- 关联 binding: `binding.md`,2
+- 已确认标准页 / 项目页 / 回写目标：,2
+- add a per-pattern openspec packet for,2

@@ -1,0 +1,13 @@
+metric,value
+Total English proposals,82483.0
+Sample size,2000.0
+Repositories in sample,1271.0
+Duplicate proposals,14.0
+Unique proposal contents,1986.0
+Repeated lines,735.0
+Repeated lines across repositories,122.0
+Average heading percentage,4.66
+Structural boilerplate percentage,2.99
+Textual boilerplate percentage,0.15
+Reviewed boilerplate percentage,0.07
+Unclassified content percentage,96.86

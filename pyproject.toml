@@ -1,0 +1,11 @@
+[project]
+name = "msrchallenge"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "langdetect>=1.0.9",
+    "nltk>=3.10.3",
+    "pandas>=3.0.6",
+    "pyarrow>=25.0.1",
+    "scikit-learn>=1.9.1",
+]

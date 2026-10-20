@@ -1,0 +1,1792 @@
+heading,number_of_proposals
+why,1783
+what changes,1780
+impact,1727
+capabilities,1364
+modified capabilities,1333
+new capabilities,1295
+non-goals,135
+out of scope,126
+scope,108
+success criteria,98
+dependencies,93
+risks,71
+in scope,67
+summary,64
+intent,63
+context,51
+approach,50
+rollback plan,49
+goals,48
+affected areas,46
+proposed solution,45
+motivation,41
+acceptance criteria,38
+stakeholders,37
+open questions,27
+problem statement,25
+problem,25
+references,20
+alternatives considered,19
+success metrics,16
+breaking changes,15
+testing strategy,15
+affected specs,14
+affected code,14
+timeline,14
+risk assessment,13
+explicit completion conditions,13
+problem / context,12
+proposal,11
+goals / non-goals,11
+goal,11
+objectives,10
+implementation approach,10
+risks & mitigation,10
+executive summary,9
+removed capabilities,9
+risks and mitigations,9
+change id,9
+business case,8
+reference: proposal and spec guidance,8
+introduction and background,8
+appendix d: agent-assisted features (optional),8
+appendix a: lane-to-stage mapping table,8
+related resources,8
+methodology and approach,8
+benefits,8
+technical requirements,8
+scripts/quality_gates.py,8
+agent-assisted features (optional),8
+appendix f: example workflow execution,8
+manual validation,8
+appendix c: pre-step validation hooks,8
+"scan proposal.md, spec.md, tasks.md for code-related keywords",8
+"proposal: workflow improvements (fast lanes, parallelization, validation hooks)",8
+write metrics,8
+3. verify timing <5 minutes,8
+appendix b: quality gate thresholds,8
+sort results deterministically before writing to ensure consistent output,8
+detailed milestones,8
+4. verify correct stages skipped,8
+budget and resources,8
+glossary and definitions,8
+table of contents,8
+solution,8
+risks & mitigations,8
+front matter,8
+evaluation plan and success metrics,8
+alternative 4: current approach (lane parameter with intelligent mapping),8
+unit tests,8
+statement of work,8
+2. execute with docs lane,8
+conclusion,8
+document metadata,8
+what does not change,8
+1. create real docs-only change,8
+appendices,8
+project foundation,8
+"alternative 1: keep current workflow, manual step selection",8
+evaluate thresholds,8
+abstract,8
+integration tests (each lane),8
+alternatives and trade-offs analysis,8
+appendix e: conventional commits format,8
+timeline and milestones,8
+alternative 3: make all stages parallel,8
+alternative 2: separate workflow files per lane,8
+proposed changes,8
+quality assurance plan,8
+overview,7
+problem space,6
+estimated effort,6
+requirements,6
+validation,6
+root cause,6
+rollout plan,6
+what,6
+implementation notes,5
+source tracking,5
+implementation plan,5
+user impact,5
+key changes,5
+documentation,5
+next steps,5
+verification gates,5
+stop conditions,4
+impact analysis,4
+out of scope (deferred),4
+assumptions,4
+change control,4
+why now,4
+files to modify,4
+technical approach,4
+rationale,4
+target authority refs,4
+added capabilities,4
+requires,4
+acceptance,3
+backward compatibility,3
+rollback,3
+github issues,3
+timeline estimate,3
+code changes,3
+testing requirements,3
+dependencies added,3
+architecture,3
+tests,3
+affected files,3
+steering,3
+related specs,3
+migration path,3
+impact assessment,3
+new,3
+status,3
+problem/context,3
+verification,3
+related work,3
+capability reference,3
+configuration,3
+features,3
+affected specifications,3
+use cases,3
+status: proposed,2
+constitution alignment,2
+code quality,2
+performance considerations,2
+files modified,2
+supersedes,2
+known issues addressed,2
+3. proposed solution,2
+non-goals (future changes),2
+good-to-have,2
+required,2
+demo path,2
+operational limits,2
+cost / quota impact,2
+security & secrets,2
+closure decision record,2
+trade-offs,2
+scope boundaries,2
+verification plan,2
+implementation details,2
+changes,2
+2. make delivery behavior capability-aware,2
+change proposal: update-doc-docs-tasks,2
+additional instructions,2
+proposed change,2
+3. scope,2
+4. update docs and tests,2
+conformance to core architectural decisions,2
+fix approach,2
+5. coordinate with install-scope behavior,2
+discipline skills,2
+error handling,2
+tasks,2
+change proposal: update-doc-claude-commands-openspec-apply,2
+proposal: issue 15,2
+affected,2
+change proposal: update-doc-docs-data-models-specification,2
+1. add explicit command-surface capability metadata,2
+approaches considered,2
+cross-cutting,2
+implementation phases,2
+review workload forecast,2
+1. problem statement,2
+selected approach,2
+user-facing changes,2
+3. add preflight validation and clearer output,2
+security considerations,2
+breaking change,2
+backend,2
+frontend,2
+affected capabilities,2
+notes,2
+visual reference,2
+compatibility / non-goals,2
+current behavior,2
+sequencing notes,2
+deliverables,2
+add agents.md standard support to init/update,2
+api,2
+performance targets,2
+change proposal: update-doc-agents,2
+non-goals (deferred),2
+ingestion,2
+related issues,2
+owner boundary,2
+background,2
+acceptance tests,2
+first reviewable cut,2
+tl;dr,2
+modified,2
+non-goals (optional),2
+4. impact,2
+related,2
+deltas,2
+design,2
+implementation strategy,2
+user review required,2
+testing,2
+user experience,2
+technical,2
+explicitly out of scope,2
+iv. testability,2
+failure modes,2
+sequence,2
+user authentication - changes,1
+requirement: oauth support,1
+decisions and product guidelines,1
+conflict resolution,1
+proposal: design-system-consistency,1
+proposal: dashboard & core,1
+change: integrate claude agent sdk for investment analysis,1
+design overview,1
+proposal: split plugins into granular components,1
+tradeoffs,1
+2026-05-09 server feature usage update,1
+"contract change (why spec lane, not issue lane)",1
+api details,1
+datasource design,1
+change proposal: update-doc-github-copilot-instructions,1
+proposal: testing strategy and live meeting simulator,1
+usage examples,1
+change: add custom filesystem support to remote config loading,1
+github with token,1
+s3 with direct credentials,1
+generic filesystem options,1
+phase 3: cli integration,1
+cli with filesystem options,1
+sftp with ssh key file,1
+azure with connection string,1
+primary api - supports custom filesystem,1
+cli design,1
+python api with custom filesystem,1
+phase 2: main integration,1
+using aws profile (alternative to direct credentials),1
+anonymous access (public buckets),1
+implementation tasks,1
+phase 1: core api completion,1
+phase 4: testing & documentation,1
+design decisions,1
+core api enhancements,1
+best practices documentation,1
+cli enhancements,1
+sftp with ssh key,1
+github with personal access token,1
+backend-specific options,1
+credential exposure,1
+api design,1
+testing & documentation,1
+context: preset alignment architecture,1
+change: add places map browsing,1
+enhance cli options,1
+proposal: fix fsrs card state legacy bucket overwrite (a6 phase 0),1
+architecture / adr alignment,1
+acceptance criteria and how they are satisfied,1
+"14 isolation tests, not to this ui.",1
+out of scope for #1,1
+proposal question round,1
+problem / motivation,1
+next recommended phase,1
+"proposal: issue #1 walking skeleton (ingest -> store -> api -> console, one tenant)",1
+in scope for #1,1
+14.,1
+proposal: pharmacy dashboard redesign,1
+fix assign idea / assign task modals overflowing the mobile viewport (footer buttons unreachable),1
+call-site contract is preserved,1
+scope & decisions,1
+proposal: consolidate and improve documentation,1
+documentation structure,1
+current documentation landscape,1
+unchanged,1
+expected output: <what to return>,1
+conflict recovery,1
+2. merge conflicts (solved via dependency graph),1
+layer 1: orchestrator state (`.claude/state/`),1
+change: <change-name>,1
+implementation order,1
+commands,1
+layer 3: openspec tasks (source of truth),1
+4. subagent coordination (non-issue with worktrees),1
+verification pipeline,1
+layer 2: per-worktree state (in each worktree),1
+context for downstream: <shared info>,1
+agent failures,1
+files touched: <actual files modified>,1
+agent spec rule: feedback capture,1
+task: <task-id>,1
+proposal: add ai agents,1
+files reserved: <files this task owns>,1
+state recovery,1
+context: <relevant context from orchestrator state>,1
+verification agents,1
+worktree: <path>,1
+3. session continuity (solved via layered state),1
+workflow,1
+issues: <any problems>,1
+core agents,1
+solutions for hard problems,1
+output: <result>,1
+developer-controlled mr creation,1
+status: completed|failed|blocked,1
+known patterns: <feedback patterns to apply>,1
+1. feedback pattern detection (solved),1
+new patterns: <any user feedback received>,1
+why this matters,1
+dependencies completed: <outputs from upstream tasks>,1
+communication protocol,1
+embedding-based k-nn scorer,1
+proposal: add detail pages for blog posts and projects,1
+change: full phoneme conversion pipeline,1
+proposal: refactor-cli-entry-point-for-pypi,1
+change type,1
+reference implementation research,1
+proposal: cross-change-review-learnings,1
+architecture / modularity,1
+spdx-license-identifier: licenseref-cal-0.2,1
+copyright (c) 2026 kaine.one <kaine.one@tuta.com>,1
+effect metric,1
+limitations,1
+proposal: add frontend chart,1
+change proposal: update-doc-project-naming-initiative,1
+recommendations (top 5),1
+api surface (expected),1
+success metrics / acceptance criteria,1
+target audience,1
+output format,1
+verification dimensions,1
+change: add /opsx:verify skill,1
+what changes (target end-state),1
+current legacy coupling (the surface to migrate),1
+change: fix literature deep reading structured rendering and reference context,1
+fix datetimepicker minvalue,1
+description,1
+justification,1
+document the `wifi-scanning` capability,1
+show server version in dashboard brand,1
+change: update instrument selection to checkbox-based ui,1
+proposal: scheme-guard every external link sourced from on-chain data,1
+logging-contract,1
+explicit decisions,1
+docs-impact,1
+hard cut topic synthesis evidence contract to `source_paper_refs`,1
+affected users and tools,1
+links,1
+implementation scope,1
+bug: adds date prefix twice,1
+strip existing date prefix if present,1
+proposal: fix scaffold date prefix duplication,1
+creates: openspec/changes/2025-10-18-2025-10-18-short-format-support/,1
+proposal: add-turn-pipeline,1
+change proposal: update-doc-openspec-project,1
+2. capabilities,1
+proposal: configure github pages deployment,1
+1. goal,1
+5. alternatives considered,1
+4. analysis,1
+open decisions,1
+proposal: developer-console-backend,1
+affected systems,1
+approach (high level),1
+pr1 (orch + me),1
+non-goals (explicit),1
+pr3 (orch),1
+strict tdd note,1
+capabilities (for sdd-spec contract),1
+pr2 (orch),1
+proposal: priorcontext-enrichment (m3),1
+sse events,1
+installs to ~/.coven/bin/covend,1
+in packages/daemon/ directory,1
+e2e test scenarios,1
+endpoints,1
+state schema,1
+monorepo structure,1
+api reference,1
+build,1
+socket location,1
+install script (downloads from github releases),1
+consumer ux details,1
+vs code extension flow,1
+installation,1
+extension bundling (primary),1
+daemon directory structure,1
+change: add coven daemon (covend),1
+standalone install (optional),1
+beads integration,1
+proposal: fleet profiles & node selectors configuration schema,1
+chosen approach,1
+change: clarify timestep access semantics,1
+proposal: fix file dependency hierarchy,1
+implementation complexity,1
+non-goals / out of scope,1
+approach 1: colima as auto-detected docker provider (recommended),1
+approach 3: documentation-only with manual colima setup,1
+approach 2: colima as a first-class peer runtime,1
+recommended,1
+change: evaluate-colima-macos,1
+proposal: update billing payment text,1
+change: forbid manual archive fallback and validate archive layout,1
+add undue notability coverage pattern,1
+user stories,1
+dependencies / open questions,1
+proposal: app type-check remediation,1
+change: migrate remaining commands to browser mode,1
+migration,1
+change: add email service for member registration,1
+req-3: cloudflare provider only,1
+req-2: terraform cloud backend (`if-prod` workspace),1
+req-7: outputs.tf + .tf-outputs.env for deploy hook,1
+req-6: import existing dns records,1
+req-1: infra/ directory structure (prod only),1
+proposal: migrate if to terraform,1
+req-4: secrets bootstrapped via `.secrets.env`,1
+req-5: pnpm tf * from repo root,1
+one non-obvious architectural fact this change must encode accurately,1
+scope fence (decided),1
+locked source set,1
+add makerperks directory,1
+design principles,1
+2. strategic index extraction,1
+5. mcp tools,1
+1. embedded schema + artifact-type registry,1
+6. export/ingest paths,1
+3. footprint derivation,1
+4. status state-machine + events,1
+change: update plan template structure,1
+proposal: outbound device flow enrollment,1
+change: add zoom to fit on trajectory load,1
+admin create product page proposal,1
+what changed,1
+change: add compact contract compilation,1
+show titles in changes command,1
+change: document mvp capabilities,1
+proposal: improve cli input ux,1
+considered approaches,1
+change: refactor streaming message display and llm service,1
+change: fix ansible-navigator yaml pull-policy structure,1
+change: refactor project structure to standard go layout,1
+out of scope / parity guarantees,1
+change,1
+guardrails,1
+scope out,1
+source of truth,1
+scope in,1
+change: fix organize conflict handling,1
+risk tier,1
+registry/catalog consistency,1
+change: redesign topic synthesis skills v2,1
+first-run setup wizard,1
+primary technical risk,1
+proposal: add proxmox lxc container listing,1
+proposal: update git commit workflow for multi-branch merge,1
+change: implement pipes & cables transport,1
+proposal: igdb + postgresql integration,1
+implementation timeline,1
+add ollama provider,1
+new playbooks,1
+modified playbooks,1
+playbooks,1
+proposal: skip passed reviews in rerun mode,1
+proposal: production tracking history and audit,1
+change: add uncallable tool trace output,1
+pwa desktop entry (conditional),1
+removed components (clean break),1
+edge (server - runs cairn-mail service),1
+decisions (from review),1
+integration pattern,1
+flake.nix - add input,1
+for existing pim users,1
+"pangolin (client - pwa only, connects to edge)",1
+related documents,1
+proposal: replace pim module with cairn-mail,1
+modules/pim/default.nix - complete rewrite,1
+multi-host architecture (server/client roles),1
+current state pain points,1
+pwa desktop entry solution,1
+home/pim/default.nix - new module,1
+production validation,1
+ai module dependency,1
+change proposal: update-doc-docs-project-constitution,1
+change: add centralized logging via opensearch,1
+proposal: add remote storage,1
+technical value,1
+user value,1
+architecture decisions,1
+proposal: add-mcp-apps-hello-world,1
+wire-format / db-schema impact,1
+surface model introspection to in-session agents,1
+change: jwt multi-tenant authentication for mcp http host (secure mode),1
+phase 2: remove self-referential options/mkif patterns,1
+change: migrate pim's home manager modules to dendritic flake-parts pattern,1
+phase 1: migration to flake-parts structure,1
+change: graceful startup failure on missing/invalid environment variables,1
+proposal: geo & seo enhancements,1
+slice map,1
+"in scope (12 deliverables, 3 slices)",1
+change: add workload identity enrichment,1
+integration points,1
+new python modules,1
+git workflow requirements,1
+quality standards,1
+new cli command: `specfact validate sidecar`,1
+change: integrate sidecar validation into specfact cli,1
+code quality requirements,1
+modified capabilities (additive delta),1
+proposal: add-rate-limit-resilient-sync,1
+change: bootstrap admin credentials and remove magic-link login,1
+change: ignore symlinked platform skills pointing to .sync-skills,1
+check --all: tighten assertion extraction to eliminate false-positive contradictions,1
+llm configuration tab,1
+proposal: separate config tabs & google ai support,1
+settings page tabs (new structure),1
+target system tab,1
+change proposal: update-doc-docs-clarification,1
+make magic visuals pure particles,1
+mandatory context files,1
+variant axes rebuilt (so the 6 nbts actually differ),1
+known bug motivating this work,1
+change: unify tui event pipeline,1
+change: add keycloak identity management (users & roles),1
+proposal: add helm to devbox,1
+4. batch operations dal (`lib/dal/batch.ts`),1
+1. analytics dal (`lib/dal/analytics.ts`),1
+5. admin dal (`lib/dal/admin.ts`),1
+change: add loaded model family to models api,1
+change: add analyst team agents,1
+cross-owner changes,1
+proposal: make live 1,1
+sandbox isolates sibling workspaces and masks the daemon's own credentials,1
+date: 2026-05-24,1
+id: no-mock-model-data-readiness,1
+"change proposal: no-mock model, data, integration, and verification readiness",1
+verification requirements,1
+required operator inputs,1
+status: draft,1
+proposal: add server-side logout,1
+spec areas affected,1
+change name,1
+proposal: alphaforge compatibility smoke export package,1
+next step,1
+change: enhance close behavior for graceful neovide shutdown,1
+add basic authentication,1
+audit strategy,1
+add agent skills tab with hierarchical skill equipping,1
+change proposal: update-doc-docs-authentication-fix-summary,1
+proposal: add-init-subcommand,1
+change: live-eval-gate,1
+change: abstract ocr environment variables from gemini-specific names,1
+configuration changes,1
+proposal: add manifest generator script,1
+static defaults,1
+git changes,1
+script behavior,1
+change: add cross-section melodic continuity constraint,1
+proposal: gestiones list page,1
+affected owners,1
+enables parallel work,1
+consumer impact,1
+forbidden owners,1
+fortify service resilience tests,1
+functions to implement,1
+change: update audio playback speed control,1
+affected layer,1
+authority sensitivity,1
+proposal: harden approval and budgets,1
+decision-log check,1
+out of scope (explicit),1
+existing flow reuse,1
+minor performance optimizations,1
+change: improve code quality and minor optimizations,1
+type safety improvements,1
+change: add aws cloudtrail emulation,1
+phase 2: remove boolean flag defaults,1
+users affected,1
+current (buggy scanner doesn't fail):,1
+column missing - validationerror raised immediately,1
+alternative 4: add validation in scanners instead,1
+phase 1: remove column field defaults,1
+phase 3: remove summary field defaults,1
+alternative 1: keep all defaults (do nothing),1
+alternative 3: make fields optional[t] instead,1
+after fix (buggy scanner raises validationerror):,1
+proposal: remove inappropriate model field defaults,1
+how,1
+column forgotten - defaults to 0 silently,1
+phase 4: testing and validation,1
+migration required,1
+alternative 2: add defaults only where truly optional,1
+"phase 3: release readiness, coverage, and docs polish",1
+deferred,1
+what must hold,1
+what must not hold,1
+change: add identifier stability policy and alias map,1
+`ghagga health` command,1
+`--output` flag,1
+distribution mode impact,1
+`--issue` flag,1
+phase 3: tui polish (review output),1
+`--issue` flag (github issue creation),1
+phase 4: ai enhance,1
+tui polish,1
+phase 1: tui foundation,1
+tui polish (cli presentation layer),1
+existing dependencies (no changes),1
+ai enhance,1
+`--issue` flag: implementation strategy,1
+tui polish: implementation strategy,1
+phase 5: `ghagga health`,1
+`--output` flag: implementation strategy,1
+phase 6: `--issue` flag,1
+`ghagga health`,1
+architecture overview,1
+ai enhance (post-analysis intelligence),1
+no new dependencies for,1
+phase 2: `--output` flag,1
+`--output` flag (structured output formats),1
+new dependencies,1
+ai enhance: implementation strategy,1
+`ghagga health`: implementation strategy,1
+proposal: knowledge repository realignment,1
+expected value,1
+layers,1
+hybrid wave photostrip pagination,1
+proposal: rename pact references to autoqac,1
+change: replace trait descriptions with copyable llm prompt,1
+change: add native app-like navigation with stackflow,1
+live event stream,1
+pattern drag-paint skips already-placed marks,1
+"backspace-merge, inline math, and rich-text cells",1
+proposal: close client performance residual 2026-06,1
+archive calibration 2026-06-14,1
+migrate to pnpm,1
+phase 3: testing and validation,1
+for users,1
+phase 1: dual interface support,1
+fix worker compatibility for backward compatibility,1
+old interface - create queue internally,1
+backward compatibility handling,1
+2. deprecation path,1
+phase 2: deprecation handling,1
+1. restore backward-compatible constructor,1
+migration strategy,1
+constructor changes,1
+3. graceful migration,1
+files to change,1
+or through asyncomniq (recommended),1
+worker and queue created automatically,1
+core files,1
+root cause analysis,1
+core integration updates,1
+migration examples,1
+... rest of initialization,1
+should work with new internal structure,1
+detailed implementation,1
+new way (recommended),1
+backward compatibility tests,1
+integration tests,1
+old way (still works but deprecated),1
+core.py - update asyncomniq,1
+document the `cli` capability,1
+change: remove `clear_expiry` boolean flag from update operations,1
+cruzamentomedias execution order (timeframe=1d fixed by user):,1
+1. database schema changes,1
+check for duplicates,1
+6. default parameter handling,1
+stage 2: ma grid search (336 tests),1
+new: use hybrid grid optimization,1
+5. ui considerations,1
+check if parameter exists,1
+hybrid grid optimization for combo strategies,1
+stage 3: stop loss optimization (63 tests),1
+2. validation & error handling,1
+9. logging & observability,1
+3. stage execution order,1
+4. backward compatibility & migration,1
+"uses best ma combo from stage 2, varies stop_loss",1
+bbands_atr execution order (timeframe=1d fixed by user):,1
+in combo_templates table (existing):,1
+proposal: add-rule-filter-framework,1
+phase 3.4: tuatha-ui,1
+"phase 3.5: oideachais-web (last, largest)",1
+phase 3.2: croilar-web,1
+phase 3.6: web/packages/ consolidation,1
+phase 3.3: croilar-portal,1
+why per-domain and not big-bang,1
+phase 3.1: hono-api backend (this change),1
+per-domain web app consolidation,1
+`translate-consistency.test.ts` (new),1
+playwright tests (6 new scenarios),1
+`translate-events.test.ts` (new),1
+test scenarios,1
+`mocks.ts` extension,1
+integration tests (2 new scenarios in existing test files),1
+proposal: simplify opportunity monitor - focus on hold status & distance,1
+fix stepping race conditions and state parsing bugs,1
+affected apis,1
+systems,1
+settings validation,1
+change: fix audit log leaking secrets,1
+proposal: fix single purchase payment flow,1
+risks and mitigation,1
+emit openspec pending spinner from the poll path,1
+safety: non-openspec projects never spin,1
+proposal: fix party-ended cleanup (music stop + ios sse reconnect),1
+change: add pluggable vector database backends,1
+proposal: orch-log-quality-fixes,1
+add webdav durable bundle sync,1
+out of scope / future considerations,1
+i. accuracy,1
+iii. actionable output,1
+cli behavior,1
+ii. minimal assumptions,1
+output formats,1
+baseline lifecycle,1
+external impact,1
+proposal: v1.2-3way-merge (closes #23),1
+change: refactor save serialization with dataclass snapshots,1
+required learning resources,1
+core documentation,1
+suggested learning path,1
+topics to study,1
+change: add zk proof generation layer,1
+specs to add,1
+specs to update,1
+relationship to existing changes,1
+5. risks and mitigations,1
+4. high-level approach,1
+date: 2026-06-01,1
+6. success criteria,1
+2. goals and non-goals,1
+proposal: ssr-stylesheet-origin-policy,1
+change slug: `ssr-stylesheet-origin-policy`,1
+change: soften openspec apply enforcement,1
+research validation,1
+spec conflicts,1
+part 2: extract optional prompt sections into plugins,1
+core sections retained in `system.md` (not extracted):,1
+new plugin (1):,1
+part 1: fix `docs/plugin-system.md` documentation,1
+enhanced existing plugins (2):,1
+template update:,1
+quality gate: task review protocol,1
+implementation process,1
+proposal: close performance iteration 2026-06,1
+proposal: build bloomfilters from scratch and learn,1
+what & why,1
+change: add formatting-fidelity comparison check,1
+proposal: toggle deleted devices section,1
+proposal: synchronized progress bars + resume-on-handoff,1
+cross-client relay (playback domain),1
+change: upgrade learning style model from vak to vark,1
+requirement: spec shall be archived with explicit superseded reason,1
+phase,1
+scenario: banner click cancels in swift app,1
+proposal: supersede consolidate-mac-tts-listener spec,1
+proposal: drift-detection,1
+change: add claude teams message source,1
+change: auto-reconcile keycloak oidc dependents after keycloak deploy,1
+local run logs,1
+risk metrics,1
+expected benefit,1
+run log sync,1
+kill criteria,1
+proposal: show all currencies in tray title,1
+target format,1
+change: add hitl continuation for multi-turn conversations,1
+rationale for `play` over `run`,1
+documentation changes,1
+issue 2: non-idiomatic block name,1
+deprecated (current code - plural block name),1
+correct (new syntax - singular block name),1
+syntax transformation,1
+incorrect (current documentation - array syntax),1
+change: rename `plays` to `play` and fix hcl2 block syntax,1
+issue 1: incorrect documentation syntax,1
+change: unified telemetry ingest (ut_2026_04),1
+validation results,1
+change: exchange code validation for etf holdings,1
+change: add worktree lifecycle setup hook,1
+"minimal, meaning-preserving name normalization",1
+key insight (why this is smaller and safer than it looks),1
+decisions (see design.md),1
+proposal: add-smithing-commands,1
+"add stiff ode solvers, bvp, and multidimensional quadrature (integrate completion)",1
+proposal: v0.app export as production design source (v0-only),1
+files deleted (breaking),1
+relationship to in-progress `v0-design-pipeline` change,1
+migration path for existing consumers,1
+removals (breaking),1
+agent workflow change,1
+source pipeline,1
+architectural placement,1
+capabilities removed from registry,1
+change proposal: update-doc-docs-constitution,1
+preserve blank lines in ingredients and instructions,1
+proposal: add interactive multi-harness tui,1
+scope / not in,1
+add terminal session manager,1
+change: update api reference to mkdocstrings-generated pages,1
+proposal: elegant ui overhaul,1
+set the access code from the desktop app,1
+change: write a complete project readme,1
+change proposal: fix-parallel-resume-state-detection,1
+change: add dedicated spec-oriented prompt to proposal chat,1
+proposal: bootstrap cli lifecycle,1
+change: add mutual fund holdings ingestion script,1
+modified capabilities (additive deltas),1
+proposal: add-sync-observability-endpoints,1
+module organization (high priority),1
+configuration management (**breaking**),1
+change: python module best practices & tdd coverage,1
+performance (**breaking**),1
+resource management (critical),1
+affected code (critical files),1
+cleave child timeout and idle detection,1
+docs,1
+prerequisite (already done),1
+add city-search,1
+4. **multi-recipient ux improvements**,1
+mitigation,1
+2. **implement equal share distribution**,1
+3. **sss configuration validation**,1
+design decisions (confirmed),1
+database changes,1
+low risk,1
+security implications,1
+proposal: remove primary recipient designation and implement equal share distribution,1
+1. **remove primary recipient concept**,1
+api changes,1
+proposal: nativewind tabs setup,1
+make shell execution directory optional,1
+roadmap rebaseline,1
+follow-up: superseded by `ui-skeleton`,1
+change: add collection export archive,1
+out of scope (deferred to phase 2),1
+phase breakdown,1
+proposal: plantingspots bounded context (`planting-spots`),1
+ii. composability first,1
+iii. observable quality,1
+i. autonomous collaboration,1
+change: accept url input for parsing,1
+chat input history navigation,1
+change proposal: update-doc-claude-commands-openspec-archive,1
+change: replace markitdown-ts with kreuzberg for document extraction,1
+proposal: dedupe-safety-net,1
+estimated size,1
+testing scope,1
+the engines (prove the contract with more than one),1
+hard invariants,1
+the pluggable inference contract (the interface),1
+the headline: a falsification test that would disprove ai-first,1
+locked decisions (approved),1
+remaining open questions (leans in design.md),1
+future,1
+proposal: school wizard stepper,1
+change: add planner-defined chunked plan execution and iterative planning review (mas-277),1
+execution model,1
+tui execute ux,1
+"progress, stop, and resume",1
+planning artifact contract,1
+planning review and iteration ux (tui),1
+batch as a wizard (client + bridge + shared protocol),1
+redesign ask_user question cards,1
+single-question cards (client-only),1
+proposal: remove json config support,1
+specification impact summary,1
+user experience after removal,1
+decision timeline (flexible),1
+change: refactor data layer and route boundaries to result patterns (phase 3),1
+backend files,1
+testing improvements,1
+backend critical fixes,1
+frontend refactoring,1
+test files,1
+frontend files,1
+files affected,1
+2. reduced motion support,1
+1. smooth scroll behavior,1
+4. focus ring utility,1
+3. scroll-to-top button,1
+5. selective theme transition,1
+proposal: time slider control panel support for `elasticstack_kibana_dashboard`,1
+pi docs alignment,1
+timeline / priority,1
+change proposal: add-scheduled-pub-sync,1
+metadata,1
+change: implement adapter enhancement recommendations,1
+out of scope (flagged as future),1
+size & delivery,1
+constraints (hard),1
+what success looks like,1
+example-tested rules: `dwarpal rules test`,1
+"change: fix channel list completeness, sorting, and usage display",1
+change: refactor status next_actions_detailed generation into app layer,1
+contract change,1
+proposal: fix utf-8-unsafe truncation in stream-json text summaries,1
+write set for later implementation,1
+proposal: d9 transformation transaction,1
+authority,1
+enables,1
+affected public and durable surfaces,1
+product scenario,1
+technical decisions,1
+pinax-sticky-note-template-pack proposal,1
+solution scale,1
+proposal: add habit page,1
+add lifecycle population,1
+core logic,1
+module architecture,1
+blocks,1
+change: add voice orchestration,1
+blocked by,1
+constitutional alignment,1
+proposal: sync downloads branch into desktop,1
+non-functional,1
+ux acceptance criteria,1
+users & scenarios,1
+functional,1
+menu-item-order,1
+behavior,1
+affected ia,1
+approval,1
+addendum (2026-06-02): dynamic-flow tension drift,1
+relay-neutral-frac-detune,1
+addendum decisions / scope deltas,1
+"success criteria (type-d, from hw follow-ups 5-8)",1
+repository pattern,1
+change: refactor core architecture,1
+logging standardization,1
+configuration management,1
+separation of concerns,1
+dependency injection,1
+key insight,1
+proposal: add an explained deduction hint to solo,1
+proposal: add-falco-ocsf-event-consumer,1
+change: add phase 2 data processing commands,1
+change: add-agent-readable-ui-observability-access,1
+change: fix date/datetime serialization to iso-8601 format,1
+estimated scope,1
+linear-agent-integration,1
+criterio de done,1
+build contract,1
+proposal: cli plan command,1
+proposal: merge requirements files and improve dependency management,1
+update pam secret service messaging,1
+change: refactor smash up special activation semantics,1
+change: improve incomplete cleanup table + details ux (compact + responsive),1
+proposal: support select flag,1
+flag-based strategy,1
+proposal: add codecov integration,1
+change: include fragment label heights in vertical layout estimate,1
+change: draggable graph groups and browser view state persistence,1
+proposal: tdd test coverage,1
+framework choices,1
+user experience improvement,1
+change: add plugin-aware agents.md generation,1
+change: strengthen docs/index entrypoints,1
+proposal: api surface hardening,1
+change: add form 5472 year-end totals summary card,1
+breaking,1
+active-swatch-accent-outline,1
+proposal: add-layout-skins-and-widgets,1
+admin-link email,1
+change: add magic wand selection tool,1
+migration / defaults,1
+proposal: module 19 - ui parity and responsive polish,1
+prerequisite,1
+discipline skills: doubt-driven-review,1
+proposal: qr migrate/import for local storage,1
+payload size (qr-friendly),1
+view context preservation,1
+file sorting algorithm,1
+change: enhance git diff navigation,1
+technical notes,1
+cursor synchronization issue,1
+diff/git view to normal editor toggle,1
+discovery summary (for implementer),1
+non-goals (phase 1),1
+dependencies / order,1
+"change: add plane service module (traefik + optional step-ca, keycloak, observability)",1
+change: add authentication system,1
+proposed features,1
+resolved product decisions,1
+implement memory system (phase 2),1
+change: add memorystore redis for gke production,1
+change: add android network security config and public pinned client api,1
+scope limitations,1
+change: add refined geospatial visualization system,1
+proposal: replace local availability logic with api integration,1
+2. date normalization,1
+3. api error handling,1
+4. server action pre-check,1
+6. frontend 409 handling,1
+proposal: prevenir feriados duplicados,1
+5. formstate enhancement,1
+1. schema migration,1
+"rendering (`src/components/chordcard.tsx`, `src/app.tsx`)",1
+engine (`src/lib/harmonybrain.ts`),1
+proposal: add pytest test baseline,1
+proposal: add-environment-support,1
+change: fix epub scrolling/toc and pdf resume in web reader,1
+soundness / non-goals,1
+resolve `this.method()` / `super.method()` calls in the call graph,1
+deliberately deferred: unique identity for nested functions,1
+change: add table style properties,1
+proposal: single-page form-mirroring confirmation ui,1
+scope / impact,1
+archived outcome,1
+architecture notes,1
+proposal: node-internal-ip-fallback,1
+non-goals (v1),1
+change: add pvc resource detail page,1
+existing capabilities (no changes),1
+change proposal: implement braintrust evaluation framework,1
+capabilities affected,1
+change proposal: update-doc-docs-plugin-integration-specification,1
+docs to update,1
+out of scope (defer to later changes),1
+files to delete,1
+decisions,1
+product outcomes,1
+cleanup,1
+histogram-based similarity,1
+extensibility,1
+deduplication logic,1
+additional unicode icons discovered,1
+proposal: replace emoji/unicode icons with phosphor icons,1
+phase 4g: playlist profiling (aggregation layer),1
+migration notes,1
+phase 4f: genre enrichment (foundation layer),1
+change: add matching pipeline services (phases 4e-4g),1
+phase 4e: matching pipeline (core algorithm),1
+already implemented (no porting needed),1
+database,1
+3. adaptive backoff on hostile signals,1
+1. per-domain randomized pacing,1
+2. first-request fast path,1
+4. the configured minimum delay is a hard floor,1
+proposal: embed-snapshot-date,1
+change: add-supabase-perfume-crud,1
+proposal: project management (manejos),1
+change: dogfooding proof for ai-bloat defense and validation,1
+split literature deep reading references and appendix,1
+change: add android intelligent ai workflows,1
+"add advanced indexing routines (numpy parity, tier 1)",1
+`.gitignore`,1
+targets,1
+test binaries,1
+dependency tracking (`-mmd -mp`),1
+version derivation,1
+makefile design,1
+nix dev shell,1
+proposal: project scaffold,1
+directory layout,1
+appimage-builder-source-slim,1
+pr description notes,1
+archive completed docs/internal plans,1
+classification (decided; do not re-derive),1
+purely additive change,1
+proposal: add emphasis delimiter captures,1
+proposal: adopt vite+ oxc rolldown toolchain,1
+alternative considered,1
+editor support verified,1
+"low risk, immediate value",1
+consistency with existing pattern,1
+change: add tabnav component,1
+non-goals (mvp),1
+open questions (to discuss in future iterations),1
+data model,1
+infrastructure,1
+proposal: optimize report page performance,1
+"priority 7: request deduplication (low impact, low effort)",1
+"priority 3: add server-side caching (high impact, medium effort)",1
+current limitation,1
+"priority 6: optimize cte queries (medium impact, high effort)",1
+"priority 5: verify/add database indexes (critical impact, high effort)",1
+"priority 2: lazy load practitioners (medium impact, low effort)",1
+"priority 4: add pagination/limits (medium impact, medium effort)",1
+"priority 1: async audit logging (high impact, low effort)",1
+deferred to v2,1
+"user calendars (""mes calendriers""): the management screen over the durable token store, with per-calendar visibility filtered at the events-source seam",1
+proposal: notifications,1
+change: add mcp reindex tool,1
+findings (verified against code),1
+product decisions (resolved 2026-07-07),1
+desired outcome,1
+proposal: honest policy views and topology read-only mode,1
+add synthesis citation graph metrics,1
+proposal: add-ssr-hydration-tests,1
+proposal: filter-simplification,1
+"change: trustworthy green checks for ci, pre-commit, and pr review",1
+risk 3: reference context not found,1
+modified behavior,1
+handle strategy execution error,1
+explicit changes,1
+rollout and deprecation policy,1
+calibrate feature annotator,1
+feature 4: capability gap detection & harness self-improvement,1
+feature 9: multi-source capability-gap signal pipeline,1
+feature 8: session transcript mining,1
+proposal: harness engineering features,1
+feature 5: generation/evaluation separation,1
+feature 7: agent throughput dashboard & metrics,1
+approach c: coordinator-first,1
+feature 1: agent-to-agent review loops,1
+feature 2: progressive context architecture,1
+feature 3: mechanical architecture enforcement,1
+approach a: incremental extension (recommended),1
+approach b: new harness layer,1
+feature 6: session focus enforcement,1
+proposal: multi-image per-turn ingestion,1
+change: restore default volume sync (bind mount),1
+broader harness and manifest usage,1
+fixtures,1
+docs export / storage repositories,1
+graphs,1
+golden diffs for analytics module maps,1
+graph inventory consistency checks,1
+"change: expand test helper usage across ingestion, graphs, analytics, and fixtures",1
+shared runtime fixture consolidation,1
+modules-first seeding parity,1
+risk 1: rapid successive updates (race conditions),1
+helpers and seeds,1
+scope inventory,1
+scip ingestion harness coverage,1
+analytics,1
+plain gx cockpit welcome,1
+user story,1
+change: define-deid-policy-engine,1
+state communication,1
+4. delete confirmation animation,1
+risk 2: large multipart uploads,1
+enhance drag-to-trash ux with floating elements,1
+trash bin animation,1
+1. floating drag ghost element,1
+risk 4: cross-device selection_hash stability,1
+3. last theme protection with feedback,1
+ghost element implementation,1
+2. cartoon-style animated trash bin,1
+change: update typography to use source code pro and ethnocentric fonts,1
+high-risk subsystems / test plan,1
+proposal: module 11 - observability & errors,1
+2. explored alternatives,1
+4. risks & dependencies,1
+3. architecture & approach,1
+1. intent & scope,1
+2. the 9 per-resource crud methods on the new pangolin client,1
+6. update the root `bonneagar/package.json` with the new alias scripts,1
+1. the new `iac/` structure (15+ new typescript files),1
+change: 2026-06-29-bonneagar-iac-merge-komodo-pangolin-infisical,1
+affected ci,1
+5. the 4 blockers from `deployment-strategy.md` that the new iac fixes,1
+3. the 3 blueprint-import methods on the new pangolin client,1
+7. migrate the 5 v0 `iac/komodo/*.ts` scripts to the new `iac/` structure,1
+deleted files,1
+modified files,1
+affected specs (3 total),1
+4. the 9 new sync commands + 4 top-level commands (the 13 new cli commands),1
+new files (~17),1
+change: refactor e2e test isolation to full-stack duplicate containers,1
+completeness checklist,1
+fix log mining streaming scalability,1
+new resources added,1
+goals (slo),1
+proposal: ecommerce mini mvp,1
+proposal: add pdf image region selection mode,1
+change proposal: update-doc-openspec-governance-automation,1
+out of scope (explicitly unchanged),1
+change: improve cross-model mcp compliance,1
+2. workflow completion signals,1
+1. natural language action directives in tool responses,1
+4. post-condition guidance in tool descriptions,1
+5. anti-loop detection,1
+6. response processing protocol in agents.md,1
+3. combined wizard lookup,1
+why this is in scope,1
+"uniform conclusion honesty across cli commands: base-ref fallback, staleness, unknown inputs",1
+"the gap (all live-reproduced on this repo, v2.1.5)",1
+coordination with sibling proposals,1
+risks & considerations,1
+expected outcomes,1
+areas to review / update,1
+validate sanity integration,1
+documentation updates,1
+"16, in-flight as `add-rsvp-poll-type` and `add-question-poll-type`), there are",1
+"affected specs (read-only references, no change)",1
+add tunnel diagnostic checks to doctor,1
+"proposal: crm core logic (case, contact, automation)",1
+expected impact,1
+not included (future work),1
+change: add structured logging,1
+refactor compression routing,1
+resource shape,1
+key design decisions,1
+new features,1
+version,1
+"docs = [{_index = ""idx"", _id = ""x""}]",1
+status: archived,1
+future extensions,1
+proposal: fix-heritability-config-contradiction,1
+change proposal: update-doc-docs-code-quality-improvements,1
+open questions resolved,1
+affected existing use cases (wiring impact),1
+out of scope (phase 2 if needed),1
+architectural pivot (post-phase-1 war-room),1
+proposal: plc configuration crud (ui-managed),1
+pomgenerator,1
+change: add pom generation module,1
+xml escaping,1
+pomvalidator,1
+dsl builder for pom xml,1
+pom structure,1
+proposal: software product estimation skills,1
+change proposal: update-doc-docs-project-clarification,1
+change: implement platform build and flash functionality,1
+breaking/behavioral changes,1
+4. `src/tui/tui-driver.tsx`,1
+5. `src/tui/reader/reader-screen.tsx`,1
+change: add knowledge base agent,1
+3. `src/tui/reader/reader-reducer.ts`,1
+success criterion,1
+1. `src/domain/reference.ts`,1
+context documents,1
+state machine extension (summary),1
+2. `src/domain/book-suggestions.ts` (new file),1
+proposal: palette-suggestions,1
+driver gate change (summary),1
+add export functionality,1
+benchmark target,1
+migration impact for users,1
+why not qt?,1
+removed,1
+crawler contract (adds to `list-visibility`),1
+components,1
+styles,1
+server actions,1
+ui relabel + restructure (modifies `list-visibility`),1
+primitive extension (modifies `menu-system`),1
+routes,1
+spec deltas,1
+migration / data,1
+not changing,1
+cache freshness,1
+change: future research topics,1
+rabbit-holes,1
+solution outline,1
+epic: two-mode pr review with refactoring investigation,1
+appetite,1
+no-gos,1
+key decisions,1
+change: add direct url ingest via ui and cli,1
+change: improve tool arguments normalization (json repair),1
+home assistant environmental metrics proposal,1
+code quality improvements,1
+security hardening (critical),1
+phase 1: critical security hardening and code quality baseline,1
+performance optimizations (quick wins),1
+deprecate git sync ui and consolidate sync panel,1
+"change: add job detail page (runs, snapshots, retention) and simplify jobs list actions",1
+add per-repo tester service containers (tester-services),1
+proposal: portal settings & password,1
+change: enhance documentation structure,1
+change: improve console profile selection to respect aws_profile,1
+change: remove nats for internal health events,1
+resolved clarifications,1
+confirmed decisions (locked),1
+"change: update worldgen to terraria-core sequencing, bedrock floor, tile set expansion, and liquid integration",1
+"the gap, concretely",1
+why openlore specifically can fix this,1
+code-anchored agent memory with deterministic staleness,1
+application to openlore,1
+research basis,1
+python tasks,1
+req-3: python texts folder structure for backstories,1
+scenario: character with backstory id,1
+req-6: character stores backstory_id field,1
+req-2: assign backstory ids instead of text,1
+lua tasks,1
+req-5: fallback to empty string,1
+scenario: xml files removed,1
+purpose,1
+req-7: remove xml backstory files,1
+backstories text lookup migration,1
+scenario: resolve unique backstory id,1
+scenario: load backstory ids from .ltx,1
+scenario: text module structure,1
+scenario: fallback for missing backstory,1
+scenario: resolve faction backstory id,1
+scenario: assign unique backstory id,1
+req-4: python resolves backstory ids to text,1
+req-1: create .ltx file with backstory id lists,1
+scenario: assign generic backstory id,1
+change: add inline data editing for result set tables,1
+`tui-async-effects` archive,1
+rule-by-rule disposition table,1
+new artifacts,1
+welcome reducer test migration,1
+updated files,1
+proposal: ts-native-architecture,1
+cost analysis from exploration,1
+the user's own words,1
+moved/archived,1
+`quit` handling after reducer simplification,1
+next steps after this lands,1
+rule 9 retirement note (exact text for `house-rules.md`),1
+outcomes,1
+human anchor,1
+optional links,1
+proposal: phase 5 - tool - get requirements,1
+content retrieval,1
+core tools,1
+template discovery (implemented),1
+change: add content retrieval tools,1
+change: add backend implementations,1
+questions for clarification,1
+remaining work (lig-25),1
+sub-issues,1
+26.,1
+outcome,1
+ui components,1
+proposal: implement n8n chat integration,1
+change: uppercase company name in outgoing email templates,1
+change: add lighting system,1
+change: add comfyui integration,1
+proposal: improve chat ux (elastic input & scroll),1
+change-id: improve-chat-ux,1
+5. alternatives,1
+learning philosophy,1
+2. problem statement,1
+1. summary,1
+change: add render deployment,1
+frontend components affected,1
+routing,1
+styling,1
+state management,1
+backend dependencies,1
+change: add paperless-ngx mcp server,1
+refine synthesis topic inventory governance,1
+rlf-158: proposal has duplicate content,1
+change: upgrade node.js to version 22 in github actions,1
+change: add-frontend-workspace-scaffold,1
+pinax-core-notes-templates-search-sync,1
+change: expand custom action type detection and exit code scheme,1
+change: improve select command performance and reliability,1
+change: bundle datastar assets locally,1
+change: add agent shared skill discovery source,1
+change: add streamlit training & demo ui,1
+rollout / migration,1
+change: [67] extract the shared routing content surface into shell core,1
+change proposal: update-doc-docs-quick-fix,1
+change: remove video page navigation arrows,1
+request cloning utility,1
+"change: add cancellationhandler, deduplicationhandler, and shared utilities",1
+cancellation handler,1
+active request tracker,1
+files to be created,1
+deduplication handler,1
+change: add manual sale price editing by point of sale,1
+core dependencies (manual implementation),1
+change: add confirmationdialog pattern component,1
+proposal: fix build errors,1
+customer profile - minimal essential features proposal,1
+backend changes (minimal),1
+landing page integration (no separate dashboard),1
+what we're not doing (out of scope),1
+minimal components (modals/sidebars only),1
+database schema (minimal),1
+frontend state management,1
+persian rtl support,1
+mobile responsive design,1
+solution overview,1
+proposal: backlog management tool with ascii burndown,1
+goals and non-goals,1
+change: add pdf parsing ui,1
+change: improve skills.sh discoverability and github visibility,1
+external systems,1
+affected files (planned implementation),1
+change: layout hook for react flow nodes/edges,1
+detailed migration plan,1
+change: add toast notifications and improve logout ux,1
+proposal: user-management-settings-backup,1
+migration plan,1
+new specs,1
+status: stale (2026-04-03),1
+what changes (original),1
+impact (original - files no longer exist),1
+why (original - pre-runtime-reforge),1
+audit file permissions,1
+infrastructure security,1
+audit for hardcoded secrets,1
+proposal: dotfiles-security-audit,1
+backup/restore security,1
+audit script security,1
+adopt future state storage for openspec changes,1
+change: add camera analysis worker management surface,1
+proposal: improve architecture diagram standards,1
+import-orcbrew-data change proposal,1
+proposal: add configurable outline shader,1
+specific guidance,1
+refine report depth guidance,1
+"proposal: add onboarding automation, documents, and reporting",1
+size estimate,1
+proposal: tickets subsidiados,1
+change proposal: update-doc-docs-audit-plugin,1
+rename to `@blackbelt-technology/pi-flows` for npm publish,1
+change: add style settings and parallel edge curves,1
+testing impact,1
+performance,1
+change proposal: update-doc-readme-latest-run,1
+change: fix tag parsing in nuget packages,1
+proposal: automatic result refresh,1
+change: add explicit data source indicator to the dashboard,1
+not in scope,1
+dictu dimensions,1
+parallel-safe,1
+change proposal: add --completo flag for article urls,1
+proposed behavior,1
+change proposal: extend shell completions,1
+what we're learning,1
+example usage,1
+phase 2: testing (2 days),1
+3. update function,1
+api mapping,1
+schema design,1
+import,1
+4. delete function,1
+compatibility,1
+input arguments,1
+phase 3: documentation (1 day),1
+phase 1: core implementation (3 days),1
+error handling strategy,1
+resource id format,1
+computed attributes,1
+1. create function,1
+2. read function with pagination and retry,1
+total estimated time: 6 days,1
+resource definition,1
+key implementation details,1
+proposal: add cls dashboard resource,1
+non-breaking guarantees,1
+relationship to active changes,1
+change: remove `nullable` keyword from json schema output,1
+upstream status,1
+dogfooding gap,1
+change: update preset management with edit mode,1
+new / modified capabilities,1
+new endpoints,1
+backend selection,1
+out of scope (deferred to phase 4+),1
+"project posture (the most important ""change"")",1
+enhance run tui findings progress display,1
+change proposal: 2025-10-19-workflow-improvements,1
+spec deliverables,1
+engineering guardrails,1
+change: add regression tasks for continuous rebracketing metrics,1
+change: extract cli business logic to service layer,1
+key files,1
+rlf-235: github status-as-labels semantics (per-provider applymarker),1
+test plan,1
+change: transient toast for quick-save confirmation,1
+existing patterns to follow,1
+definition of done,1
+proposal: e1_s6_headspace,1
+affected php classes and wordpress hooks,1
+scf field dependencies,1
+rationale for option a over alternatives,1
+proposal: multi-user library model (v1.4.0),1
+sparse extras (deferred backlog),1
+current state analysis,1
+router groupings,1
+file structure (app.py - 1565 lines),1
+hardcoded values identified,1
+shared dependencies,1
+proposal: refactor app.py into endpoint modules,1
+new module structure,1
+proposal: naming conventions standardization (slice 2a - category & franchise),1
+proposal: opentui full-screen rewrite,1
+current behavior notes,1
+create foundry project in deployment export,1
+change: update scripting correctness and diagnostics,1
+proposal: h5-visual-design-pipeline,1
+compatibility decisions,1
+change: add infinite paper canvas,1
+proposal: harden logging default writer seam,1
+unchanged specs,1
+change proposal: update-doc-docs-security-specification,1
+proposal: token optimizer adoption,1
+proposal: media manager,1
+proposal: hera plan-dag substrate,1
+delta: new cli completion specification,1
+add shell completions,1
+change: add basic vercel landing site,1
+proposal: room reservation management system,1
+improve invalid verdict diagnostics,1
+change: add subscription summary overview,1
+"8 existing skills expanded (+1,492 lines total)",1
+files moved (132 total),1
+files deleted (15 total),1
+4 new skills,1
+`08-mirrors/_summaries/` (11 files),1
+change: sync-skills-from-docs-round-8,1
+proposal: order engine implementation,1
+measured drift (verified against current `master`),1
+values,1
+visual identity & habit grid,1
+proposal: per-project remote config,1
+local db migration (one-time),1
+wire change (breaking for cross-version peers),1
+native android update,1
+change: move call-history rumors from kind 16 to kind 1405,1
+single source of truth for the kind,1
+proposal: ballistics calculation engine,1
+problem analysis,1
+fix-response-delivery-reliability,1
+proposal: calculate tax report,1
+redesign dashboard layout & cross-tab consistency,1
+change: add sam3 mask precompute pipeline,1
+change: add fetch metrics change detection (content_hash / changed_count),1
+frontend (`dashboard/dist/index.js`),1
+hash interaction,1
+board search and filter,1
+add fft + fftpack (phase 3),1
+memory discoverability (issue #10),1
+quality intelligence tools (issue #8),1
+change: add memory agent integration tools and discoverability,1
+graph query tools (issue #9),1
+change: simplify quiz launch,1
+proposal: sync-docs-with-code,1
+change proposal: update-doc-claude,1
+proposal: bootstrap `settings.py` and `.env.example`,1
+resume archived dirty workspaces,1
+change: add authentication ui,1
+change: beautify godot wand editor ui,1
+new command structure,1
+file generation,1
+command behavior,1
+proposal: add scaffold test compose command,1
+change: add bulk messaging system,1
+proposal: fix file polyfill for jira attachments,1
+location,1
+name validation rules,1
+new utilities,1
+change: add sequence note model,1
+"proposal: ios mechanical polish (accentcolor, structured logging, dynamic type)",1
+unchanged (reused) capabilities,1
+keep-vs-remove (legacy/simple reset routes),1
+db schema,1
+"lawsnote_api_key: """"",1
+"change: background task runner + per-workspace queue (agentic, hours-long)",1
+6. remove dead dependencies,1
+next phase,1
+3. create github actions ci workflow,1
+effort estimate,1
+files to create,1
+2. fix test markers,1
+4. add unit tests for coverage gaps,1
+5. configure pytest-cov with threshold,1
+1. fix `pytest.ini` configuration,1
+guard 1: `spec-test-mapping-gate.ts`,1
+mobile typecheck and navigation debt cleanup,1
+proposed approach,1
+change: add sbom supplier details,1
+security fixes + test coverage proposal,1
+premise / context,1
+change: add speca runner acceptance adapter guidance,1
+why openspec,1
+change: phase 2 rollout for unified error envelope,1
+change: add `reason_code` and `next_actions` to target-unsupported errors,1
+proposal: seema rohan dry and architectural refactor,1
+related capabilities,1
+change: openclaw agent discovery,1
+proposal: scaffold phase 1 core platform,1
+proposal: branching prerequisite changes,1
+audit findings,1
+topology-transparent http bridge owner handoff,1
+specs affected,1
+part 1: dependency classification,1
+part 4: standalone mode (future),1
+part 2: lock file,1
+part 3: browser cache strategy,1
+2. bundled-mode (no external opencode server),1
+1. new docker compose stack `infrastructure/stacks/openchamber/`,1
+4. komodo stack + deploy procedure,1
+6. openspec change artifacts,1
+5. stack inventory + agents.md,1
+3. no cloudflare tunnel for v1,1
+change: add-openchamber-stack-and-opencode-ui,1
+headless wavefront readiness gate,1
+change: stabilize sqlite abi scripts,1
+redesign-openspec-board,1
+session slot (rows inside a proposal card),1
+worktree visualization (new),1
+frontend design source (authoritative),1
+migration risks,1
+new-proposal flow,1
+entry point,1
+filtering (new),1
+proposal cards,1
+board layout,1
+change: in-app image viewer for messages,1
+proposal: professional markdown templates with apple hig branding,1
+proposal: auto-end and auto-delete stale parties,1
+sub-feature 1: 2nd wall ring for default-strategy ais,1
+proposal: port aomodai layered walls behavior into extra ai + aomodai,1
+sub-feature 3: attack-cancellation,1
+"success criteria (in-game, observed by user)",1
+out of scope / not ported (verified),1
+sub-feature 2: wall-building rusher delay,1
+the behavior in detail,1
+open questions for the user,1
+"optimize i18n, theme, and navigation",1
+proposal: implement-homepage,1
+added requirements,1
+optimize build and asset handling,1
+"60 alone accounts for **>99% of the visible content loss on body-mutating save**. #58 + #59 combined are <0.1%. without bundling these under one architectural fix, the v3.13.5 closing claim (""lossless `<w:document>` round-trip"") cannot be honored.",1
+risks and trade-offs,1
+refactor: consolidate cli filesystem options,1
+wiring,1
+logging,1
+vector store extension,1
+retriever package,1
+sparse embedding,1
+config,1
+proposal: columns-unified-api,1
+phase 2: migrate completed stories (30 min),1
+current structure limitations,1
+non-risks,1
+optional: vitepress documentation site,1
+long-term benefits,1
+phase 3: organize backlog (30 min),1
+optional: github projects integration,1
+phase 1: create new structure (30 min),1
+phase 5: simplify readme.md (30 min),1
+auto-generate roadmap from user story files,1
+type,1
+example roadmap.md,1
+new documentation structure,1
+optional: script-based roadmap generation,1
+immediate benefits,1
+roadmap - shopping manager,1
+proposal: improve roadmap and user story documentation,1
+phase 6: validate (30 min),1
+user needs,1
+phase 4: update references (30 min),1
+future enhancements (out of scope),1
+change: add hardcoded system prompt for apply command,1
+proposal: openspec scaffold script,1
+alternatives,1
+1. image ingestion (`image-ingestion`),1
+user authentication,1
+change proposal: implement milestone 3 advanced features,1
+4. user authentication (`user-authentication`),1
+related changes,1
+user journey,1
+processing mode toggle,1
+enhanced capabilities,1
+2. citation system (`citation-system`),1
+image ingestion flow,1
+citation system,1
+authentication flow,1
+3. processing mode toggle (`processing-mode-toggle`),1
+citation flow,1
+image ingestion,1
+maintained,1
+processing mode flow,1
+change: add scheduler-local custom presets,1
+add capture proxy + shortcut,1
+scenario: oauth login flow,1
+add-meal-heatmap,1
+change: trendlife brand style with logo overlay,1
+design reference,1
+core capabilities,1
+make targets,1
+ci gate,1
+new scripted smoke suite,1
+fulfills,1
+automated tests,1
+[modify] [usetangledtracing.ts](file:///users/brianwong/project/react/matching-game/src/features/tracing/usetangledtracing.ts),1
+fix destination detection sensitivity,1
+manual verification,1
+game mechanics,1
+goal description,1
+code,1
+downstream,1
+change: enforce web ui visual consistency (design system rules),1
+change: document database migration workflow,1
+changed capabilities,1
+"2, 2026-07-01). this change encodes f3's locked posture with **no new design latitude**.",1
+4. dead code removal,1
+proposal: security audit 2025 q1,1
+3. api security,1
+2. next.js cve mitigation,1
+1. database security (rls),1
+document request additions (capability: `ats-document-requests`),1
+change: add offer acceptance flow and hr onboarding paperwork workflow,1
+offer letter acceptance (new capability: `ats-offer-acceptance`),1
+pipeline-status mapping (no enum changes),1
+hr onboarding paperwork workflow (new capability: `ats-hr-onboarding-paperwork`),1
+reuse before reinvention,1
+depends on,1
+change proposal: update-doc-docs-testing-guide,1
+change: add ios native viewer integration,1
+handle `review-gauntlet run` keyboardinterrupt without traceback,1
+design considerations,1
+proposal: fix-predator-sensing-biology,1
+key architectural shifts:,1
+2. proposed solution,1
+proposal: deep refactor of npc ai with limboai (hsm + bt),1
+change: remove public schema usage from ash migrations,1
+remove the `--puppet` cli flag,1
+change: update source consistency warnings ux,1
+change: align platform to litellm + qdrant closed loop v2,1
+change: add agent projects with remote repositories and template sandboxes,1
+change proposal: personal-lake-ingestion,1
+change: add uploaded courses page,1
+principles alignment,1
+change: [23] update shell provider workflow around an app-owned provider catalog,1
+design decision,1
+new tests (tdd),1
+expected behavior,1
+change: encrypt connection credentials at rest and improve connections list ui,1
+change: add comprehensive api examples,1
+harden path and verdict boundaries,1
+"non-goals (documented, not built)",1
+change: add doctor command,1
+what stays from desktop,1
+lib cleanup,1
+git state,1
+what comes from downloads,1
+learning,1
+adopt delta-based changes for specifications,1
+dependencies & tooling,1
+why not boost.asio?,1
+why this project?,1
+helper libraries (learning focus: integration),1
+learning objectives,1
+why not c++20?,1
+build & development tools,1
+example,1
+scenario: inactive session timeout,1
+proposal: implement multithreaded download manager,1
+renamed requirements,1
+modified requirements,1
+what we're building,1
+requirement: session management,1
+ux bugs,1
+theme bridge (1 file),1
+npm deps to remove,1
+css tokens,1
+what gets added new,1
+cljs build & config (7 files),1
+nativewind stack (5 files),1
+merge strategy,1
+what gets removed (post-merge),1
+post-merge architecture,1
+proposal: adopt pnpm,1
+proposal: add-docs-site,1
+"add a 3d wind-tunnel solver, binding, and stl example",1
+visual polish,1
+critical,1
+proposal: implement aura sphere homing logic,1

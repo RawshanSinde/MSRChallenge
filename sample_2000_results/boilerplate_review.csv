@@ -1,0 +1,123 @@
+line,number_of_repositories,classification
+| risk | likelihood | mitigation |,40,template_formatting
+| area | impact | description |,39,template_formatting
+| risk | mitigation |,5,template_formatting
+- no new dependencies,5,generic_language
+- affected code (expected):,5,template_instruction
+- no breaking changes,4,generic_language
+- no new dependencies required,4,generic_language
+<!-- no existing specs to modify -->,4,template_instruction
+| risk | severity | mitigation |,3,template_formatting
+| risk | impact | mitigation |,3,template_formatting
+- **dependencies**: none added.,3,generic_language
+- no new external dependencies,3,generic_language
+| area | impact |,3,template_formatting
+- **dependencies**: none new.,3,generic_language
+"- **mitigation:** reuse the existing marker-update helper shared with `claude.md`, and add tests that cover files containing custom text before and after the block.",2,project_specific_reuse
+- **risk:** divergence between `openspec/agents.md` and the root file.,2,project_specific_reuse
+- broader restructuring of how templates are stored or loaded.,2,project_specific_reuse
+- adding additional agents-specific prompts or workflows beyond the shared instructions block.,2,project_specific_reuse
+"4. document the new behavior in cli specs and verify marker handling (no duplicates, preserve user content outside the block) with tests for both commands.",2,project_specific_reuse
+- teach `openspec init` to manage a root-level `agents.md` file using the same marker system as `claude.md`.,2,project_specific_reuse
+- keep the existing `openspec/agents.md` template as the canonical source while ensuring assistants that read `agents.md` opt-in instructions get the latest guidance automatically.,2,project_specific_reuse
+- allow `openspec update` to refresh or scaffold that root `agents.md` so agents-compatible tools always receive current instructions.,2,project_specific_reuse
+"1. extend the `openspec init` selection flow with an ""agents.md standard"" option that creates or refreshes a root `agents.md` file wrapped in openspec markers, mirroring the existing claude integration.",2,project_specific_reuse
+"2. when generating the file, pull the managed content from the same template used in `openspec/agents.md`, ensuring both locations stay in sync.",2,project_specific_reuse
+- **mitigation:** source the root file content from the canonical template rather than duplicating strings inline.,2,project_specific_reuse
+- non-interactive flags or bulk configuration for multiple standards in one run.,2,project_specific_reuse
+- add a dedicated css class to the candidate details offcanvas container and apply responsive width rules by breakpoint.,2,project_specific_reuse
+"recruiters use the candidate details offcanvas to review dense interview and application data, but the current fixed width causes cramped layouts and excessive wrapping on tablet and desktop screens. expanding the pane responsively improves readability and efficiency without changing business logic.",2,project_specific_reuse
+- affected code: none (documentation only),2,generic_language
+- no new runtime dependency is expected.,2,generic_language
+- no api changes,2,generic_language
+- **out of scope:**,2,template_formatting
+"- **mitigation:** log creation vs update, and ensure help text references the agents option during `init`.",2,project_specific_reuse
+- **risk:** confusion about when the file is created.,2,project_specific_reuse
+- **risk:** accidentally overwriting user-edited content surrounding the managed block.,2,project_specific_reuse
+- new component stylesheet: `frontend/src/components/candidatedetails.css`,2,project_specific_reuse
+- `delete-interviews`: validate delete interview modal layering over wider candidate details pane.,2,project_specific_reuse
+- frontend component: `frontend/src/components/candidatedetails.js`,2,project_specific_reuse
+- keep mobile behavior full-width while widening tablet and desktop widths using `min()` and `clamp()` constraints.,2,project_specific_reuse
+"- preserve existing offcanvas behavior (placement, close mechanics, focus trap, accessibility semantics, and nested modal behavior).",2,project_specific_reuse
+"- add automated frontend tests that validate class attachment, close behavior, and responsive width expectations.",2,project_specific_reuse
+- `candidate-details-pane-width`: responsive candidate details pane width adapts per viewport while preserving existing interactions.,2,project_specific_reuse
+- affected code: none (documentation-only),2,project_specific_reuse
+- frontend tests: candidate details component tests and cypress candidate pane e2e coverage,2,project_specific_reuse
+"- no backend, api contract, or data model changes",2,project_specific_reuse
+<!-- no existing spec-level requirements are changing -->,2,project_specific_reuse
+- `edit-interview`: validate edit interview modal layering and usability over wider candidate details pane.,2,project_specific_reuse
+"`specs/**/*.md`, and `tasks.md` before implementation starts.",2,project_specific_reuse
+"if scope changes after proposal approval, update `proposal.md`, `design.md`,",2,project_specific_reuse
+- clean separation of concerns,2,generic_language
+- no new runtime dependencies are expected.,2,generic_language
+- affected specs: `specs/cli/spec.md`,2,project_specific_reuse
+_(none — no existing spec-level behavior changes)_,2,template_instruction
+- **no new dependencies**,2,generic_language
+openspec currently assumes command delivery maps directly to command adapters. that assumption does not hold for all tools.,2,project_specific_reuse
+"trae is a concrete example: it invokes openspec workflows via skill entries (for example `/openspec-new-change`) rather than adapter-generated command files. in this model, skills are the command surface.",2,project_specific_reuse
+3. update `openspec update` so it always refreshes the root `agents.md` (creating it if missing) alongside `openspec/agents.md` and any other configured assistants.,2,project_specific_reuse
+"the readme now points teams to agents.md-compatible assistants, but the cli only manages `claude.md`. projects must hand-roll a root `agents.md` file to benefit from the standard, and updates will drift unless maintainers remember to copy content manually. extending `init` and `update` closes that gap so openspec actually delivers on the promise of first-class agents support.",2,project_specific_reuse
+- `delivery=commands` can remove skills,2,project_specific_reuse
+"today, this creates a behavior gap:",2,project_specific_reuse
+- tools without adapters skip command generation,2,project_specific_reuse
+- result: selected tools like trae can end up with no invocable workflow artifacts,2,project_specific_reuse
+- `adapter`: command files are generated through a command adapter,2,project_specific_reuse
+- `skills-invocable`: skills are directly invocable as commands,2,project_specific_reuse
+this is more than a prompt ux issue because non-interactive and ci flows bypass interactive guidance. we need a capability-aware model in core generation logic.,2,project_specific_reuse
+add an optional field in tool metadata to describe how a tool exposes commands:,2,project_specific_reuse
+capability values use kebab-case string tokens for consistency with serialized metadata conventions.,2,project_specific_reuse
+- trae -> `skills-invocable`,2,project_specific_reuse
+update `init` and `update` to compute effective artifact actions per tool from:,2,project_specific_reuse
+- global delivery (`both | skills | commands`),2,project_specific_reuse
+- tool command surface capability,2,project_specific_reuse
+- generate skills for all tools with `skillsdir` (including `skills-invocable`),2,project_specific_reuse
+- `none`: no openspec command surface,2,project_specific_reuse
+field should be optional. default behavior is inferred from adapter registry presence: tools with a registered adapter resolve to `adapter`; tools with no adapter registration and no explicit annotation resolve to `none`.,2,project_specific_reuse
+- remove adapter-generated command files,2,project_specific_reuse
+"- `adapter`: generate commands, remove skills",2,project_specific_reuse
+- `skills-invocable`: generate (or keep if up-to-date) skills as command surface; do not remove them,2,project_specific_reuse
+- `none`: fail fast with clear error,2,project_specific_reuse
+"before writing/removing artifacts, validate selected/configured tools against delivery mode:",2,project_specific_reuse
+- interactive flow: show clear compatibility note before confirmation,2,project_specific_reuse
+- non-interactive flow: fail with deterministic error listing incompatible tools and supported alternatives,2,project_specific_reuse
+"update summaries to show effective delivery outcomes per tool (for example, when commands mode still installs skills for skills-invocable tools).",2,project_specific_reuse
+- document capability model and trae behavior under delivery modes,2,project_specific_reuse
+- ensure cli docs and supported-tools docs reflect effective behavior,2,project_specific_reuse
+- add test coverage for:,2,project_specific_reuse
+- `init --tools trae` with `delivery=commands`,2,project_specific_reuse
+- `update` with trae configured under `delivery=commands`,2,project_specific_reuse
+- mixed selections (`claude + trae`) across all delivery modes,2,project_specific_reuse
+- generate command files only for `adapter` tools,2,project_specific_reuse
+- `none`: no artifact action; may emit compatibility warning,2,project_specific_reuse
+"when combined with `add-global-install-scope`, init/update planning must compose:",2,project_specific_reuse
+- explicit error path for tools with no command surface under `delivery=commands`,2,project_specific_reuse
+- install scope (`global | project`),2,project_specific_reuse
+- delivery mode (`both | skills | commands`),2,project_specific_reuse
+"- `tool-command-surface`: capability model that classifies tools as `adapter`, `skills-invocable`, or `none` to drive delivery behavior",2,project_specific_reuse
+- `cli-init`: delivery handling becomes tool-capability-aware with preflight compatibility validation,2,project_specific_reuse
+- command surface capability (`adapter | skills-invocable | none`),2,project_specific_reuse
+implementation tests should cover mixed-tool matrices to ensure deterministic behavior when both changes are active.,2,project_specific_reuse
+- `src/core/config.ts` - add optional command-surface metadata and trae override,2,project_specific_reuse
+- `src/core/command-generation/registry.ts` (or shared helper) - capability inference from adapter presence,2,project_specific_reuse
+- `src/core/init.ts` - capability-aware generation/removal planning + compatibility validation + summary messaging,2,project_specific_reuse
+- `src/core/update.ts` - capability-aware sync/removal planning + compatibility validation + summary messaging,2,project_specific_reuse
+"- `src/core/shared/tool-detection.ts` - include capability-aware detection so `skills-invocable` tools remain detectable under `delivery=commands`, and `none` tools are excluded from command-surface artifact detection",2,project_specific_reuse
+- `docs/supported-tools.md` and `docs/cli.md` - document delivery behavior and compatibility notes,2,project_specific_reuse
+- `cli-update`: delivery sync becomes tool-capability-aware with consistent compatibility validation and messaging,2,project_specific_reuse
+- `supported-tools-docs`: documents command-surface semantics for non-adapter tools,2,project_specific_reuse
+"- this change is intended to stack safely with `simplify-skill-installation` by introducing additive, capability-specific requirements for init/update.",2,project_specific_reuse
+- `test/core/init.test.ts` and `test/core/update.test.ts` - add coverage for skills-invocable behavior and mixed-tool delivery scenarios,2,project_specific_reuse
+"- if `add-global-install-scope` merges first, this change should be rebased to compose capability-aware behavior on top of scope-resolved path decisions from that change.",2,project_specific_reuse
+"- if `simplify-skill-installation` merges first, this change should be rebased and keep the capability-aware rule as the source of truth for `delivery=commands` behavior on `skills-invocable` tools.",2,project_specific_reuse
+"- if this change merges first, `add-global-install-scope` should be rebased to preserve section 5 composition rules (`install scope` + `delivery mode` + `command surface capability`) without overriding capability-aware command-surface outcomes.",2,project_specific_reuse
+- edge cases considered:,2,project_specific_reuse
+- dependencies and systems:,2,project_specific_reuse
+"- if this change merges first, the `simplify-skill-installation` branch should be rebased to avoid re-introducing a global ""commands-only means no skills for all tools"" assumption.",2,project_specific_reuse
+- affected specs: `web-ui`,2,project_specific_reuse
+- no new dependencies.,2,project_specific_reuse
+| risk | likelihood | impact | mitigation |,2,template_formatting
+| file | change |,2,template_formatting
+- **breaking changes**: none,2,generic_language
+<!-- no existing spec-level requirement changes -->,2,template_instruction
+- 关联 binding: `binding.md`,2,project_specific_reuse
+- 已确认标准页 / 项目页 / 回写目标：,2,project_specific_reuse
