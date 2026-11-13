@@ -108,6 +108,19 @@ python scripts/tfidf_spec_files.py \
   --output tfidf_spec_files_random_150.csv
 ```
 
+To take a larger proportional sample across all `spec_tool` groups:
+
+```bash
+python scripts/tfidf_spec_files.py \
+  --stratified-sample 600 \
+  --random-state 42 \
+  --language en \
+  --output tfidf_spec_files_stratified_600.csv
+```
+
+TF-IDF removes English stopwords plus common specification boilerplate and
+file-format tokens such as `shall`, `must`, `md`, `ts`, and `json`.
+
 To compare the saved row-range runs:
 
 ```bash

@@ -4,13 +4,14 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import gzip
 import json
 import random
 from pathlib import Path
 
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, TfidfVectorizer
 
 
 METADATA_COLUMNS = [
@@ -21,6 +22,38 @@ METADATA_COLUMNS = [
     "spec_tool",
     "spec_role",
 ]
+
+DOMAIN_STOPWORDS = {
+    "shall",
+    "must",
+    "should",
+    "may",
+    "given",
+    "when",
+    "then",
+    "following",
+    "requirement",
+    "requirements",
+    "spec",
+    "specification",
+    "specifications",
+    "file",
+    "files",
+    "fr",
+    "md",
+    "ts",
+    "js",
+    "jsx",
+    "tsx",
+    "py",
+    "json",
+    "yaml",
+    "yml",
+    "xml",
+    "html",
+    "css",
+    "sql",
+}
 
 
 def load_rows(path: Path, start_row: int, end_row: int) -> pd.DataFrame:
@@ -52,6 +85,145 @@ def load_rows(path: Path, start_row: int, end_row: int) -> pd.DataFrame:
         0,
         "source_row_number",
         range(start_row, start_row + len(metadata)),
+    )
+    return metadata
+
+
+def iter_metadata_records(path: Path):
+    source_row_number = 0
+
+    if path.suffix == ".parquet":
+        import pyarrow.parquet as parquet
+
+        parquet_file = parquet.ParquetFile(path)
+        batches = parquet_file.iter_batches(
+            batch_size=10_000,
+            columns=METADATA_COLUMNS,
+        )
+        for batch in batches:
+            metadata = batch.to_pandas()
+            for values in metadata.itertuples(index=False, name=None):
+                source_row_number += 1
+                yield source_row_number, dict(zip(METADATA_COLUMNS, values))
+        return
+
+    for metadata in pd.read_csv(
+        path,
+        compression="infer",
+        usecols=METADATA_COLUMNS,
+        chunksize=10_000,
+    ):
+        for values in metadata.itertuples(index=False, name=None):
+            source_row_number += 1
+            yield source_row_number, dict(zip(METADATA_COLUMNS, values))
+
+
+def allocate_stratified_counts(
+    strata_counts: Counter[str],
+    sample_size: int,
+) -> dict[str, int]:
+    total_rows = sum(strata_counts.values())
+    if sample_size > total_rows:
+        raise ValueError(
+            f"Requested {sample_size} rows, but the table has only {total_rows} rows"
+        )
+
+    strata = sorted(strata_counts)
+    if sample_size < len(strata):
+        selected_strata = sorted(
+            strata,
+            key=lambda stratum: strata_counts[stratum],
+            reverse=True,
+        )[:sample_size]
+        return {
+            stratum: 1 if stratum in selected_strata else 0
+            for stratum in strata
+        }
+
+    targets = {stratum: 0 for stratum in strata}
+    targets = {stratum: 1 for stratum in strata}
+
+    remaining = sample_size - sum(targets.values())
+    if remaining <= 0:
+        return targets
+
+    capacities = {
+        stratum: strata_counts[stratum] - targets[stratum]
+        for stratum in strata
+    }
+    capacity_total = sum(capacities.values())
+    raw_allocations = {
+        stratum: remaining * capacities[stratum] / capacity_total
+        for stratum in strata
+    }
+
+    for stratum in strata:
+        targets[stratum] += min(
+            capacities[stratum], int(raw_allocations[stratum])
+        )
+
+    remaining = sample_size - sum(targets.values())
+    remainders = sorted(
+        strata,
+        key=lambda stratum: raw_allocations[stratum]
+        - int(raw_allocations[stratum]),
+        reverse=True,
+    )
+    for stratum in remainders:
+        if remaining == 0:
+            break
+        if targets[stratum] < strata_counts[stratum]:
+            targets[stratum] += 1
+            remaining -= 1
+
+    return targets
+
+
+def load_stratified_rows(
+    path: Path,
+    sample_size: int,
+    random_state: int,
+) -> pd.DataFrame:
+    strata_counts: Counter[str] = Counter()
+    for _, record in iter_metadata_records(path):
+        stratum = record["spec_tool"] or "unknown"
+        strata_counts[str(stratum)] += 1
+
+    target_counts = allocate_stratified_counts(strata_counts, sample_size)
+    generator = random.Random(random_state)
+    reservoirs: dict[str, list[tuple[int, dict[str, object]]]] = {
+        stratum: [] for stratum in target_counts
+    }
+    seen_counts: Counter[str] = Counter()
+
+    for source_row_number, record in iter_metadata_records(path):
+        stratum = str(record["spec_tool"] or "unknown")
+        seen_counts[stratum] += 1
+        reservoir = reservoirs[stratum]
+        target_count = target_counts[stratum]
+
+        if len(reservoir) < target_count:
+            reservoir.append((source_row_number, record))
+            continue
+
+        replacement_index = generator.randrange(seen_counts[stratum])
+        if replacement_index < target_count:
+            reservoir[replacement_index] = (source_row_number, record)
+
+    selected_rows = [
+        (source_row_number, record)
+        for reservoir in reservoirs.values()
+        for source_row_number, record in reservoir
+    ]
+    selected_rows.sort(key=lambda item: item[0])
+    metadata = pd.DataFrame(
+        [record for _, record in selected_rows],
+        columns=METADATA_COLUMNS,
+    )
+    metadata.insert(
+        0,
+        "source_row_number",
+        [source_row_number for source_row_number, _ in selected_rows],
     )
     return metadata
 
@@ -207,7 +379,7 @@ def build_output(
     vectorizer = TfidfVectorizer(
         lowercase=True,
         strip_accents="unicode",
-        stop_words="english",
+        stop_words=sorted(set(ENGLISH_STOP_WORDS) | DOMAIN_STOPWORDS),
         ngram_range=(1, 2),
         max_features=max_features,
     )
@@ -254,7 +426,7 @@ def build_output(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Compute top TF-IDF terms for a range of spec_files rows "
+            "Compute top TF-IDF terms for spec_files rows or samples "
             "using their text from specs.jsonl.gz."
         )
     )
@@ -288,11 +460,18 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="last 1-based spec_files row to analyze, inclusive",
     )
-    parser.add_argument(
+    sampling_group = parser.add_mutually_exclusive_group()
+    sampling_group.add_argument(
         "--random-sample",
         type=int,
         default=None,
         help="randomly select this many rows from the full table",
+    )
+    sampling_group.add_argument(
+        "--stratified-sample",
+        type=int,
+        default=None,
+        help="sample this many rows proportionally across spec_tool groups",
     )
     parser.add_argument(
         "--random-state",
@@ -345,10 +524,15 @@ def parse_args() -> argparse.Namespace:
         parser.error("--end-row must be greater than or equal to --start-row")
     if arguments.random_sample is not None and arguments.random_sample < 1:
         parser.error("--random-sample must be at least 1")
-    if arguments.random_sample is not None and (
+    if arguments.stratified_sample is not None and arguments.stratified_sample < 1:
+        parser.error("--stratified-sample must be at least 1")
+    if (
+        arguments.random_sample is not None
+        or arguments.stratified_sample is not None
+    ) and (
         arguments.start_row != 1 or arguments.end_row is not None
     ):
-        parser.error("--random-sample cannot be combined with a row range")
+        parser.error("sampling cannot be combined with a row range")
     if arguments.top_n < 1:
         parser.error("--top-n must be at least 1")
     if not 0 <= arguments.min_language_probability <= 1:
@@ -378,6 +562,12 @@ def main() -> None:
         metadata = load_random_rows(
             arguments.spec_files,
             arguments.random_sample,
+            arguments.random_state,
+        )
+    elif arguments.stratified_sample is not None:
+        metadata = load_stratified_rows(
+            arguments.spec_files,
+            arguments.stratified_sample,
             arguments.random_state,
         )
     else:
