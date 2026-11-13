@@ -1,0 +1,3640 @@
+spec_tool,count,file_first_commit_message
+adhoc_other,389,"desloppify: wontfix orphaned entry points and false-positive unused imports
+
+Wontfixed 354 issues as intentional demo repo patterns:
+- 44 orphaned run.sh files: standalone entry point scripts by design
+- 4 orphaned standalone scripts (run_all.sh, status_dashboard.sh, Shell/*.sh)
+- 310 false-positive ""unused import"" findings: shell CLI args misidentified
+
+Also resolved stale api_surface_coherence review issue (case-insensitive
+SPECIFIC_LANG fix already committed in d4c50f9).
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+adhoc_other,341,"feat(insur): §140 · per-dept × per-technique use case matrix · 342 cells · 4 REAL ref models
+
+Operator brief: ""every department must have some usecase · use all must""
+
+THE MATRIX (mandatory per §140):
+  19 departments × 18 techniques = 342 cells
+  Each cell carries: spec.md + script.py + dataset_ref.json + metrics.json
+                     + drill.py + manifest.json
+
+  Files generated: 2,053 (342 cells × 6 files + 1 matrix_index.json)
+
+DEPARTMENTS (19 mandatory per §63):
+  marketing · hr · sales · finance · operations · legal · procurement ·
+  customer-support · engineering · security-operations · supply-chain ·
+  it-operations · claims · underwriting · policy-admin · distribution ·
+  customer-experience · fraud-investigation · actuarial
+
+TECHNIQUES (18 mandatory per §140.3):
+  CV: segmentation · detection · classification
+  NLP: general · transformer · roberta
+  DL: pytorch · rnn-lstm
+  TS: time-series
+  Gen: gan · vae
+  RL: reinforcement-learning · rlhf
+  Ops: hitl-workflow · autoreview · tool-search
+  ML: small-data-fewshot
+  Sim: fable-5 (awaiting clarification per §57.7)
+
+IMPL LEVEL DISTRIBUTION:
+  spec_only:              158 cells  (cross-cutting · honest scaffold)
+  scaffold:               108 cells  (Stage-1 adapter wired)
+  real_trained_reference:  76 cells  (4 techniques × 19 depts)
+
+4 REFERENCE MODELS TRAINED on REAL DATA:
+  · time-series · Ridge AR(7) · MAE 27.27 · MAPE 15.61% (hourly invocation count)
+  · rnn-lstm    · 2-layer LSTM hidden=16 · MAE 28.16 (torch · 40 epochs)
+  · vae         · VAE(d_z=3, d_h=16) · P95 2.1349 · P99 7.4886 (5-feat real)
+  · gan         · Vanilla GAN(2-feat) · d_loss 1.41 · g_loss 0.74 (real → synth)
+
+  Each REAL data from agent_invocation PostgreSQL (7,767 rows).
+
+2 REFERENCE MODELS FAILED (honest report per §57.7):
+  · transformer · DistilBERT · failed due to protobuf/tf version conflict
+  · reinforcement-learning · PPO · same protobuf/tf conflict
+  Will retry after `pip install --upgrade protobuf` resolution.
+
+BACKEND ENDPOINTS (LIVE on 8001):
+  GET  /api/v1/use-case-matrix/health         (n_cells: 342)
+  GET  /api/v1/use-case-matrix/overview       (full matrix index)
+  GET  /api/v1/use-case-matrix/cell/<d>/<t>   (per-cell detail w/ ref model metrics)
+  GET  /api/v1/use-case-matrix/by-dept/<d>    (all 18 techs for one dept)
+  GET  /api/v1/use-case-matrix/by-technique/<t> (all 19 depts for one tech)
+  GET  /api/v1/use-case-matrix/score-card     (§122 11-dim brutal score: 0.7948 · TOP_25_PCT)
+
+§122 SCORE: 0.7948 · BAND: TOP_25_PCT
+  coverage:              0.538  ▼ (real+scaffold) / total · gap = spec_only cross-cutting cells
+  real_trained:          0.222  ▼ only 4 of 18 techs have ref · transformer+RL pending
+  scaffolded:            0.316
+  depts_present:         1.000  ✓ all 19
+  techs_present:         1.000  ✓ all 18 (incl. fable-5 awaiting clarification)
+  honest_reporting:      1.000  ✓ §57.7 enforced
+  reference_models:      0.667  ▼ 4 of 6 attempted
+  spec_md_present:       1.000  ✓
+  drill_present:         1.000  ✓
+  manifest_present:      1.000  ✓
+  dataset_ref_present:   1.000  ✓
+
+PER §140 (NEW MANDATORY POLICY):
+  · 19 depts × 18 techs = 342 use cases per project · NON-NEGOTIABLE
+  · Each cell: spec + script + dataset_ref + metrics + drill + manifest
+  · impl_level: spec_only → scaffold → tiny_demo → real_trained → production
+  · Honest §57.7 declaration on every cell (no fabrication)
+  · Fable 5 cells emit `awaiting_clarification: true` until operator clarifies
+
+POLICY FILE: ~/.claude/policies/department-technique-use-case-matrix.md
+
+VERIFICATION (run yourself):
+  ls data/use_case_matrix/ | wc -l                  # 19 dept dirs (+ matrix_index.json)
+  find data/use_case_matrix -type f | wc -l         # 2053 files
+  ls models/refs/                                    # 4 ref models + summary.json
+  curl http://localhost:8001/api/v1/use-case-matrix/health
+  curl http://localhost:8001/api/v1/use-case-matrix/cell/claims/vae
+
+HONEST CAVEATS (per §57.7):
+  · 158/342 cells (46%) are 'spec_only' · cross-cutting techniques on depts
+    that don't naturally use them · honest stub, not fabricated metrics
+  · 4 of 6 reference models trained · 2 blocked by environmental issue
+    (protobuf/tf conflict · documented · retry path clear)
+  · Reference models are SHARED across all 19 depts that use that technique ·
+    a real per-dept fine-tune is the next 'real_trained' (dept-specific) elevation
+  · Fable 5 awaits operator clarification · 19 cells marked awaiting_clarification
+
+COMPOSES WITH:
+  §38.3 (audit) · §43 (drill ≥3 neg) · §47 (architecture) · §51 (substrate) ·
+  §57.7 (honest scaffold MANDATORY) · §63 (19-dept canonical) ·
+  §122 (brutal feedback · 0.7948) · §131 (200 AI types) · §133 (14-field) ·
+  §134 (master plan) · §138 (18 artifacts/AI type) · §139 (Odysseus reference) ·
+  §140 (THIS NEW POLICY · 342 cells/project)
+
+FORENSIC SUBSTRATE (§51)
+  Date:         2026-06-11 19:34 MDT (America/Edmonton)
+  Location:     praveen-dev-linux-x86_64 (/mnt/deepa/insur_project)
+  Approach:     autonomous-loop · operator approved 'use all must'
+  Policies:     §140 (NEW) · §38.3 · §43 · §51 · §54 · §57.7 · §63 · §107 ·
+                §122 · §131 · §133 · §138 · §139
+  Verification: 19 depts × 18 techs = 342 cells on disk ✓
+                4/6 reference models trained on REAL data ✓
+                score 0.7948 · TOP_25_PCT (gap = transformer+RL pending)
+                live endpoint smoke: claims/vae returns real_trained_reference
+                  + ref_model_path · P95=2.13 (anomaly threshold) ✓
+  Push:         NOT pushed · operator gates remote ops per §42"
+adhoc_other,313,chore: snapshot current project state
+adhoc_other,309,"Migrate all 366 legacy specs into Plan/<state>/ folders (Spec 357)
+
+Complete the deferred physical-folder migration from Spec 357 (""Still —
+physical folder move""): every legacy flat Plan/NNN-slug/ spec now lives under
+its lifecycle-state folder (draft/open/inprogress/superseded/done), with a
+matching `state:` frontmatter field and all intra-repo references re-anchored.
+
+State per spec was determined by EVIDENCE, not the stale `status:` field:
+12 CodeGraph-verification passes confirmed whether each spec's claimed
+deliverables actually exist as symbols/capabilities in the indexed codebase.
+This corrected ~234 specs mislabelled `status: draft` and caught ""shipped""
+prose that referred to predecessor specs rather than the spec itself.
+
+Final distribution: done 105 · inprogress 111 · draft 142 · superseded 8.
+
+Also fixes workflow.index: strip a leading Spec-292 `<!-- agency-node -->`
+anchor before parsing frontmatter, so anchored specs no longer false-flag as
+`missing-state` (8 loop specs). check-drift spec-state gate green; ADR /
+workflow / spec-state / document acceptance suites green (98 passed).
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01SARyHLF4VAkNR8tyuAcqQw"
+adhoc_other,265,first commit
+adhoc_other,248,"docs: auto-generate missing module documentation repo-wide
+
+- Ensured README.md, SPEC.md, and AGENTS.md exist at all folder levels
+- Generated 951 missing documentation files utilizing automated python scripts
+- Enforced documentation alignment with 'Zero-Mock' architecture and functional requirements
+- Fixed pytest module aliasing bug in test_i18n.py for 100% test pass recovery"
+adhoc_other,160,"Relocate cortex-command artifacts under cortex/ umbrella (#202)
+
+Major version v1.0.0. Single atomic git mv of lifecycle/, research/, backlog/, requirements/, retros/, debug/, lifecycle.config.md under cortex/. Path rebases for runtime code, hooks, dashboard, parity gates, tests, init scaffold templates, and the check_symlink_safety target.
+
+DR-5/7/8/9 of the relocation spec.
+
+Post-merge operator actions:
+- /plugin update cortex-core
+- /plugin update cortex-overnight
+- uv tool install --reinstall git+https://github.com/charleshall888/cortex-command.git@v1.0.0
+
+See cortex/lifecycle/relocate-cortex-command-artifacts-under-cortex-root/ for the full 19-task plan, decision records, and review."
+adhoc_other,160,"chore(measure): create 3 new tracks (legacy_test_audit, typescript_strictness, webtorrent_addon_resolution)"
+adhoc_other,155,"chore: apply date-bucket archive migration (0.24.0 → 0.32.1)
+
+Migrate flat archive entries from archive/{name}/ to date-bucketed
+archive/yyyy/mm/{name}/ structure. Applied by /fab-setup migrations."
+adhoc_other,144,Add sanitized public benchmark copies
+adhoc_other,144,init
+adhoc_other,134,"fix(tests): add collection-time skip guards to all api test files
+
+18 test files in tests/unit/api/, tests/unit/api_documentation/,
+tests/unit/api_standardization/, tests/unit/deployment/ were
+erroring at collection time when 'uv sync --extra api' is absent.
+
+Fixed by wrapping top-level codomyrmex.api imports in:
+  try: ... except ImportError: pytest.skip(allow_module_level=True)
+
+This converts collection ERRORs to clean SKIPs. 21970 tests now
+collect with zero errors.
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+adhoc_other,127,"feat: merge planning tooling, fix seasonal banner, update silver logo
+
+- Merge planning factory files into production (features/, docs/design/,
+  .claude/roles/, scripts/, specs/, SpecKit commands)
+- Update CLAUDE.md with planning factory section
+- Fix CountdownBanner: add Oct 31-Dec 31 seasonal window so it hides
+  after New Year instead of rolling forward perpetually
+- Add escalating price table ($321 → $987.65/yr over 2024-2030)
+- Restore silver gear as spinning logo element, bump bracket sizing
+  to 56% and mallet to 58% for better visual balance
+- Update CountdownBanner tests with date mocking for seasonal logic
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+adhoc_other,119,"Sync release artifacts: paper/submitted_version, dataset, harness, graders, results
+
+Single squash of the release branch onto main for the public release snapshot.
+
+paper/submitted_version/
+- neurips_2026.tex, neurips_2026.sty, references.bib, checklist.tex
+- imgs/ (figures used in the paper)
+- croissant.json (Croissant 1.1 + RAI extension; validates clean via mlcroissant CLI)
+- dataset_README.md (Hugging Face dataset card)
+
+paper/EXPERIMENT_FACTSHEET.md
+- Authoritative paths for the LB90 leaderboard, role-mixing 27-config grid,
+  role-enforcement ablation, and human pilot. Use this to re-derive every
+  numeric claim in the paper.
+
+shared/teambench_dataset.json
+- Canonical 931-instance listing with task_id, title, category, difficulty,
+  has_generator, ablation_scores, tni, classification.
+
+shared/paper/teambench_rai_metadata.json
+- Source of truth for the Croissant RAI extension fields.
+
+shared/paper/contamination_validation.json + table_contamination.tex
+- Refreshed contamination audit results.
+
+experiments/role_enforcement_ablation/
+- 05_analyze.py wired up; gpt_5_4_mini prompt-only results consolidated.
+
+generators/
+- gen_cross1, gen_dist1/2/3, real_data_base parameterization fixes.
+- New ds*, db*, devops*, gh*, ml*, rds*, ts*, perf, ir, etc. generators
+  brought in from the broader scrape.
+
+harness/
+- run_all, ablation, batch_runner, schemas, human_baseline, gemini_adapter,
+  anthropic_adapter, openai_adapter, adapters/__init__ refreshed for the
+  camera-ready evaluation runs.
+- New helpers: compute_controlled_runner, cross_model_evaluator,
+  failure_analysis, state_manager, team_score.
+
+scripts/run_all_opensource_100_ablation.sh
+- LB100 sweep driver.
+
+tasks/<TASK_ID>/grade.sh
+- 56 grader hardening fixes flagged during the verifier audit.
+- D6_data_reconcile/workspace/reconcile.py updated.
+- RDS10/RDS13 check_solution.py updated.
+
+Removes superseded paper drafts (paper/neurips2025/, paper/paper.tex,
+paper/references.bib)."
+adhoc_other,117,"feat(monorepo): scaffold pnpm+turborepo monorepo and migrate advantage-games
+
+- Set up pnpm workspace with Turborepo pipeline (build, lint, test, dev)
+- Create shared packages: @reading-advantage/config (ESLint/TS/Tailwind), @reading-advantage/utils (cn, hooks), @reading-advantage/ui (Button, Card, Dialog, Input, Tabs)
+- Migrate advantage-games as vocabulary-games into apps/ directory with workspace deps
+- Add CI workflow (.github/workflows/ci.yml) for build/lint/test
+- Write README with setup instructions
+- Complete all 28 track tasks; mark monorepo-scaffold track as complete
+
+Known tech debt: Difficulty type mismatches, ESLint warnings, Tailwind v3/v4 config mismatch (tracked in measure/tech-debt.md)"
+adhoc_other,101,"feat: Add profiling and watch features in Favnir v9.9.0
+
+- Implemented `fav profile` to automatically insert profiling code for stage calls, allowing users to view execution time tables.
+- Added `fav watch` functionality to monitor file changes and automatically re-run the specified commands.
+- Introduced new primitives in `vm.rs` for profiling and file modification time retrieval.
+- Enhanced `compiler.fav` to support profiling instrumentation and compilation of profiled source code.
+- Updated `driver.rs` and `cli.fav` to handle new commands and integrate profiling and watch functionalities.
+- Completed extensive testing to ensure stability and performance without overhead in normal builds."
+conductor,217,conductor(setup): Add conductor setup files
+conductor,118,Initial APFS-RS repository snapshot
+docs_embedded,195,first commit
+docs_embedded,117,init
+docs_embedded,106,"fix(convention): standardize get_logger imports to public API across 428 files
+
+Replace 'from codomyrmex.logging_monitoring.core.logger_config import'
+with 'from codomyrmex.logging_monitoring import' everywhere in src/.
+Both export the same symbols; public API is the stable interface.
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+docs_embedded,101,(*) rename readme to specs
+opencode,494,"refactor(026): stage 2 — 46 folder moves, 17 phases into 7 themed parents
+
+Context: Structural reorganization of 026 per rename-plan.json. Consolidates
+17 flat top-level phases into 7 themed parents (000-006) with clean renumber.
+Internal metadata path/status refresh happens in stage 5 (regeneration).
+
+Changes:
+- 7 themed parents: 000-release-and-program-cleanup, 001-research-and-baseline,
+  002-spec-kit-internals, 003-memory-and-causal-runtime, 004-code-graph,
+  005-graph-impact-and-affordance, 006-operator-tooling
+- 004-code-graph: 22 children regrouped into 4 sub-wrappers + 2 kept nested parents
+- 004-external-project-adoption dissolved: 8 children split across 000/005,
+  shell archived to z_archive/wave-4-2026-05-26-reorg/
+- All 8987 file moves are history-preserving renames (verified R-status)
+
+Refs: system-spec-kit/026-graph-and-context-optimization/017-phase-reorg-and-renumber
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
+opencode,203,"chore: parallel-track sync — z_archive reorganization + misc updates
+
+Sweeps 6,430 worktree changes into main. Mostly parallel-track work
+that landed in the worktree during the multi-day template-greenfield
+session and the subsequent fleet cleanup runs (007 + 008).
+
+Breakdown:
+- ~5,860 renames: skilled-agent-orchestration packets moved to z_archive
+  (and re-organized within z_archive subtrees) by parallel-track agent
+- ~490 deletions: stale artifacts from the same reorg
+- ~50 adds: new files from misc parallel work
+- ~20 modifications: scattered docs touched by other tracks
+
+This is intentional sweep-up of state that was running in parallel
+while the 010-template-levels phase parent's 8 children landed. Per
+memory feedback_worktree_cleanliness_not_a_blocker, the user runs
+multiple tracks concurrently and explicitly requested this sweep.
+
+No secrets, no large binaries, no spec-kit production code touched
+outside what landed in the named feature commits earlier in this
+session.
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
+opencode,132,"rename: sk-code-- to sk-code- (double-dash to single-dash)
+
+Rename all 4 code quality skill folders and their 4 changelog
+folders from double-dash to single-dash naming convention, and
+update all ~414 files with text references across all runtimes.
+
+Folders renamed:
+- sk-code--full-stack → sk-code-full-stack
+- sk-code--opencode → sk-code-opencode
+- sk-code--review → sk-code-review
+- sk-code--web → sk-code-web
+- 06--sk-code--opencode → 06--sk-code-opencode (+ 3 more changelogs)
+
+Updated across: agent definitions (5 runtimes), skill_advisor.py,
+SKILL.md/README.md files, root docs, install guides, command YAMLs,
+related skills, changelogs, and historic spec folders.
+
+Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+opencode,121,"refactor(027): group 30 flat phases into six themed tracks
+
+Collapse the flat top-level phase list (000-030) into six themed parent tracks (release-cleanup, research-and-doctrine, memory-store-and-search, advisor-and-codegraph, shared-infrastructure, verification-and-remediation), modeled on 026. All 30 prior phases moved history-preserving and renumbered contiguously within each parent; identity metadata re-derived; root tracking docs (spec.md map, graph-metadata, description, before-vs-after, context-index, changelog README, timeline) realigned. Adds 000-release-cleanup/000-spec-tree-consolidation documenting the regroup. Frozen research logs retain old paths by design; context-index.md is the OLD->NEW bridge.
+
+Verified: validate.sh --recursive 0/0; bidirectional graph-metadata consistency clean; @review 100/100; gpt-5.5 independent audit (lone FAIL refuted as a template-comment false positive).
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+opencode,119,"chore(027): land full working-tree snapshot (operator-directed catch-all)
+
+Lands everything pending across the active sessions, minus runtime junk
+(score-cache, scorer/cache, daemon owner/crash/checkpoint state, the deep-review
+lock): new spec trees (149 fable-5 + children, 028 memory-search, 150/151
+reviews), ~319 regenerated graph-metadata.json, the in-flight skill-advisor
+refactor + fable-mode tooling, and assorted constitutional/scripts/docs.
+
+Committed as a snapshot at operator direction; the in-flight advisor refactor
+was not independently verified here.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+opencode,115,"chore(specs): checkpoint cross-session spec changes
+
+Bulk checkpoint of all uncommitted changes under .opencode/specs/ across active sessions, per operator direct-push directive on protected main. Scoped to specs/ only (skills, config, CI excluded); includes concurrent-session metadata regens and runtime-state file deletions.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+openspec,1394,init
+openspec,887,openspec: sync specs and archive completed changes
+openspec,850,first commit
+openspec,659,chore: archive completed openspec changes
+openspec,457,Archive completed OpenSpec changes
+openspec,440,docs: prepare direct-grid forcing change
+openspec,426,chore: archive stale openspec proposals
+openspec,357,commits compact
+openspec,318,"chore: archive completed openspec changes
+
+archive completed changes older than one week into openspec/changes/archive
+
+apply spec updates where possible and fall back to --skip-specs for drifted historical deltas
+
+revalidate openspec state after archiving"
+openspec,307,chore(openspec): archive completed changes
+openspec,305,"Initial public release
+
+KAINE (Kaine Autonomous Intelligent Networked Entity) — a reference
+implementation of a predictive global neuronal workspace for a continuously
+running synthetic mind: sixteen modules (fourteen predictive cognitive modules
+plus a two-module embodiment layer that ships inactive) integrated through a
+shared workspace, with architecture-level safety and a falsifiability-first
+evaluation framework. Runs fully local on consumer hardware.
+
+Paper: https://github.com/kaineone/predictive-workspace-paper
+License: Cognitive Architecture License (see LICENSE.md / NOTICE)."
+openspec,296,"Rewrite to modular monolith + UI (#60)
+
+* WIP
+
+* WIP
+
+* WIP
+
+* WIP
+
+* CreateTeam
+
+* WIP
+
+* WIP
+
+* WIP
+
+* Fix build and tests
+
+* Add more guardrails for implementation
+
+* feat: implement FEAT-005 Coupon Management
+
+Add coupon CRUD operations to the Registrations module enabling
+organizers to create, list, view, and revoke single-use invitation
+coupon codes for ticketed events.
+
+Domain:
+- Coupon aggregate root with Create/Revoke lifecycle
+- CouponId, CouponStatus, CouponCode, TicketTypeInfo value objects
+- TicketTypeId in Shared.Kernel for cross-module identity
+- CouponCreatedDomainEvent for outbox-based invitation emails
+
+Use Cases (4 vertical slices):
+- CreateCoupon: validates ticket types, expiry, generates unique code
+- ListCoupons: returns coupon summaries with computed status
+- GetCouponDetails: returns full coupon details including code
+- RevokeCoupon: idempotent revocation, rejects redeemed coupons
+
+Infrastructure:
+- CouponEntityConfiguration with PrimitiveCollection for ticket type IDs
+- RegistrationsDbContext, DI, and module endpoint wiring
+- RegistrationsMessagePolicy maps domain event to module event
+- IsCancelled added to TicketTypeDto (forward-compatible)
+- IsEventActiveAsync added to IOrganizationFacade (stub for FEAT-003)
+
+Tests:
+- 13 domain tests covering all 12 acceptance scenarios (SC-001 to SC-012)
+- CouponBuilder with fluent API for test setup
+- CreateCouponHandlerTests for handler-level SC-006
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* docs: standardize error placement pattern and add feature-implementer agent
+
+Error handling:
+- Expand arc42 section 8.6 with three-tier error placement pattern:
+  shared helpers (public, kernel), entity-nested (internal, domain),
+  handler-local (internal, application)
+- Extend InternalsVisibleTo to cover *.Domain.Tests projects
+- Update feature-coder, feature-reviewer, feature-tester agents to
+  reference section 8.6 for error placement rules
+
+Agent:
+- Add feature-implementer agent that orchestrates coder, tester, and
+  reviewer agents in a 5-phase workflow with review-fix loop
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* chore: remove dead Coupon value object and refine coder agent
+
+Remove commented-out Domain/ValueObjects/Coupon.cs — superseded by
+the Coupon aggregate root in Domain/Entities/Coupon.cs (FEAT-005).
+
+Add two guidance lines to feature-coder agent:
+- Reference crosscutting concepts in arc42 chapter 8
+- Require XML summaries on public types and handlers
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* test: add FEAT-005 handler integration tests and document test patterns
+
+- Add 15 Aspire-backed integration tests across all 4 coupon handlers
+  (CreateCoupon, ListCoupons, GetCouponDetails, RevokeCoupon)
+- Move CreateCouponHandlerTests from Domain.Tests to Registrations.Tests
+- Fix RegistrationsDbContext: add ConfigureConventions with shared
+  value converters (EmailAddress, DisplayName, Slug, TeamId)
+- Uncomment RegistrationsDbContextFactory for EF Core design-time tools
+- Generate initial EF Core migration for registrations schema
+- Uncomment integration test infrastructure (AssemblySetup,
+  IntegrationTestBase, IntegrationTestEnvironment)
+- Document two-tier test strategy in arc42 chapter 10.2 with patterns
+  for fixtures, builders, facade mocking, and naming conventions
+- Update feature-tester and feature-reviewer agents to reference
+  test pattern documentation
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* refactor: remove feature-specific IDs from domain test names
+
+Domain tests describe aggregate invariants that hold regardless of which
+feature exercises them. Renamed from SC001_Create_... to Create_... to
+decouple from FEAT-005 scenario IDs.
+
+Updated arc42 §10.2 and feature-tester agent to document the distinction:
+- Domain tests: {Method}_{Condition}_{ExpectedOutcome}
+- Handler tests: {ScenarioId}_{UseCase}_{Condition}_{ExpectedOutcome}
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* docs: add CLI commands to feature implementation workflow
+
+- Create src/Admitto.Cli/AGENTS.md with CLI command conventions
+  (mutation/query patterns, Settings classes, Program.cs registration)
+- Update feature-coder: add CLI command phase after backend slices
+- Update feature-implementer: add CLI as Phase 2 sub-phase
+- Update feature-reviewer: add CLI completeness check
+- Update root AGENTS.md checklist: CLI command item
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* feat: add CLI commands for FEAT-005 coupon management
+
+Add create, list, show, and revoke coupon commands to the CLI app.
+Includes a temporary partial ApiClient extension with coupon HTTP
+methods and DTOs (to be replaced when NSwag client is regenerated).
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* WIP
+
+* WIP
+
+* feat: complete FEAT-001 team management
+
+- Add GetTeams use case: admins get all active teams, members get
+  their own teams (merged US-003/US-006 per intentional design decision)
+- Add ArchiveTeam use case with optimistic concurrency and active-event
+  guard (US-005)
+- Fix CreateTeam route: POST / instead of POST /teams
+- Fix GetTeamHandler EF query: use TeamId.From() value object comparison
+- Fix GetTeamsHandler EF query: use ArchivedAt == null (not IsArchived)
+- Fix IMediator registration that was commented out from initial commit
+- Move IAdministratorRoleService to Module.Shared.Application.Auth to
+  avoid circular project reference
+- Add AddTeamArchiveColumns migration (archived_at, ticketed_event_scope_version)
+- Rename UseCases/Teams/ -> UseCases/TeamManagement/ in src and tests
+- Add ArchiveTeamValidator
+- Add ArchiveTeam CLI command (team archive <slug> --expected-version <n>)
+- Refactor CreateTicketedEvent to raise TicketedEventCreatedDomainEvent
+  so Team reacts via TicketedEventCreatedDomainEventHandler; handler
+  retains explicit archived guard for fast-fail and test coverage
+- Make Team.EnsureNotArchived() public for direct use in handler
+- Add XML documentation to Team, TicketedEvent, ArchiveTeamHandler,
+  CreateTicketedEventHandler, TicketedEventCreatedDomainEventHandler
+  explaining the TicketedEventScopeVersion / TOCTOU concurrency design
+- Add tests for GetTeam, GetTeams, UpdateTeam, ArchiveTeam (25 total,
+  23 pass, 2 skipped: SC-005 auth, SC-016 concurrency race)
+- Update FEAT-001 spec with merged endpoint design note
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* refactor: use command dispatch in TicketedEventCreatedDomainEventHandler
+
+- Add RegisterTicketedEventCreation slice in TeamManagement with a
+  command and handler — the actual Team mutation logic lives here
+- Move TicketedEventCreatedDomainEventHandler to TeamManagement/ (the
+  aggregate that reacts) and make it a dumb translator: event → command
+  dispatched via IMediator
+- Fix AddDomainEventHandlersFromAssembly, AddModuleEventHandlersFromAssembly,
+  and AddIntegrationEventHandlersFromAssembly: the Scrutor filter was
+  checking if the class itself is generic (always false for concrete
+  handlers) instead of using AssignableTo(). Domain/module/integration
+  event handlers were never actually registered in DI.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* refactor: move TicketedEventCreatedDomainEventHandler to EventHandlers subfolder
+
+Place the handler under RegisterTicketedEventCreation/EventHandlers/ so the
+slice structure mirrors the convention: event handlers that trigger a use
+case live in an EventHandlers/ folder alongside the command and handler.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* docs: add lessons learned to arc42 chapter 8
+
+Add four new sections based on patterns discovered during FEAT-001:
+
+- 8.9 Vertical slice structure: canonical file layout per slice,
+  EventHandlers/ subfolder convention, HTTP endpoint registration pattern
+- 8.10 EF Core query rules: computed-property translation gotcha,
+  value-object LINQ comparisons, AsNoTracking for guard queries,
+  optimistic concurrency via Version token
+- 8.11 Domain event dispatch: in-process atomicity, EF change-tracker
+  reuse, write-amplifier pattern for concurrency tokens,
+  fast-fail guard rule for testability
+- 8.12 Handler DI registration: assembly-scan auto-discovery,
+  AssignableTo vs Where(isGeneric) pitfall
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* docs: update arc42 chapter 8 with lessons learned from FEAT-001
+
+Add sections covering patterns discovered during FEAT-001 implementation:
+- 8.5 Use case slice layout: folder structure, file conventions,
+  domain-event-triggered slices, dumb handler pattern, endpoint registration
+- 8.8 EF Core query rules: computed properties not translatable, value
+  object LINQ comparisons, AsNoTracking for guards, optimistic concurrency,
+  write-amplifier pattern (TicketedEventScopeVersion)
+- 8.9 Domain event dispatch: DomainEventsInterceptor atomicity, change
+  tracker reuse, fast-fail guard rule for test coverage, DatabaseTestContext
+  limitation (no DomainEventsInterceptor)
+- 8.10 Handler DI registration: Scrutor AssignableTo patterns, no manual
+  registration rule, IsGenericType pitfall
+
+Also fix duplicate section 8.6 (Error handling vs Messaging), renumber
+sections 8.6-8.11, and move Observability to 8.11.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* fix: use nested Errors class in ArchiveTeamHandler; fix SC014 assertion
+
+ArchiveTeamHandler was throwing an inline new Error(...) instead of
+following the nested Errors class convention. The 'has active events'
+check is a handler-level concern (cross-aggregate query), so the error
+belongs in ArchiveTeamHandler.Errors, not Team.Errors.
+
+- Add ArchiveTeamHandler.Errors.HasActiveEvents static property
+- Replace inline throw with BusinessRuleViolationException(Errors.HasActiveEvents)
+- Fix SC014 test assertion: ShouldMatch(ArchiveTeamHandler.Errors.HasActiveEvents)
+  instead of the broken ShouldMatch(Team.Errors.) placeholder
+- Remove unused Team import from ArchiveTeamTests
+- Add test assertion convention to arc42 8.7: always use ShouldMatch(StaticError)
+  over raw .Code.ShouldBe() for compile-time safety
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* fix: replace all raw Code.ShouldBe error assertions with ShouldMatch pattern
+
+Fixes 5 remaining tests that used exception.Error.Code.ShouldBe(""raw.string"")
+instead of the canonical ShouldMatch(StaticErrorObject) pattern.
+
+- ArchiveTeamTests SC011: ShouldMatch(Team.Errors.TeamAlreadyArchived(TeamId.From(...)))
+- CreateTeamTests SC003: ShouldMatch(StringValueObject.Errors.Empty)
+- CreateTicketedEventTests SC015: ShouldMatch(Team.Errors.TeamArchived(TeamId.From(...)))
+- UpdateTeamTests SC008: ShouldMatch(ConcurrencyConflictError.Create(wrongVersion, fixture.TeamVersion))
+- UpdateTeamTests SC010: ShouldMatch(Team.Errors.TeamArchived(TeamId.From(...)))
+
+Also make StringValueObject.Errors public so kernel-level validation errors
+(text.empty, text.too_long) are accessible from test projects, consistent
+with how ConcurrencyConflictError exposes its errors publicly.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* fix: address FEAT-002 review failures
+
+- Fix GetTeamMembershipRoleHandler to look up users by ExternalUserId
+  (Keycloak sub claim) instead of the internal domain Id — prior
+  implementation broke team-membership authorization for non-admin users
+
+- Add EC-10 guard to AssignTeamMembershipHandler: load the target team
+  and call EnsureNotArchived() before adding the member
+
+- Add SC-014 and SC-015 E2E tests in Admitto.Api.Tests:
+  * SC-014: Crew member gets 403 on Owner-required endpoints
+  * SC-015: Admin bypasses ownership check and gets 200
+  Bob's Keycloak client added to EndToEndTestAppHost/Environment
+
+- Add domain unit tests for new User methods: ChangeTeamMembershipRole,
+  RemoveTeamMembership (last/not-last membership), CancelDeprovisioning,
+  AddTeamMembership (cancels pending deprovisioning)
+
+- Update AssignTeamMembershipFixture and tests to seed a team, required
+  now that the handler loads the team for the EC-10 check
+
+- Fix auth level regression: AssignTeamMembership requires Owner (not
+  Organizer), ListTeamMembers requires Owner (not Crew) per NFR-001/002
+
+- Rename test methods to include SC-0xx prefix per convention
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* feat: implement FEAT-003 event management
+
+- Add EventStatus enum (Active, Cancelled, Archived)
+- Extend TicketedEvent aggregate with lifecycle methods:
+  Cancel(), Archive(), Update(), AddTicketType(),
+  UpdateTicketType(), CancelTicketType()
+- Add 8 new use cases with HTTP endpoints:
+  GetTicketedEvent, GetTicketedEvents, UpdateTicketedEvent,
+  CancelTicketedEvent, ArchiveTicketedEvent, AddTicketType,
+  UpdateTicketType, CancelTicketType
+- Wire all endpoints in OrganizationApiEndpoints
+- Implement IsEventActiveAsync in OrganizationFacade
+- Add EF migration for event status and ticket type cancellation
+- Refactor ticket types to use slugs as identifiers:
+  - TicketTypeDto now uses slug/name instead of Guid id
+  - Coupon.AllowedTicketTypeSlugs replaces AllowedTicketTypeIds
+  - EF migration for allowed_ticket_type_slugs column
+- Make ExpectedVersion optional (uint?) placed last in all
+  request and command types; remove NotNull validators
+- Add CLI commands: event update, event cancel, event archive
+- Add domain tests: TicketedEventTests (27 scenarios)
+- Add integration tests covering all 22 acceptance scenarios
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* feat: implement FEAT-004 attendee registration
+
+- Remove IsSelfService/IsSelfServiceAvailable from TicketType value object
+- Add TicketTypeAdded/CapacityChanged module events and domain events
+- Implement EventCapacity aggregate with slug-keyed TicketCapacity (JSON)
+- Implement EventRegistrationPolicy aggregate (window + domain restriction)
+- Implement SelfRegisterAttendee use case with capacity enforcement
+- Implement RegisterWithCoupon use case (uncapped, bypasses window/domain)
+- Implement SetRegistrationPolicy admin use case and CLI command
+- Add capacity sync module event handlers (TicketTypeAdded/CapacityChanged)
+- Rewrite Registration entity with TicketTypeSnapshot value objects
+- Add EF migrations: RemoveIsSelfService (Org), AddRegistrationsAndCapacityTables
+- Fix GetTicketedEventHandler to materialize before projecting TimeSlots
+- Fix test fixtures to remove obsolete isSelfService params (3 fixtures)
+- Fix TicketedEventCapacityEntityConfiguration to use HasJsonPropertyName
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix verification issues for attendee-registration change
+
+- Add SC016 duplicate-email test for SelfRegisterAttendee (DB constraint)
+- Add domain event assertions to AddTicketType (SC014) and UpdateTicketType (SC017)
+- Add SC014b test for null-capacity AddTicketType domain event
+- Add SC017b test for name-only update (no capacity change event)
+- Remove obsolete TicketGrantModeDto and RegisterAttendeeInput from Contracts
+- Remove dead legacy SetRegistrationPolicyEndpoint from Admitto.Application
+- Remove commented-out TicketRequest.cs value object
+- Mark task 11.5 done (migrations verified via Aspire)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Refactor Capacity handlers to event→command→handler pattern
+
+Split Capacity use cases into distinct folders with thin event handlers
+that map module events to commands, following the RegisterExternalUser
+pattern from the Organization module.
+
+Structure:
+- Capacity/InitializeTicketCapacity/ (command, handler, event handler)
+- Capacity/UpdateTicketCapacity/ (command, handler, event handler)
+
+Also removed commented-out CapacityTracker.cs.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* Fix Worker startup and failing unit tests
+
+Worker startup fixes:
+- Add Keycloak config to Worker appsettings.Development.json (was
+  throwing 'No user management service configured')
+- Add keycloak reference to Worker in AppHost.cs for service discovery
+- Register IMediator (AddMessagingApplicationServices) and QueueClient
+  (AddSharedInfrastructureMessagingServices) in Worker Program.cs
+
+Test fixes:
+- GetTeamMembershipRoleFixture: assign ExternalUserId to test user so
+  handler can find it by external ID
+- UpdateTeamTests SC007: add missing handler invocation (Act step)
+- UpdateTicketedEventTests SC006: expect URI-normalized trailing slash
+- ShouldExtensions.ShouldMatch: compare collection details element-wise
+  to avoid type mismatch between List and ReadOnlySingleElementList
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* Admin UI audit: document patterns, fix bugs, remove dead code
+
+- Add ADR-006: Admin UI technology stack (Next.js, Shadcn/UI, Better Auth,
+  HeyAPI, TanStack Query/Table, Zustand, React Hook Form + Zod)
+- Expand Admin UI section in arc42 building block view (05)
+- Add ADR-006 reference to arc42 architectural decisions (09)
+- Add Admin UI tech debt items to arc42 risks document (11)
+- Fix nav-events.tsx bug: remove erroneous router.push('/') after fetch,
+  fix useEffect dependency array to track teamSlug instead of router
+- Fix Zustand store anti-pattern: use get() instead of getState() inside
+  actions
+- Remove dead code: signin-form (magic-link), nav-team, nav-main, fonts.ts,
+  chart-area-interactive, section-cards, attendee.ts mock data,
+  disabled .txt pages, 230+ commented-out lines in data-table.tsx,
+  37 lines in use-data-loader.ts
+- Clean up unused imports in app-sidebar.tsx and nav-events.tsx
+- Add sqlite.db to .gitignore and remove from tracking
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* Team management UI
+
+* Expand team management UI
+
+* Add event management UI
+
+* Add event management UI
+
+* Add endpoint tests for registration policy CRUD endpoints
+
+Add E2E tests for CancellationPolicy and ReconfirmPolicy admin endpoints:
+- SetCancellationPolicy: happy flow (200) and lifecycle rejection (400)
+- GetCancellationPolicy: happy flow (200 with DTO) and not found (404)
+- RemoveCancellationPolicy: happy flow (204)
+- SetReconfirmPolicy: happy flow (200) and lifecycle rejection (400)
+- GetReconfirmPolicy: happy flow (200 with DTO) and not found (404)
+- RemoveReconfirmPolicy: happy flow (204)
+
+Enable RegistrationsDatabase in test infrastructure by uncommenting
+the RegistrationsDbContext setup and reset code.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* WIP
+
+* WIP
+
+* WIP
+
+* WIP
+
+* WIP
+
+* WIP
+
+* Implement tasks 7.1-7.6: unified EmailSettings/EmailTemplates admin endpoints
+
+- Add scope-agnostic EmailSettings CRUD slice (Get/Create/Update/Delete/Upsert)
+  under UseCases/EmailSettings/ parameterised by (Scope, ScopeId)
+- Add EmailTemplates CRUD slice (Get/Upsert/Delete) under UseCases/EmailTemplates/
+- Wire team-scoped endpoints: GET/PUT/DELETE /admin/teams/{teamSlug}/email-settings
+- Wire event-scoped endpoints: GET/PUT/DELETE /admin/teams/{teamSlug}/events/{eventSlug}/email-settings
+- Wire team/event template endpoints: GET/PUT/DELETE .../email-templates/{type}
+- Use nested Handler class pattern for configurable upsert endpoints
+- Add FluentValidation validators for UpsertEmailSettings and UpsertEmailTemplate
+- Update EmailPostgresExceptionMapping to handle IX_email_templates_scope_scope_id_type
+- Fix UpdateEventEmailSettingsHandler type alias conflict introduced by new namespace
+- Mark tasks 7.1-7.6 complete in tasks.md
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Tasks 7.7-8.5: CLI commands, API endpoint tests, documentation
+
+- Task 7.7: CLI commands for all email admin endpoints (team/event
+  scope settings + templates) using regenerated NSwag ApiClient
+- Task 7.8: API endpoint tests for settings/template CRUD at both
+  scopes, including 403 (non-member) and 409 (stale version) scenarios
+- Task 8.1: Updated arc42 §5 Email module description to reflect
+  unified EmailSettings aggregate, templates, log, and send pipeline
+- Task 8.2: Added §6.8 registration-confirmation email runtime flow
+  to arc42 §6 (sequence diagram + idempotency/degraded-mode notes)
+- Tasks 8.3/8.4 already complete (Worker capability + MailDev wired)
+- Task 9.1: openspec validate add-email-module --strict passes
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Mark tasks 9.1-9.3 complete in tasks.md
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix E2E email tests: use dynamic MailDev SMTP port from Aspire
+
+Expose MailDevSmtpEndpoint in EndToEndTestEnvironment via
+Application.GetEndpoint(""maildev"", ""smtp""), and update
+SendRegistrationEmailFixture to seed SMTP settings with the
+dynamic host/port instead of hardcoded localhost:1025.
+
+SC001 and SC002 now pass.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Remove dead EventEmailSettings use cases
+
+The unified EmailSettings slices in Application/UseCases/EmailSettings/
+already handle both team and event scopes via the EmailSettingsScope
+parameter. The EventEmailSettings folder (and its tests) were left
+over from an earlier event-only implementation and were not wired
+into EmailApiEndpoints.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Enrich AttendeeRegisteredIntegrationEvent with event name and website URL
+
+Confirmation emails need event context (name, website) but the Email
+worker runs async and shouldn't sync-couple to Registrations. Per
+arc42 §8.6, integration events are the canonical async cross-module
+contract — extend the event-carried state instead of introducing a
+facade call.
+
+- Add EventName and EventWebsiteUrl to AttendeeRegisteredDomainEvent
+  and AttendeeRegisteredIntegrationEvent
+- Plumb event details through Registration.Create (snapshot at
+  registration time so historical emails stay correct if the event
+  is later renamed)
+- Pass ticketedEvent.Name/WebsiteUrl from RegisterAttendeeHandler
+- Surface both fields in the SendEmailCommand template parameters,
+  replacing the EventName=string.Empty placeholder
+- Update domain/policy tests and all Registration.Create test callers
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Use Registrations facade to fetch live event details for emails
+
+Replaces the registration-time snapshot of event Name/WebsiteUrl
+with a synchronous facade lookup at email send time. This way later
+emails (cancellation, reconfirm) reflect the current event
+configuration even if the team has updated it since registration.
+
+- New IRegistrationsFacade in Module.Registrations.Contracts with
+  GetTicketedEventEmailContextAsync(eventId) returning
+  TicketedEventEmailContextDto(Name, WebsiteUrl)
+- Implementation delegates to a new GetTicketedEventEmailContextQuery
+  that reads from RegistrationsDbContext.TicketedEvents
+- Registered as scoped in Registrations DI (mirrors the
+  IOrganizationFacade pattern; no caching for now)
+- AttendeeRegisteredIntegrationEventHandler injects the facade and
+  uses live values in template parameters
+- Reverts commit 0e01ba8: removes EventName/EventWebsiteUrl from the
+  domain event, integration event, Registration.Create signature, and
+  matching test changes
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Archive add-email-module and unify-register-attendee changes
+
+Both changes are complete (47/47 and 33/33 tasks). Specs synced to main.
+
+For add-email-module, restructured the email-settings delta to use
+ADDED + REMOVED for the renamed 'per-event' → 'scope-keyed aggregate'
+requirement (MODIFIED requires header match in source spec).
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* WIP
+
+* Add team email settings page
+
+* Update instuctions
+
+* Add bulk email
+
+* Add QR code
+
+* Add cancellation
+
+* Fix test
+
+* Fix archiving
+
+* Add attendee detail page
+
+* Release cancelled tickets
+
+* Add support for changing tickets
+
+* Allow re-register
+
+* Add self registration
+
+* Remove OTP requirement for cancellation/changes
+
+* Archive change
+
+* Fixed ticket type bugs
+
+* Consolidate CustomBulkTemplate into EmailTemplate aggregate
+
+- Add BulkCustom type to EmailTemplateType
+- Add nullable Name and make HtmlBody nullable on EmailTemplate
+- Remove CustomBulkTemplate entity, use EmailTemplate with BulkCustom type
+- Add team-scoped and event-scoped custom bulk template endpoints
+- Fix unique index to be partial (name IS NULL) for system templates
+- Regenerate OpenAPI SDK
+- Update event templates page: replace dialog UX with redirect pattern
+- Add custom bulk templates section to team templates page
+- Create full-page editor for custom bulk templates (team + event scoped)
+- Add team-level proxy routes for custom bulk templates
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Unify email template API and UI
+
+- Collapsed separate built-in and custom-bulk-template models into a
+  single EmailTemplate model identified by Guid + Name
+- Added BuiltInEmailTemplateNames constants and BuiltInEmailTemplateCatalog
+  with reserved names, descriptions, and default content
+- Dropped EmailTemplateType enum; Name is now required and unique per scope
+- Replaced CustomBulkTemplates/* and UpsertEmailTemplate/* use-case folders
+  with unified EmailTemplates/* folder (Create, Get, GetList, Update, Delete,
+  Preview, TestSend)
+- New unified API routes: /email-templates (GET, POST),
+  /email-templates/{id} (GET, PUT, DELETE),
+  /email-templates/preview (POST),
+  /email-templates/{id}/test-send (POST)
+- EF migration DropTemplateType: backfills Name from Type slug, drops Type
+  column, adds UNIQUE index on (scope, scope_id, lower(name))
+- Admin UI: regenerated SDK, replaced old proxy routes with unified ones,
+  rewrote team and event list pages to fetch from unified endpoint,
+  new [id]/page.tsx edit pages replace [type] and custom/[id] pages,
+  send-bulk-email-dialog now uses unified endpoint filtered by kind=custom
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Navigate back to list after save or delete in email template editor
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix 404 error after deleting email template
+
+Use removeQueries instead of invalidateQueries so the deleted template
+is evicted from cache without triggering a refetch that would 404.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix creating custom email template with no subject/body
+
+- Remove Subject/TextBody validator requirement for custom templates;
+  handler now fills in defaults (name as subject, placeholder text body)
+  when null is sent, matching built-in template behaviour
+- Fix error dialog to show actual validation field messages from
+  err.errors instead of the generic 'One or more validation errors
+  occurred.' title
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Navigate immediately after template create, without awaiting list refresh
+
+Skip invalidateQueries before routing away from the list page — the list
+will naturally refetch when the user returns. Removes the visible flash
+where the list updates before navigation completes.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Show team-level custom templates in event template list with override support
+
+- GetEmailTemplatesHandler now accepts ParentScopeId; for events, the
+  team's custom templates appear as virtual entries (id: null) when not
+  already overridden at event level
+- CreateEmailTemplateHandler uses parent-scope template content as
+  defaults when materialising an event-level override (null subject/body)
+- Both HTTP endpoints pass orgScope.TeamId as ParentScopeId for event scope
+- Event list page UI handles id:null custom templates the same as
+  id:null built-ins (materialise on click, then navigate to edit)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix EF Core query translation error in GetEmailTemplatesHandler
+
+BuiltInEmailTemplateNames.IsReserved() cannot be translated to SQL —
+fetch all parent-scope rows first and filter in memory, matching the
+pattern already used for the current-scope rows.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Bulk e-mail
+
+* refactor: use primitives in commands (Phase 7)
+
+Replace VO parameters in all Commands with primitives (Guid/string).
+Handlers convert primitives back to VOs at the top of HandleAsync.
+Updated all callers: endpoints, event handlers, and test fixtures.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Use generated VOs
+
+* Replace slug-based routing with GUID-based routing (tasks 1.1-5.3)
+
+- Remove Slug/TeamSlug properties from Team and TicketedEvent aggregates
+- Remove slug parameters from Team.Create and TicketedEvent.Create factory methods
+- Remove slug uniqueness checks from CreateTeamHandler and CreateTicketedEventHandler
+- Remove GetTeamIdAsync from IOrganizationFacade and all implementations
+- Update all route templates: {teamSlug} -> {teamId:guid}, {eventSlug} -> {eventId:guid}
+- Update all endpoint handlers to bind Guid teamId/eventId directly from routes
+- Update TeamMembershipAuthorizationHandler and ApiKeyTeamScopeFilter to read Guid from route
+- Update all response DTOs: replace Slug with Id/TeamId fields
+- Add EF Core migrations to drop Slug columns and unique indexes
+- Delete obsolete files: OrganizationScopeResolver, ITicketedEventIdLookup,
+  RegistrationsTicketedEventIdLookup, GetTeamId handlers, GetTicketedEventId handlers
+- Fix CachingOrganizationFacade and its DI registration (remove unused IMemoryCache)
+- Fix GetTicketedEventEmailContextHandler to use TeamId/EventId instead of slugs
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Remove slugs
+
+* feat: add Admitto.Core.ArchTests with dependency, naming, and placement rules
+
+- Add TngTech.ArchUnitNET.MSTestV2 v0.13.3 to Directory.Packages.props
+- Create tests/Admitto.Core.ArchTests project with MSTest.Sdk
+- DependencyRulesTests: SharedKernel isolation, Domain layer isolation,
+  cross-module Application and Infrastructure dependency rules
+- NamingRulesTests: enforce handler naming conventions for domain event,
+  integration event, module event, command, and query handlers using reflection
+- PlacementRulesTests: enforce namespace placement for event handlers,
+  HTTP endpoints, FluentValidation validators, commands and queries
+- Fix SendEmailCommandHandler → SendEmailHandler (naming convention violation)
+- Remove duplicate SendTestEmailValidator outside AdminApi namespace (arch violation)
+- All 14 arch tests pass; all 513 existing Core tests still pass
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Consolidate modules into Core project
+
+* Fix messaging dispatch after module consolidation into Admitto.Core
+
+Three root causes fixed:
+
+1. QueueMessageDispatcher used mediator.SendAsync<ICommand> causing
+   type-erasure — handler lookup failed at runtime. Added SendCommandAsync
+   to IMediator with MakeGenericType resolution, mirroring the existing
+   PublishDomainEventAsync pattern.
+
+2. All three module DI setups scanned the same Admitto.Core assembly
+   (Assembly.GetExecutingAssembly() returns the same dll for all modules
+   after consolidation). Scrutor's default Append strategy registered each
+   handler 3× → 3 activity log entries, 3 emails. Fixed with a custom
+   TryAddEnumerableStrategy in all four Add*HandlersFromAssembly methods.
+
+3. AddIntegrationEventHandlersFromAssembly was still scanning ALL handlers
+   in Admitto.Core and registering them under each module's own key. The
+   IntegrationEventRouter iterates every subscriber module, so Email handlers
+   ran once per module (3×). Fixed by adding an optional namespaceAnchor
+   parameter to all scan methods and passing typeof(DependencyInjection) from
+   each module's DI setup — scoping each scan to its own namespace subtree.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Simplify command handling
+
+* refactor: remove IMediator, inject handlers directly
+
+- Replace IMediator with direct constructor injection of concrete handlers
+  in all endpoints, facades, and event handlers
+- Remove Scrutor assembly scanning; replace with explicit DI registration
+  lists per module (AddOrganizationModule, AddRegistrationsModule,
+  AddEmailModule + worker variants)
+- Add MessageTypeRegistryBuilder for explicit message type registration
+- Remove RequiresCapabilityAttribute and HostCapability from handler classes
+- Delete Mediator.cs and RequiresCapabilityAttribute.cs
+- Update event handlers to inject ICommandHandler<T> interface so tests
+  can substitute them via NSubstitute
+- Fix ambiguous RegistrationListItemDto references in Registrations DI
+- Fix missing IOutbox/ICommandHandler usings in shared infrastructure DI
+- Remove stale AddApplicationCommandHandlers from Api DependencyInjection
+- Fix duplicate code in Admitto.Api/Program.cs
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix registrations
+
+* Consolidate DI
+
+* Remove old projects
+
+* More cleanup
+
+* Refactor registration use cases
+
+* Refactor tests
+
+* Refactor tests
+
+* Passkeys
+
+* Fix signout
+
+* feat: replace primitive types with typed value objects across domain and tests
+
+- Split DisplayName VO into TeamName, EventName, TicketTypeName VOs
+- Add ApiKeyName VO to Organization module
+- Type-safe RegistrationId on ActivityLog.Create
+- Slug[] on TicketType.TimeSlotSlugs
+- EmailScopeId, EmailAddress, RegistrationId, TeamId, TicketedEventId typed on EmailLog, EmailSettings, EmailTemplate, BulkEmailRecipient, ExternalListItem
+- Move CreationRequestId from Organization.Domain.ValueObjects to Shared.Kernel.ValueObjects (cross-module correlation id)
+- Fix all test files to use VO types instead of raw strings/Guids
+- All architecture tests (13) and domain tests (246) pass
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* fix: resolve EF Core VO mapping issues in JSON columns
+
+- Register Slug.EfCoreValueConverter in RegistrationsDbContext conventions
+- Use PrimitiveCollection with explicitly-typed lambda and EfCoreValueConverter
+  for Slug[] arrays in JSON-owned entities (TicketType.TimeSlotSlugs and
+  TicketTypeSnapshot.TimeSlots) — explicit lambda type avoids overload
+  resolution picking ComplexCollectionBuilder instead of OwnedNavigationBuilder
+- Remove redundant manual HasConversion lambdas for scalar VOs covered by convention
+- Fix GetRegistrationDetailsHandler: compare RegistrationId VO directly
+  instead of .Value (Guid doesn't implement IConvertible, breaking EF's Sanitize)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* feat: add Vogen STJ converters and EF migration for VO-typed domain model
+
+- Enable Conversions.SystemTextJson in VogenAssemblyDefaults so all value
+  objects carry [JsonConverter] attributes; fixes serialization of EmailAddress
+  inside ExternalListSource JSONB column and API responses
+- Add RegistrationsDbContext migration VoTypedDomainModel: replaces
+  allowed_ticket_type_slugs (text[]) with allowed_ticket_type_ids (uuid[])
+  following TicketType key change from slug to TicketTypeId
+- Regenerate Admin UI SDK (openapi-spec.json + generated/) after VO contract
+  updates; TypeScript build passes
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* fix: guard TeamMembershipAuthorizationHandler against unauthenticated requests
+
+Without the guard, an unauthenticated request to a RequireTeamMembership-protected
+endpoint causes TeamMembershipAuthorizationHandler to call userContextAccessor.Current
+before UserContextResolutionMiddleware has populated the context, throwing an
+InvalidOperationException instead of returning 401.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* fix: add admitto-api audience mapper to admitto-ui Keycloak client
+
+Tokens issued for the admitto-ui client were missing aud: [""admitto-api""],
+causing the API's JWT audience validation to reject them with 401. Added
+an oidc-audience-mapper protocol mapper (matching the pattern used by
+admitto-test-runner) to include admitto-api in access tokens.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* fix: restore global security requirement in OpenAPI spec and regenerate Admin UI SDK
+
+BearerSecuritySchemeTransformer was missing document.Security and
+document.SetReferenceHostDocument() calls, so the generated spec had no
+security requirements on operations. HeyAPI therefore omitted the security
+array from generated SDK functions, causing getAccessToken to never be
+called and all API requests to be sent without an Authorization header.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* fix: return teamId from CreateTeam endpoint to fix redirect after team creation
+
+The endpoint was returning TypedResults.Ok() with no body, causing the
+Admin UI to redirect to /teams/undefined after creating a new team.
+
+Changes:
+- CreateTeamCommand now implements Command<Guid>
+- CreateTeamHandler returns the new team's ID
+- New CreateTeamHttpResponse record carries the teamId
+- CreateTeamHttpEndpoint returns Ok<CreateTeamHttpResponse>
+- Regenerated Admin UI OpenAPI SDK to reflect the new response type
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* fix: redirect to settings page after team creation
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Refactorings
+
+* Fix sidebar GUID flash, restyle reconfirm settings, change cadence to hours
+
+- Sidebar: show skeleton placeholder while event name loads instead of GUID
+- Reconfirm settings: restyle to match registration form (Card + Field pattern,
+  Save/Discard buttons, Remove policy section at bottom)
+- Cadence: change from days to hours throughout the stack (domain minimum now
+  1 hour, API layer uses CadenceHours, cron builder handles sub-day cadences
+  using hourly stepping)
+- Add sub-day cron test coverage in ScheduleReconfirmationsHandlerTests
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Consolidate IUserContextAccessor implementations into StaticUserContextAccessor
+
+- Add StaticUserContextAccessor to Core.Shared with a SystemUser constant
+- Delete SystemUserContextAccessor (Worker) and MigrationUserContextAccessor (Migrations)
+- Delete FakeUserContextAccessor (Tests) - constants were unused outside the class
+- Fix HttpContextUserContextAccessor SystemUser email inconsistency
+  (system@system.local → system@admitto.local via StaticUserContextAccessor.SystemUser)
+- Update Worker, Migrations, and DatabaseTestContext to use StaticUserContextAccessor
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Refactorings and small fixes
+
+* Replace Azure Storage Queues with Azure Service Bus
+
+- Swap NuGet packages: remove Storage Queues, add Service Bus SDK
+- Update AppHost to provision Service Bus emulator with MSSQL Server 2019
+  sidecar (replaces incompatible sql-edge on ARM/Linux)
+- Rewrite OutboxMessageSender to use ServiceBusSender
+- Replace polling AzureStorageQueueProcessor with push-based
+  AzureServiceBusQueueProcessor (ServiceBusProcessor)
+- Update MessageQueueProcessor to start/stop ServiceBusProcessor
+- Simplify serviceBus.bicep to Basic SKU
+- Wire serviceBus module into main.bicep; update API and Worker
+  app bicep modules to use ConnectionStrings__messaging
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix BulkEmail E2E tests: SB restart + UnitOfWork best-effort outbox flush
+
+- Restart Service Bus emulator before each BulkEmail test (clean state)
+- Replace useless worker-Running wait with AMQP readiness probe in ClearAsync
+- Fix UnitOfWork: wrap inline outbox flush in try-catch (truly best-effort)
+- Add ILogger to UnitOfWork for warning on flush failure
+- Make bulk email per-message delay configurable (zero in test environment)
+- Fix integration tests that directly construct UnitOfWork to pass NullLogger
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Use ServiceBusAdministrationClient to reset queue between tests
+
+Replace the slow ReceiveAndDelete polling loop with a fast delete+recreate
+using ServiceBusAdministrationClient. This correctly handles locked messages
+and is instantaneous.
+
+Also remove the duplicate WithHttpEndpoint(targetPort: 5300) call from
+ConfigureServiceBus — RunAsEmulator already registers that port as the
+'emulatorhealth' endpoint; adding a second mapping to the same target port
+caused the emulator container to fail at startup.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Service Bus
+
+* Refactor constants
+
+* WIP
+
+* Use interface for handlers
+
+* Implement auto-cancel unconfirmed registrations (v2)
+
+Move MaxReconfirmAttempts from event-level reconfirm policy to individual
+ticket types. Registrations are auto-cancelled when not reconfirmed if any
+of their ticket types has MaxReconfirmAttempts set. The effective threshold
+per registration is the minimum across all applicable ticket types.
+
+- Revert v1 auto-cancel fields from TicketedEventReconfirmPolicy
+- Add MaxReconfirmAttempts to TicketType domain entity
+- Extend RegistrationsFacade to compute EffectiveMaxReconfirmAttempts per registration
+- Update RequestReconfirmationsJob split logic to use per-registration threshold
+- Expose MaxReconfirmAttempts via ticket type add/update API endpoints
+- Add MaxReconfirmAttempts field to Admin UI Add/Edit Ticket Type forms
+- Fix pre-existing WaitlistTests build errors (IssueNextCoupon signature change)
+- Fix pre-existing route naming conflict ([ticketTypeSlug] vs [ticketTypeId])
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Archive 3 changes and sync specs to main
+
+- auto-cancel-unconfirmed-registrations (39/39 tasks)
+- waitlist (32/32 tasks)
+- badges-module (40/40 tasks)
+
+Spec changes synced:
+- event-management: added AutoCancelEnabled/MaxReconfirmAttempts to reconfirm policy
+- reconfirm-sending: updated Quartz trigger + added scheduler tick auto-cancel set requirement
+- email-sending: added ReconfirmAutoCancel reason mapping for cancellation emails
+- email-templates: added reconfirm-cancelled template type
+- admin-ui-event-policies: added auto-cancel toggle and max attempts fields to reconfirm policy form
+- reconfirm-auto-cancel: new spec (auto-cancel integration event handler)
+- coupon-management: added source discriminator + public coupon details endpoint
+- attendee-registration: added WaitlistOnly mode rejection scenario
+- ticket-type-management: added waitlistEnabled/claimWindowHours fields and WaitlistMode in listing
+- waitlist: new spec
+- admin-ui-waitlist: new spec
+- badge-type-management: new spec
+- badge-export: new spec
+- standalone-badge-instances: new spec
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix architecture violation and test failures
+
+- Move WaitlistClaimWindowCalculator from Application to Domain layer
+  (domain entity must not depend on application layer)
+- Pass utcNow from timeProvider into Waitlist.IssueNextCoupon so quiet-hours
+  expiry calculation uses the injectable clock, not DateTime.UtcNow
+- Add IEmailWriteStore + idempotency check to AttendeeRegisteredIntegrationEventHandler,
+  matching the pattern used by all other email event handlers
+- ArchiveBadgesEventHandler: use FindAsync + null guard instead of GetAsync
+  so archiving a non-existent BadgesEvent is safe (event-driven, eventual consistency)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Remove idempotency checks from email event handlers
+
+Deduplication is handled exclusively by SendEmailHandler via the
+idempotency key check on EmailLog. The per-handler checks were redundant.
+
+Also fixes:
+- WaitlistTests: pass utcNow to IssueNextCoupon (updated signature)
+- Event handler files: remove duplicate trailing content
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Clean up endpoint code quality issues
+
+- Extract inline async lambda in PreviewBulkEmailHttpEndpoint into a
+  private static method
+- Add missing blank line before namespace in CancelBulkEmailHttpEndpoint
+- Move CreateEmailTemplateResponse and CreateBulkEmailResponse to their
+  own files
+- Remove redundant 'using Microsoft.AspNetCore.Http.HttpResults;' from
+  16 Registrations endpoint files (covered by GlobalUsings.cs)
+- Rename HandleAsync to descriptive method names in 14 endpoint files,
+  consistent with admin endpoint naming convention
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* simplify waitlist join to use OTP token directly
+
+Replace the two-step join (POST email → confirm via link) with a single
+step that accepts an OTP verification token in the request body.
+
+- Waitlist.AddEntry(email, addedAt): replaces RequestJoin + ConfirmEntry.
+  Creates an active entry directly (no domain event needed).
+- JoinWaitlistCommand/Handler/Request/Validator updated for Token field.
+  Handler validates token via IVerificationTokenService and extracts email.
+- Removed ConfirmWaitlistEntry use case (command, handler, endpoint, route).
+- Removed WaitlistEntryAddedDomainEvent (was only used to trigger email).
+- Removed WaitlistJoinRequestedIntegrationEvent and its Email module handler.
+- Removed IVerificationTokenService from RegistrationsIntegrationEventPublisher.
+- Updated domain tests: replaced RequestJoin/ConfirmEntry tests with AddEntry.
+- Fixed RegistrationsIntegrationEventPublisherTests constructor call.
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* feat: enforce team-event scope across all handlers
+
+- Add TeamId to BadgesEvent, TicketCatalog entities and their factory methods
+- Scope all badge, registrations, coupon, bulk-email, and waitlist handlers
+  by teamId to prevent cross-team data leakage
+- Add EF migrations for badges_events.team_id and ticket_catalog.team_id
+  with cross-context backfill SQL (guarded by existence check)
+- Add SecurityConventionTests arch test to detect missing TeamId checks
+- Fix all test fixtures to pass teamId to TicketCatalog.Create / BadgesEvent.Create
+
+All tests pass: 16 arch, 278 domain, 298 integration, 156 API
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Make Admin UI mobile-friendly for Scenario A
+
+- Responsive hero title: text-[40px] → text-[28px] md:text-[40px]
+- Add flex-wrap to page headers in registrations, ticket-types,
+  badge-types, instances, email templates pages so action buttons
+  wrap below the title on narrow screens
+- Registrations table: hide Reconfirm and Registered columns on mobile
+  (hidden sm:table-cell); show only Attendee, Ticket, Status
+- Registrations search input: w-full sm:max-w-xs
+- AppHeader breadcrumbs: collapse to last 2 items + ellipsis on mobile
+  (sm:hidden); full path on sm+ (hidden sm:block); add min-w-0 flex-1
+  wrapper to prevent overflow into ThemeToggle
+- Settings layout: gap-8 → gap-4 lg:gap-8 when stacked vertically
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Redesign email template editor: tabs, syntax highlighting, fix Edit button jank
+
+- Fix 'Opening...' button flicker: move setMaterialisingId(null) from finally to catch only in both team and event template list pages
+- Add staleTime: 30_000 to template list queries to prevent mid-navigation badge flicker
+- Install @uiw/react-codemirror + @codemirror/lang-html for HTML syntax highlighting
+- Add CodeEditor component (app/components/ui/code-editor.tsx) wrapping CodeMirror with HTML language support
+- Redesign EmailTemplateForm: Edit|Preview tabs (Radix), labels-above layout, CodeMirror for HTML body
+- Preview tab fetches on tab activation (not on every keystroke) via previewKey + snapshot of form values
+- Remove PreviewPanel component (superseded by inline PreviewTabContent)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Email template editor: buttons at top, HTML/Text/Preview tabs, fix 404 noise
+
+- Move Save/Send test/Delete buttons to top of form (consistent with other settings pages)
+- Split Edit tab into HTML and Text tabs (Subject field stays above tabs)
+- Increase HTML editor min-height to 400px, text area to min-h-64
+- Fix 404 console warnings: use fetch() with status check instead of apiClient.get()
+  for event email-settings lookup (404 = no event override, expected, now silent)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix button order: Send test left, Delete + Save right
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Use FileText icon for email templates (matches sidebar icon)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Wrap subject field in card for visual separation
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Unify email template editor into single card
+
+- Merge Subject field and tab panel into one Card with overflow-hidden
+- Subject row sits at top with border-b divider
+- Tab bar styled with underline indicator (no pill background), flush to card
+- Removed redundant FormLabel and hint paragraphs inside HTML/Text tabs
+  (tab name already provides the context)
+- Subject hint updated to show a code example of template syntax
+- CodeEditor rendered borderless/flush when inside the unified card
+- Eliminates visual fragmentation from two separate containers + floating tabs
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix tab polish: styling, borders, padding, height stability
+
+- Revert tab bar to default Shadcn pill style (looks cleaner inside card)
+- Fix CodeEditor extra top border: use border-none instead of border-x-0 border-b-0
+- Add px-6 py-4 padding to PreviewTabContent (was only pt-4, no horizontal padding)
+- Set min-h-[460px] on all TabsContent to prevent page jumping when switching tabs
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Reduce tab bar vertical padding (py-2 → py-1.5)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Fix tab row padding: less top, more bottom (pt-1 pb-2.5)
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Remove top padding from tab row, pull TabsList up by 4px
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* Remove bottom divider from tab row
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* WIP
+
+* WIP
+
+* Rename ListTeamMembers use case to GetTeamMembers
+
+- Rename folder from ListTeamMembers to GetTeamMembers in both src and tests
+- Update class names: ListTeamMembersHttpEndpoint → GetTeamMembersHttpEndpoint
+- Update method names: MapListTeamMembers() → MapGetTeamMembers()
+- Update fixture and test classes accordingly
+- Update namespace declarations in all related files
+- Update imports in OrganizationModule
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+* WIP
+
+* Update infra
+
+* Remove deterministic command ids
+
+* Harden
+
+* Update packages
+
+* Tighten badge security
+
+* Harden Email
+
+* Harden registrations
+
+* WIP
+
+* Harden DB
+
+* Harden for go-live
+
+* WIP
+
+* Add keycloak theme
+
+* WIP
+
+* WIP
+
+* Add OpenAPI tags to endpoints
+
+* Simplify public API routes
+
+* Refactor ActivityLog to read view
+
+* Harden email
+
+* Improve observability
+
+* Harden user resolution
+
+* Fix OpenAPI
+
+* Routing and simplify QR code signing
+
+* Fix interceptor order bug
+
+* Improve waitlist API
+
+* Removed old Cancelled references
+
+* Simplify email templating
+
+* Add team branding features including accent color and public slug
+
+- Introduced TeamBrandingDto for team branding information.
+- Added accent color property to Team entity with validation.
+- Implemented public slug for ticketed events to create unique links.
+- Updated relevant commands, handlers, and validators to support new properties.
+- Removed team-scoped email settings and adjusted related specifications.
+
+* Rename Public API to Partner API and update related endpoints and documentation
+
+* Add TimeZone field to ticketed event details and update related integration events
+
+* Update Partner API to use eventSlug instead of eventId in endpoints and documentation
+
+* Introduce Waitlist Policy with configurable quiet hours for ticketed events
+
+* Add optional reply-to email address to team settings and related functionality
+
+* Configure DB infra
+
+* Refactor SMTP configuration to unify parameters for Keycloak and Worker applications
+
+* Refactor Keycloak options and remove redundant identity service registration
+
+* Update email sender identity to use team reply-to address as display name while preserving system sender address
+
+* Refactor entity configurations to store enum values as strings with a maximum length of 32 characters
+
+* Update email sender display name to use projected team name while preserving system sender address
+
+* New logo
+
+* Add Partner API endpoint for ticket-confirmation email resend
+
+* Add Partner API endpoints for retrieving and updating registration details
+
+* Simplified bulk email
+
+* Remove obsolete workflows
+
+---------
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+openspec,277,"chore(openspec): add 105 new capability specs from archived delta specs (#598)
+
+* chore(openspec): seed hygiene-pass change-of-record and apply delta-spec merges
+
+- Add openspec/changes/agent-claude-openspec-hygiene-pass-2026-05-17-01-26/{proposal,tasks,specs/openspec-hygiene-pass/spec}.md as the change-of-record for the bulk archive that follows.
+- Apply the additive delta specs that openspec emitted while archiving the 221 merged-PR changes (9 files under openspec/specs/, only additions plus one cli-modularization scoping tweak).
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 1/12 (20 changes)
+
+Archived slugs:
+- agent-claude-add-e2e-ci-finish-flow-2026-05-17-00-35
+- agent-claude-add-jsdoc-to-load-bearing-modules-2026-05-17-00-33
+- agent-claude-add-omc-gitignore-and-oh-my-claude-statu-2026-04-20-09-28
+- agent-claude-add-release-please-automation-2026-05-11-12-30
+- agent-claude-add-submodule-advance-verb-2026-05-11-13-40
+- agent-claude-allow-human-commits-on-main-2026-04-20-08-21
+- agent-claude-archive-merged-openspec-changes-batch-1-2026-05-11-12-28
+- agent-claude-archive-stale-openspec-changes-2026-05-17-00-33
+- agent-claude-auto-prune-stale-agent-worktrees-on-setu-2026-04-24-16-38
+- agent-claude-bare-gx-auto-bootstrap-kitty-2026-05-05-09-43
+- agent-claude-bare-gx-prompt-missing-companions-2026-04-24-00-32
+- agent-claude-branch-finish-advance-submodules-flag-2026-05-11-13-50
+- agent-claude-budget-friendly-ci-templates-2026-05-14-00-52
+- agent-claude-ci-label-based-opt-in-2026-05-14-01-28
+- agent-claude-dedupe-hooks-soften-skill-guard-2026-05-17-00-35
+- agent-claude-doctor-auto-finish-local-merge-2026-04-23-21-47
+- agent-claude-fix-metadata-test-stale-assertions-2026-05-14-02-09
+- agent-claude-fix-source-probe-worktree-leak-2026-04-20-00-27
+- agent-claude-frontend-add-claude-install-mode-2026-04-20-11-27
+- agent-claude-frontend-guardex-brand-copy-doctor-2026-04-20-11-44
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 2/12 (20 changes)
+
+Archived slugs:
+- agent-claude-frontend-how-it-works-design-match-2026-04-20-11-02
+- agent-claude-g5-g6-symlink-precommit-gitignore-cleanu-2026-05-11-12-34
+- agent-claude-gitguardex-dmux-cockpit-phase1-topbar-2026-05-05-09-01
+- agent-claude-gitguardex-dmux-cockpit-phase2-welcome-2026-05-05-09-11
+- agent-claude-gitguardex-dmux-cockpit-phase3-projects-2026-05-05-09-23
+- agent-claude-gitguardex-dmux-cockpit-phase4-logs-2026-05-05-09-29
+- agent-claude-gitguardex-dmux-cockpit-phase5-new-agent-2026-05-05-09-35
+- agent-claude-gitguardex-dmux-cockpit-phase6-terminal-2026-05-05-09-49
+- agent-claude-gitguardex-dmux-cockpit-phase7-kitty-tre-2026-05-05-10-00
+- agent-claude-gx-budget-subcommand-2026-05-14-01-32
+- agent-claude-gx-ci-init-workflows-2026-05-14-01-38
+- agent-claude-gx-finish-preflight-and-auto-promote-2026-05-14-01-09
+- agent-claude-gx-gaps-roadmap-2026q2-2026-05-11-16-08
+- agent-claude-gx-setup-installs-speckit-2026-05-17-00-10
+- agent-claude-gx-setup-runs-speckit-by-default-2026-05-17-00-23
+- agent-claude-harden-claude-pivot-2026-04-27-09-28
+- agent-claude-improve-gx-bare-output-2026-04-23-23-58
+- agent-claude-kitty-cockpit-host-2026-05-05-08-35
+- agent-claude-port-role-datetime-branch-naming-2026-04-20-01-06
+- agent-claude-readme-design-simpler-2026-04-24-00-47
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 3/12 (20 changes)
+
+Archived slugs:
+- agent-claude-remove-session-state-and-vscode-active-a-2026-05-16-00-15
+- agent-claude-remove-vscode-icon-submodule-and-prune-a-2026-05-16-00-27
+- agent-claude-rename-colony-package-to-colonyq-2026-05-11-13-03
+- agent-claude-restore-post-checkout-primary-branch-gua-2026-04-19-23-57
+- agent-claude-setup-spec-kit-2026-05-17-00-02
+- agent-claude-skip-merged-worktree-on-reuse-2026-05-16-00-37
+- agent-claude-slim-agents-md-for-token-savings-2026-04-19-23-47
+- agent-claude-smoother-finish-autoclaim-deletes-and-lo-2026-05-12-00-28
+- agent-claude-split-main-cli-into-subcommands-2026-05-17-00-33
+- agent-claude-submodule-auto-sync-on-setup-2026-05-11-13-32
+- agent-claude-submodule-aware-gx-2026-05-07-18-46
+- agent-claude-trim-claude-md-2026-05-17-00-34
+- agent-claude-verify-self-update-actually-advanced-ver-2026-04-20-10-01
+- agent-claude-wire-colony-tasks-into-active-agents-vie-2026-04-24-18-21
+- agent-codex-active-agents-bugfix-pass-2026-04-22-16-54
+- agent-codex-active-agents-bust-icon-2026-04-23-14-52
+- agent-codex-active-agents-openspec-change-icons-2026-04-23-17-07
+- agent-codex-add-caveman-stack-and-claudecode-links-2026-04-21-03-02
+- agent-codex-add-gx-cockpit-tmux-session-command-2026-04-29-21-22
+- agent-codex-add-npx-skills-install-surface-2026-04-23-17-47
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 4/12 (20 changes)
+
+Archived slugs:
+- agent-codex-add-readme-badges-and-dependency-stars-2026-04-21-03-51
+- agent-codex-add-session-severity-scoring-command-2026-04-22-23-28
+- agent-codex-admin-compastor-com-openspec-cleanup-checklist
+- agent-codex-admin-recodee-com-recodee-compastor-how-it-works-nextjs-frontend-999465
+- agent-codex-agents-start-claims-manual-2026-04-29-2131
+- agent-codex-agents-start-dry-run-2026-04-29-21-23
+- agent-codex-align-guardian-t-rex-package-description-2026-04-21-18-46
+- agent-codex-auto-route-small-tasks-to-caveman-and-la-2026-04-22-01-20
+- agent-codex-auto-run-gx-doctor-from-default-status-2026-04-23
+- agent-codex-bump-guardex-to-7-0-14-2026-04-21-11-17
+- agent-codex-bump-guardex-to-7-0-39-release-2026-04-27-18-38
+- agent-codex-bump-guardex-to-7-0-40-release-2026-04-28-01-13
+- agent-codex-bump-guardex-to-7-0-41-release-2026-04-28-20-56
+- agent-codex-bump-npm-version-7-0-38-release-2026-04-27-10-18
+- agent-codex-bump-npm-version-7-0-42-release-2026-04-29-22-36
+- agent-codex-bump-npm-version-to-7-0-21-and-prepare-r-2026-04-22-15-11
+- agent-codex-bump-version-7-0-7-2026-04-20-19-59
+- agent-codex-bump-version-7-0-9-2026-04-20-20-48
+- agent-codex-bump-version-and-toggle-help-2026-04-20-20-29
+- agent-codex-clarify-finished-active-agents-cleanup-s-2026-04-25-16-06
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 5/12 (20 changes)
+
+Archived slugs:
+- agent-codex-clarify-readme-skill-installs-2026-04-23-18-30
+- agent-codex-clear-agent-upstream-on-branch-start-2026-04-20-20-06
+- agent-codex-cli-owned-install-surface-2026-04-21-23-09
+- agent-codex-cockpit-backend-selection-cli-2026-04-30-14-10
+- agent-codex-codex-approval-policy-guidance-2026-05-10-01-30
+- agent-codex-codex-session-task-mode-decider-2026-04-22-12-16
+- agent-codex-codex-task-2026-05-08-12-32
+- agent-codex-codex-task-2026-05-08-15-30
+- agent-codex-codex-task-2026-05-11-09-45
+- agent-codex-codex-task-2026-05-11-12-44
+- agent-codex-codex-task-2026-05-11-15-20
+- agent-codex-codex-task-2026-05-11-15-20-2
+- agent-codex-codex-task-2026-05-12-10-39
+- agent-codex-codex-task-2026-05-13-00-50
+- agent-codex-codex-task-2026-05-13-11-56
+- agent-codex-colony-queen-agent-json-surface-2026-04-30-00-03
+- agent-codex-cr-workflow-env-gate-followup-2026-04-21-02-46
+- agent-codex-dedupe-cli-main-context-output-scaffold-2026-04-22-14-29
+- agent-codex-demo-vscode-active-agents-2026-04-21-18-04
+- agent-codex-dismiss-stale-active-session-2026-04-23-18-29
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 6/12 (20 changes)
+
+Archived slugs:
+- agent-codex-dmux-codex-multi-launcher-panel-2026-04-30-09-41
+- agent-codex-dmux-pane-context-menu-2026-04-30-13-54
+- agent-codex-doctor-agents-toggle-example-2026-04-20-20-39
+- agent-codex-doctor-status-colors-2026-04-21-15-58
+- agent-codex-document-worktree-cleanup-handoff-2026-04-21-16-19
+- agent-codex-dry-run-testable-kitty-command-builders-2026-04-30-14-10
+- agent-codex-enforce-agent-cleanup-in-openspec-tasks-2026-04-20-19-23
+- agent-codex-expand-readme-badges-2026-04-22-16-01
+- agent-codex-extract-doctor-sandbox-module-2026-04-22-15-38
+- agent-codex-fix-active-agents-install-stale-window-2026-04-22-18-11
+- agent-codex-fix-active-agents-view-container-id-2026-04-25-15-48
+- agent-codex-fix-agent-branch-start-template-parity-2026-04-22-11-18
+- agent-codex-fix-branch-finish-remote-delete-tail-2026-04-22-15-42
+- agent-codex-fix-branch-start-pipefail-stash-lookup-2026-04-23-20-01
+- agent-codex-fix-ci-review-bot-test-hang-2026-04-21-02-54
+- agent-codex-fix-codex-agent-autofinish-and-nested-gi-2026-04-21-13-28
+- agent-codex-fix-doctor-sandbox-cleanup-2026-04-23-17-49
+- agent-codex-fix-doctor-setup-force-conflict-ux-2026-04-22-08-58
+- agent-codex-fix-doctor-source-probe-stale-worktree-2026-04-22-15-33
+- agent-codex-fix-release-workflow-base-ref-2026-04-22-23-34
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 7/12 (20 changes)
+
+Archived slugs:
+- agent-codex-fix-remaining-cli-ci-failures-2026-04-21-11-42
+- agent-codex-fix-self-update-handoff-after-npm-update-2026-04-21-03-36
+- agent-codex-fix-temp-helper-worktree-cleanup-2026-04-23-11-56
+- agent-codex-group-active-agents-by-worktree-2026-04-22-18-12
+- agent-codex-gx-doctor-2026-04-20-12-13
+- agent-codex-handle-codex-file-path-and-early-gitigno-2026-04-21-10-35
+- agent-codex-harden-scorecard-best-practices-2026-04-23-18-42
+- agent-codex-hide-active-agents-source-control-commit-2026-04-24-16-47
+- agent-codex-ignore-scripts-star-and-githooks-2026-04-21-10-40
+- agent-codex-improve-guard-startup-output-design-2026-05-07-20-25
+- agent-codex-improve-how-it-works-frontend-style-2026-04-21-01-53
+- agent-codex-improve-setup-new-repo-docker-loader-2026-04-21-11-41
+- agent-codex-improve-usage-limit-takeover-handoff-2026-04-21-23-30
+- agent-codex-improve-vscode-reference-image-2026-04-21-02-39
+- agent-codex-inspect-active-agent-session-2026-04-22-17-45
+- agent-codex-kitty-availability-wrapper-final-2026-04-30-14-23
+- agent-codex-kitty-default-agent-terminal-2026-04-30-13-14
+- agent-codex-kitty-gx-cockpit-backend-2026-04-30-13-47
+- agent-codex-kitty-gx-window-terminal-2026-04-30-13-36
+- agent-codex-kitty-welcome-first-terminal-tab-2026-04-30-14-03
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 8/12 (20 changes)
+
+Archived slugs:
+- agent-codex-make-npm-deployment-green-2026-04-21-03-13
+- agent-codex-make-release-workflow-idempotent-when-ve-2026-04-21-16-30
+- agent-codex-merge-overlapping-agent-branches-2026-04-21-14-28
+- agent-codex-move-active-agents-to-own-sidebar-icon-2026-04-23-14-13
+- agent-codex-move-problem-diagram-and-vsc-image-2026-04-21-03-39
+- agent-codex-nest-active-agent-changes-2026-04-22-10-53
+- agent-codex-optimize-gx-to-use-rtk-2026-05-04-06-03
+- agent-codex-point-frontend-links-at-recodeee-fronten-2026-04-21-12-45
+- agent-codex-pr-merge-current-main-changes-2026-04-20-00-29
+- agent-codex-prevent-finish-rerun-from-opening-duplic-2026-04-22-23-58
+- agent-codex-prevent-session-severity-help-and-test-d-2026-04-23-00-01
+- agent-codex-prompt-install-oh-my-claudecode-dependen-2026-04-21-03-49
+- agent-codex-protect-active-cwd-during-cleanup-2026-05-07-15-13
+- agent-codex-ralplan-masterplan-role-prompts-and-owne-2026-04-21-14-48
+- agent-codex-readme-about-description-2026-04-21-18-05
+- agent-codex-readme-about-description-regression-test-2026-04-21-18-20
+- agent-codex-readme-terminal-doctor-setup-ci-note-2026-04-21-02-38
+- agent-codex-record-active-agents-logo-merge-evidence-2026-04-22-16-36
+- agent-codex-record-merged-cleanup-evidence-for-gx-pr-2026-04-22-16-18
+- agent-codex-record-merged-cleanup-evidence-for-live-2026-04-22-13-56
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 9/12 (20 changes)
+
+Archived slugs:
+- agent-codex-record-pr-380-cleanup-evidence-2026-04-23-16-54
+- agent-codex-refactor-cli-doctor-foundations-2026-04-22-10-50
+- agent-codex-refresh-gx-status-svg-2026-04-21-16-31
+- agent-codex-refresh-readme-longform-2026-04-21-02-22
+- agent-codex-release-7-0-23-2026-04-22-23-22
+- agent-codex-release-7-0-26-2026-04-23-16-21
+- agent-codex-release-cli-owned-install-surface-v7-0-1-2026-04-22-00-53
+- agent-codex-release-guardex-7-0-16-2026-04-21-15-22
+- agent-codex-release-guardex-7-0-19-2026-04-22-10-27
+- agent-codex-release-guardex-7-0-20-2026-04-22-12-12
+- agent-codex-release-guardex-7-0-22-2026-04-22-16-19
+- agent-codex-release-guardex-7-0-25-2026-04-23-12-33
+- agent-codex-release-guardex-7-0-27-2026-04-23
+- agent-codex-release-guardex-7-0-35-2026-04-24-17-33
+- agent-codex-release-guardex-7-0-37-2026-04-25-15-11
+- agent-codex-remove-stale-active-agents-scm-provider-2026-04-24-17-44
+- agent-codex-rename-guardex-to-gitguardex-and-slim-fi-2026-04-21-01-29
+- agent-codex-rename-npm-package-to-gitguardex-everywh-2026-04-21-21-02
+- agent-codex-replace-cavemem-with-colony-companion-2026-04-28-20-34
+- agent-codex-restore-agents-hook-bridge-2026-04-20-08-45
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 10/12 (20 changes)
+
+Archived slugs:
+- agent-codex-restore-cleanup-pr-merged-flag-2026-04-21-09-53
+- agent-codex-restore-guardex-npm-package-name-2026-04-22-00-02
+- agent-codex-reuse-dirty-matching-worktree-on-branch-2026-04-28-00-56
+- agent-codex-reuse-existing-agent-worktree-on-repeate-2026-04-27-18-17
+- agent-codex-scm-active-agent-signals-2026-04-22-15-54
+- agent-codex-self-heal-repo-scan-ignores-2026-04-23-12-12
+- agent-codex-setup-current-single-repo-alias-2026-04-22-13-48
+- agent-codex-setup-protected-main-sandbox-2026-04-21-12-20
+- agent-codex-show-cavekit-caveman-cavemem-in-status-2026-04-21-03-29
+- agent-codex-show-session-health-in-active-agents-2026-04-23
+- agent-codex-skip-live-codex-worktree-cleanup-2026-05-13-01-13
+- agent-codex-skip-mirror-sync-when-pat-missing-2026-04-21-13-00
+- agent-codex-source-control-how-it-works-style-parity-2026-04-20-00-42
+- agent-codex-split-claude-worktrees-under-omc-2026-04-21-13-46
+- agent-codex-split-cli-main-args-dispatch-2026-04-22-13-48
+- agent-codex-sync-frontend-mirror-webu-pro-2026-04-20-13-08
+- agent-codex-sync-how-it-works-design-logic-codex-2026-04-20-09-52
+- agent-codex-sync-recodee-openspec-bootstrap-into-gx-2026-04-21-17-20
+- agent-codex-takeover-task-7d894129d262-2026-04-24-17-47
+- agent-codex-tolerate-already-deleted-local-branch-in-2026-04-22-20-43
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 11/12 (20 changes)
+
+Archived slugs:
+- agent-codex-update-companion-tools-readme-2026-04-21-02-53
+- agent-codex-vscode-active-agents-canonical-source-pl-2026-04-22-17-59
+- agent-codex-vscode-active-agents-extension-2026-04-21-17-38
+- agent-codex-vscode-active-agents-icon-size-2026-04-22-16-50
+- agent-codex-vscode-active-agents-scm-badge-visibilit-2026-04-21-18-31
+- agent-codex-vscode-active-agents-scm-commit-input-2026-04-22-10-55
+- agent-codex-vscode-active-agents-scm-provider-layout-2026-04-21-23-22
+- agent-codex-vscode-active-agents-subrepo-path-labels-2026-04-23-16-46
+- agent-codex-vscode-active-agents-welcome-view-2026-04-22-10-58
+- agent-codex-vscode-active-agents-worktree-status-2026-04-21-21-23
+- agent-codex-vscode-extension-version-bump-guard-2026-04-22-16-18
+- agent-codex-vscode-setup-ignore-worktrees-2026-04-22-12-18
+- agent-codex-vscode-source-control-openspec-visual-2026-04-20-12-25
+- agent-codex-vscode-tree-lock-decorations-2026-04-22-10-55
+- agent-codex-vscode-working-agents-groups-2026-04-22-09-05
+- auto-release-writer
+- doctor-recursive-nested-repos
+- fix-branch-start-stash-leak
+- fix-regression-finish-flows
+- setup-current-single-repo-alias
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): archive merged changes batch 12/12 (1 changes)
+
+Archived slugs:
+- tighten-token-fragmentation-prompts
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* chore(openspec): add 105 new capability specs from archived delta specs
+
+These spec.md files were created by the `openspec archive` pipeline as it folded each merged change's delta spec into the main `openspec/specs/<capability>/` tree. Each one is the first main-spec entry for a capability that previously only existed inside the change folder.
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+---------
+
+Co-authored-by: NagyVikt <nagy.viktordp@gmail.com>
+Co-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
+openspec,267,Initial project import
+openspec,267,feat: initial commit
+openspec,242,workflow helpers and checkpoint files
+openspec,219,Refactor code structure for improved readability and maintainability
+openspec,217,Update rule and archive change complete openspec
+openspec,211,First commit
+openspec,207,JNG-6382 Add agentic instructions
+openspec,207,"Update archive path and rules (#80)
+
+* update archive path and rules
+
+* revert skill changed by mistake"
+openspec,202,Track OpenSpec specs
+openspec,194,"chore: archive 36 OpenSpec changes, fix spec validation, remove slop, type cleanup (#400)
+
+* chore: archive 36 completed OpenSpec changes, fix spec validation, remove slop files
+
+- Archive 36 completed changes to openspec/changes/archive/2026-04-14-*
+- Sync 51 delta specs to main specs before archiving
+- Fix 13 spec validation failures (missing Purpose/Requirements headers)
+- Remove orphaned donut-example SVG and unused Vite template react.svg
+- All 19 specs now pass openspec validate --specs
+- 6 in-progress changes remain active
+
+* style: remove unnecessary else/elif after return/raise (RET505/RET506)
+
+* refactor: replace cast(dict[str, object]) with typed field assignments
+
+- Replace dynamic loop + cast(dict[str, object]) with explicit typed
+  field assignments for rate-limit metadata (plan_type, resets_at,
+  resets_in_seconds) using OpenAIErrorDetail TypedDict
+- Type rate_limit_metadata as OpenAIErrorDetail instead of dict[str, object]
+- Fix bare dict parameter in _validate_context_window_entries to Mapping[str, object]
+
+* style: fix import ordering in settings.py"
+openspec,188,"refactor(mobile): 攤平 Flutter 子目錄並提升共用資產至 monorepo root
+
+- 將 naver_blog_image_downloader/ 內容提升一層到 apps/mobile/
+- 將 docs/、openspec/、.spectra.yaml、.claude/commands/ 移到 monorepo root
+- 將 PROJECT SYSTEM DESIGN ARCHITECTURE.md 重新命名為 docs/mobile-architecture.md
+- 搬移 mobile workflow 至 .github/workflows/mobile-*.yml
+- 移除 app repo 根層的 .gitignore（內容已整合至 monorepo root .gitignore）"
+openspec,184,archive: apply delta-based spec updates and archive changes\n\n- adopt-delta-based-changes: fix MODIFIED/ADDED headers; update specs; archive\n- add-zod-validation: mark cli-diff validation as ADDED; archive\n- adopt-verb-noun-cli-structure: move Flags to MODIFIED; archive\n\nAlso adjust openspec-conventions deltas to reflect existing headers.
+openspec,178,"refactor(openspec): flatten specs to domain-prefixed flat layout
+
+Move from nested specs/{domain}/{capability}/spec.md to the flat
+specs/{domain}-{capability}/spec.md layout so the OpenSpec CLII
+(spec list/show/validate) discovers all specs again. Update config.yaml
+and AGENTS.md to document the convention. Renames only; no spec content
+changed."
+openspec,175,"feat(whatsapp): add QR code connection flow, health check, and message statistics
+
+- Implemented requirements for connecting WhatsApp accounts via QR code, including scenarios for pairing, status polling, and error handling.
+- Added functionality to view WhatsApp connection status, allowing users to see their connection details and manage their connection.
+- Introduced the ability to disconnect WhatsApp accounts and delete all related data, ensuring compliance with data privacy regulations.
+- Developed a health check feature to verify the WhatsApp connection status and send test messages to the user's own number.
+- Created a connection event log to track WhatsApp connection activities and display the last health check timestamp for user confidence."
+openspec,171,Initial version (#1)
+openspec,157,"Bulk archive completed changes and normalize source specs (#716)
+
+* chore: bulk archive completed changes and normalize specs
+
+* docs: finalize spec purposes and align init workflow scenarios
+
+* test: guard source specs against placeholders and delta headers
+
+* docs: resolve remaining spec review nits"
+openspec,157,docs: archive completed openspec changes
+openspec,152,"Add performance metrics: PCG thermal solver, fused interpolation, logging, benchmarking (#165)
+
+* Add performance metrics: PCG thermal solver, fused interpolation, logging, benchmarking
+
+- PCG thermal solver (thermal_solver=1): Jacobi-preconditioned CG with warm-starting,
+  replaces CHOLMOD for thermal equation. 98% thermal solve speedup on large grids.
+- Fused P2Mastah interpolation (interp_mode=3): single-pass particle-to-grid with
+  shared stencil weights and atomic scatter. 66% interpolation speedup.
+- Cached CHOLMOD factorization: reuse symbolic analysis across timesteps.
+- AccumulatedStrainII OpenMP parallelization.
+- Structured logging system (LOG_INFO/WARN/ERR/DBG/TIME macros, configurable
+  log_dest/log_level/log_timestamp/log_ts_mode/log_metadata in .txt files).
+- Per-timestep perf.csv with 24 columns of phase timing and resource usage.
+- PCG residual CSV export (export_pcg_residuals=1) for convergence diagnostics.
+- Comprehensive CI test suite: thermal accuracy (CHOLMOD vs PCG), interpolation
+  equivalence (mode 0 vs 3), interp_mode=1/2 variants for all existing tests.
+- RiftingComprehensive scenario with lowres/medres/highres parameter files.
+- OPTIMIZATIONS.md documenting all changes, validation, and usage.
+- Benchmark infrastructure (misc/benchmark.sh, perf.csv analysis).
+- OpenSpec artifacts and skill files for logging, benchmarking, testing.
+
+* Fix markdown table: escape pipe characters in |diff| headers
+
+* add thermo-elastic and ocean cooling benchmarks
+
+* visualize using canvas
+
+* polish
+
+* add multigrid view
+
+* optimizations
+
+* improve visuals
+
+* fancy phases
+
+* add day mode
+
+* polish phases
+
+* add zoom in
+
+* add directory scan
+
+* archive specs
+
+* add overlays
+
+* add visualisation
+
+* experiment: eliminate the particles when overflow
+
+* add scan of the files
+
+* add CountPartCell_v2
+
+* fix CI
+
+* add exp 0
+
+* Rigid-body rotation and Vortex shear tests added to readme
+
+* change description
+
+* change description
+
+* archive specs
+
+* add new reseeding mode
+
+* Experiment: GMG for FGMRES inside killer solver outer loop
+
+* fix rotation test
+
+* first GMG benchmarks fails
+
+* archive
+
+* add-gmg-upleg-fix §1: gmg_fgmres_max_restarts + log alignment + failing fixtures
+
+Zero-risk prerequisite bundle for the upleg-amplification investigation:
+
+* New `gmg_fgmres_max_restarts` param (mdoodz.h / InputOutput.c),
+  default 20, validated to [1, 1000]; threaded through to FGMRES_GMG.
+* FGMRES convergence predicate is now literally `‖r_k‖/‖r_0‖ ≤ tol`
+  — `FGMRESStats` records `initial_residual`, and the ""converged"" /
+  ""did not converge"" LOG_INFO/LOG_WARN messages report `final_res_rel`
+  and `tol` (predicate-comparable) instead of the raw ‖r_k‖.
+* Startup banner logs the active GMG config once per Stokes solve.
+* Two regression tests land as *currently failing* live fixtures:
+  - UplegAmplificationBound (81/161/201²): asserts per-stage upleg
+    residual ratio ≤ 2× and whole-V-cycle ≤ 4×. 81² pre-fix measures
+    whole-V-cycle = 8.72× → fails as designed, confirming the bug.
+  - GmgConvergesAtDefaultLevels (201²): asserts FGMRES converges at
+    default gmg_levels with no CHOLMOD fallback and iters ≤ 60.
+* New SolViBenchmark fixtures (SolViUpleg{81,161,201}.txt,
+  SolViGmgDefaultLevels201.txt).
+
+MultigridStokesTests (FGMRES + V-cycle + solver equivalence): 16/16 green
+post-refactor. See openspec/changes/add-gmg-upleg-fix/{proposal,design,
+specs,tasks}.md for the full plan.
+
+* finest-level Vanka pre-smoother was buggy and amplifying residual
+
+* archive change
+
+* remove-gmg-stokes-solver: delete GMG implementation and retire specs
+
+Implements openspec/changes/remove-gmg-stokes-solver (proposal.md, design.md).
+Remove MultigridLevels/StokesAssemblyGMG/MultigridStokes sources; strip lin_solver=3
+dispatch; reject lin_solver=3 at input parse with LOG_ERR; warn once on deprecated
+gmg_* keys. Delete GMG tests/fixtures, ec2/vcycle_vis harness, SolViPerf driver.
+Replace main gmg-* specs with tombstones; prune non-canonical archived GMG artifacts.
+
+Preserves non-GMG OMP guards (ChemicalRoutines, Main_DOODZ) and mdoodz-private.h
+include guards from the GMG era.
+
+Build: mdoodz with OMP on/off. Tests: ctest (20 default tests). Manual: lin_solver=3
+exit 1; gmg_levels legacy line emits WARN.
+
+Made-with: Cursor
+
+* chore(openspec): archive remove-gmg-stokes-solver to 2026-04-21-remove-gmg-stokes-solver
+
+Update main gmg-stokes-solver tombstone to point at the archived change path.
+
+Made-with: Cursor
+
+* failed CHOLMOD factor recycling documented
+
+* add Popov (2025) 0d test
+
+* add SolCx test
+
+* fix Popov 2025 post processing
+
+* fix Popov 2025 post processing (2)
+
+* add out_of_plane = 1 to lower the slope for volumetric
+
+* clean the md
+
+* add assertions snippets
+
+* GSE fix to test the CI
+
+* archive the change
+
+* add linv=15 tests
+
+* add Fig 2 Grain size reference
+
+* polish benchmark
+
+* delete extra .txt files from tests
+
+* update citations
+
+* ani_fstrain={2,3}: Hansen-calibrated δ(γ), Boneh DiSRX relaxation, F-init helper (#166)
+
+* ani_fstrain={2,3}: Hansen-calibrated δ(γ), Boneh DiSRX relaxation, F-init helper
+
+Turns the viscous-anisotropy machinery from a static ""δ pinned at
+aniso_factor"" placeholder into a lab-calibrated, dynamically-evolving
+fabric model. The full derivation, citations, and reproducible figures
+live at VISUAL_TESTS/aniso_fstrain/CALIBRATION_AND_DYNAMIC_FSTRAIN.md;
+this commit is the engine implementation plus tests and demos.
+
+What it adds:
+
+* ani_fstrain=2 — per-mineral, lab-calibrated δ(FS_AR) dispatched via
+  aniso_db: Hansen olivine (38-point combined fit, δ_max=14.132),
+  damped olivine (93-pt non-Hansen), Pennacchioni / Blackford quartz,
+  Pieri / Barnhoorn calcite (Bruijn+11 retracted post-audit), Tokle+23
+  quartz-mica, plagioclase. Constants reproducible from
+  misc/aniso_fstrain/calibrate/*.py against raw CSVs under
+  misc/aniso_fstrain/data/.
+
+* ani_fstrain=3 — dynamic δ evolution: Hansen build-up under active
+  strain + Boneh+21 DiSRX relaxation toward δ=1 under static anneal,
+  with a smooth strain-rate gate f_gate = 1/(1+(eII/eII_max)^2) that
+  locks fabric where the rock is actively creeping. δ-update is the
+  analytic exponential δ_new = 1 + (δ_old - 1)·exp(-Δt/τ_eff).
+
+* Phase-1 F-init helper — initialises per-marker F so that step-0 δ
+  exactly equals the prescribed aniso_factor, encoding inherited
+  fabric as past finite strain rather than as a magnitude offset.
+  Closes the ""+offset overshoots Hansen ceiling"" failure mode.
+
+New .txt keys (all default to off / legacy behaviour):
+  aniso_db, ani_fstrain={0,1,2,3}, ani_relax_length, ani_relax_eps_max.
+
+Engine entry points:
+  anisoDelta_HansenOlivine            in MDLIB/FlowLaws.c
+  DeltaRelaxationTau                  in MDLIB/AnisotropyRoutines.c
+  aniso_init_finite_strain_for_marker in MDLIB/RheologyParticles.c
+
+Tests:
+  AnisotropyBenchmarkTests (27 cases)   — FS_AR(γ) analytics, sat clamp,
+                                            mineral δ-laws, director angle
+  InitAnisoFromFiniteStrainTests        — F-init round-trip math
+  RheologyCreepTests::PinchSwellGSEAniso — coupled GSE+aniso sentinels
+CI documentation: TESTS/AnalyticalSolutions.md §8.3 and §9.
+
+Lab-validation demos (one per mineral):
+  SETS/AniFstrain{CalciteBruijn, CalcitePieri, CalciteSchuster,
+                  QuartzBlackford, QuartzPennacchioni, OlivineBoneh_InitFS}
+each ships a .c/.txt SET plus a mdoodz_vs_<paper>.py overlay and PNG.
+
+Visual-tests suite at VISUAL_TESTS/aniso_fstrain/ — 6 plot scripts +
+provenance-pinned 7th rifting comparison, runners under runners/,
+INDEX.md and the summary markdown.
+
+OpenSpec design records (archived) and capability specs under
+openspec/changes/archive/2026-05-{06,07,14,15}-* and openspec/specs/{
+aniso-delta-relaxation, aniso-init-from-finite-strain,
+ci-finite-strain-anisotropy, ci-gse-anisotropy-coupled}/.
+
+Backward compatibility: ani_fstrain=0 and aniso_db=0 defaults preserve
+the old min(FS_AR, ani_fac_max) form. Every pre-existing .txt is
+byte-identical-effective.
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* docs(CALIBRATION_AND_DYNAMIC_FSTRAIN.md): rewrite PDF references to in-doc anchors + DOI links
+
+GitHub-readable PR documentation: replaced 57 outbound `../../../bib/`
+links (which point to `~/bib/` on the maintainer laptop only and 404
+for everyone reading the PR) with 39 in-doc `#refN` anchor jumps to
+the References section, where each entry now ends with a `[DOI](...)`
+(or `[Cambridge](...)` for Karato 08) publisher link.
+
+Net: 17 external DOIs + 39 #refN anchor jumps + 24 intra-repo links to
+tracked files. Zero broken links.
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* fix markdown
+
+* fix aniso tests
+
+* apply optimizations tested with anisotropic models
+
+* make pc_line_search optional
+
+---------
+
+Co-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+---------
+
+Co-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
+openspec,136,feat: add historical curriculum lineage and safety foundations
+openspec,133,"chore: archive v2 wave plan + fix all TS typecheck errors
+
+- Archive completed 12-wave v2 plan (26 specs) to openspec/archive/
+- Fix @nexus/register tsconfig: bun-types → @types/bun
+- Fix @nexus/core: add @types/bun devDep + tsconfig types
+- Fix @nexus/ui: add @testing-library/jest-dom to tsconfig types
+- Fix @nexus/agent: body as any in tests, Server<WsData> type, watcher-bridge stdout/stdin casts
+- Fix @nexus/nextjs: add @types/bun, mock cast via unknown
+All 6 TS packages now pass typecheck"
+openspec,132,"chore: archive 5 completed changes (frontend-ui, auth-rbac, email-otp, account-sync, auth-sync-tabs)"
+openspec,128,chore: initial commit
+openspec,127,"Add learning docs and YouTube reference to README
+
+- Add docs/how-openspec-works.md: demystifies the five core mechanisms
+- Add docs/index.md: full documentation navigation hub
+- Add docs/architecture/system-design.md: artifact graph, adapter system, delta merge
+- Add docs/reference/configuration.md: complete config and env var reference
+- Add docs/troubleshooting/common-issues.md: consolidated troubleshooting guide
+- Update README.md: YouTube video link front and center, attribution to original repo
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+openspec,127,"merging testing into staging (#2246)
+
+* ash framework integration (#2206)
+
+* initial openspec
+
+* proposal updates
+
+* WIP - ash integration
+
+* WIP ash integration
+
+* adding policy/tenant stuff
+
+* more ash framework integration work
+
+* cleaning up account contexts
+
+* more ash context work
+
+* auth work
+
+* tenant id isolation work
+
+* adding tests
+
+* updating onboarding tests
+
+* updated tasks
+
+* doc updates
+
+* openspec work
+
+* feature flag cleanup
+
+* use ash forms
+
+* fixing tests
+
+* wip agent and poller bringup
+
+* working out bazel build issues
+
+* bazel updates wip
+
+* updated openspec
+
+* wip magic link auth stuff
+
+* magic link stuff working can sign-in to app again
+
+* fixing ui and schemas
+
+* ash resource fixes
+
+* fixing errors on dashboards
+
+* WIP core bringup
+
+* fixing migrations bug
+
+* adding integration page, horde ui
+
+* fixing infra ui
+
+* adding multi tenancy stuff
+
+* wip ash integration -- break to work on agents/pollers
+
+* Chore/fix credo linter errors (#2207)
+
+* linted
+
+* bazel updates
+
+* linted
+
+* fixing bazel build issues, linting
+
+* 2208 feat multi tenant isolation (#2209)
+
+* initial
+
+* updated tenant schema
+
+* agent work
+
+* cleanup
+
+* updated docs
+
+* fixing bazel issues
+
+* Feat/multi tenant isolation cont (#2210)
+
+* cleanup, adding new openspec proposal for nats tenants work
+
+* working on tenant onboarding
+
+* linted
+
+* k8s updates
+
+* doc updates
+
+* fixing linter warnings
+
+* fixing more linter warnings
+
+* linted
+
+* Update/ash framework cont2 (#2211)
+
+* openspec task list updates
+
+* adding device actors
+
+* state publisher
+
+* adding healthcheck runner
+
+* infra health events work
+
+* updated openspec proposal
+
+* Update/ash integration cont3 (#2214)
+
+* updating core coordinator
+
+* fixing bazel
+
+* new openspec proposal to address db-event writer issues
+
+* Feat/db event writer elx (#2215)
+
+* adding openspec proposal
+
+* feat(event-writer): Add Elixir EventWriter to replace Go db-event-writer
+
+Implements Broadway-based NATS JetStream consumer for writing events
+to TimescaleDB hypertables. Includes:
+
+- EventWriter.Pipeline: Broadway pipeline with batching
+- EventWriter.Producer: NATS JetStream connection with mTLS
+- Processors for: OtelMetrics, OtelTraces, Logs, Events, Telemetry, Sweep, NetFlow
+- EventWriter.Health: Health check module integrated with ClusterHealth
+- 51 unit tests for message parsing
+- Docker-compose configuration with EVENT_WRITER_ENABLED toggle
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+* chore: Add broadway/elixir_uuid/gen_stage to hex cache
+
+Required for Elixir EventWriter Broadway pipeline.
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+* fixing hex cache stuff
+
+* refactor(event-writer): Remove CloudEvents processor, use OCSF instead
+
+Removes the deprecated Events processor that wrote CloudEvents format
+to the `events` table. Going forward, events should use OCSF format
+and be written via the Monitoring.Event Ash resource.
+
+- Remove Events processor and tests
+- Remove EVENTS stream from default config
+- Update pipeline to not route events.* subjects
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+* feat(event-writer): Update Logs processor to use OCSF schema
+
+- Add ocsf_events hypertable migration with OCSF v1.7.0 schema
+- Update Logs processor to write Event Log Activity (class_uid: 1008)
+- Map OpenTelemetry severity to OCSF severity_id (0-6)
+- Build OCSF metadata, observables, actor, and device objects
+- Remove deprecated EVENTS stream from runtime config
+- Add handshake_first: false to NATS config for Gnat compatibility
+- Update tests for new OCSF schema format
+
+OCSF fields implemented:
+- class_uid, category_uid, type_uid, activity_id
+- severity_id, severity, message
+- metadata (with product info and version 1.7.0)
+- observables (IP addresses, hostnames)
+- trace_id, span_id (OpenTelemetry correlation)
+- log_name, log_provider, log_level, log_version
+- actor, device, src_endpoint objects
+- unmapped (for extensibility)
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+* docs: Add EventWriter TLS connection issue documentation
+
+Detailed analysis of the TLS handshake failure between Gnat
+(Elixir NATS client) and NATS server with mandatory mTLS.
+
+Includes:
+- Root cause analysis (STARTTLS vs implicit TLS mismatch)
+- What was tried (handshake_first, cert verification)
+- Six potential solutions with pros/cons
+- Configuration reference
+- Environment variables
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+* core joining and talking to nats jetstream
+
+* docker fixes
+
+* fixing datasvc connections
+
+* fixing ashoban scheduler moving from webng to core-elx
+
+* adding back oban web
+
+* event writer schema alignments
+
+* updating openspec and ocsf stuff
+
+* adding eventwriter
+
+* build fixes
+
+* linted
+
+* fixing compile issues with hex
+
+---------
+
+Co-authored-by: Claude Opus 4.5 <noreply@anthropic.com>
+
+* 2216 feat nats multi tenant integration work (#2217)
+
+* initial tasks completed
+
+* openspec updates
+
+* nats datasvc changes for jwt users
+
+* adding/updating tests
+
+* adding nats account creation, working and tested with tests
+
+* Feat: NATS multi-tenant onboarding with JWT push
+
+- Add OperatorBootstrap GenServer for auto-bootstrap at startup
+- Add NatsOperator and NatsPlatformToken Ash resources
+- Add NatsCredential and CollectorPackage for edge collectors
+- Add PushAccountJWT RPC to push JWTs to NATS resolver
+- Update CreateAccountWorker to push JWTs after account creation
+- Add Go CLI nats_bootstrap command and NATS config generation
+
+The operator bootstrap runs automatically on startup when datasvc is
+available. It checks if an operator record exists in the database, and
+if not, calls BootstrapOperator RPC on datasvc. New tenants get NATS
+accounts created via Oban worker with JWTs pushed to NATS resolver for
+immediate activation without server restart.
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
+* nats onboarding wip
+
+* wip datasvc
+
+* wip datasvc
+
+* fixing bazel caching issues
+
+* bazel caching updates, nats operator wip
+
+* fixing ashcloak issues
+
+* tenant keys showing up, fixing login loop
+
+* can now delete nats credentials from tenant
+
+* nats JWT switchover and hardening
+
+* fixing cnpg mtls issues
+
+* fixing auth stuff
+
+* linted
+
+* linted
+
+* fixing bazel issues
+
+---------
+
+Co-authored-by: Claude Opus 4.5 <noreply@anthropic.com>
+
+* agent/tenant updates (#2220)
+
+* agent/tenant updates
+
+* spki changes
+
+* Updates/nats tenant int cont (#2219)
+
+* collector onboarding
+
+* onboarding package work for nats - wip
+
+* adding openspec proposals
+
+* tenant provisioning wip
+
+* Feat/agent gateway work (#2221)
+
+* initial agent gateway work
+
+* agent gateway fixes
+
+* agent/agent-gateway ui cleanup work
+
+* fixing agent gateways showing up in UI
+
+* agent gateways missing from ui
+
+* infra ui should only show up for platform tenant
+
+* agent updates
+
+* poller -> agent rename cleanup work
+
+* poller cleanup
+
+* qodo code review issues, linting
+
+* qodo fixes
+
+* qodo updates
+
+* cleanup and mtls fixes
+
+* qodo update for agent
+
+* qodo changes
+
+* qodo fixes
+
+* more qodo fixes
+
+* qodo improvements
+
+* bump, qodo / linter fixes
+
+* adjusting beam settings, linted
+
+* linted
+
+* qodo fixes
+
+* qodo changes
+
+* more qodo changes
+
+* fixing tests
+
+* qodo updates
+
+* qodo
+
+* qodo updates
+
+* linted
+
+* linted
+
+* adding openspec proposal for poller cleanup
+
+* qodo changes
+
+* linted
+
+* linted
+
+* qodo cleanup
+
+* qodo updates
+
+* qodo updates
+
+* linted
+
+* fixing build issue
+
+* qodo improvements
+
+* linted
+
+* qodo updates
+
+* more qodo work
+
+* more qodo
+
+* qodo changes
+
+* more qodo improv
+
+* qodo changes
+
+* qodo
+
+* fixing tests
+
+* linter fix
+
+* adding chunking sequence stuff
+
+* credo updates
+
+* qodo updates
+
+* qodo
+
+* linted
+
+* qodo changes
+
+* qodo changes
+
+* qodo updates
+
+* qodo
+
+* qodo updates
+
+* fixing tests
+
+* qodo
+
+* Bugs/agent gateway (#2223)
+
+* agents and agent gateways showing up in ui cleanly now, no errors in
+logs
+
+* linted
+
+* linted
+
+* Updates/sync service ng (#2225)
+
+* initial - wip
+
+* openspec cleanup
+
+* openspec cleanup
+
+* sync service wip
+
+* WIP checkin
+
+* integration ui work
+
+* gateway config now bootstrapped
+
+* deprecating push methods
+
+* updated os
+
+* updating openspec
+
+* cleanup and more onboarding work
+
+* linted
+
+* sync service integration work into agent WIP
+
+* sync integration with agent
+
+* linted and fixing srql-fixtures tests
+
+* bazel updates
+
+* bazel updates
+
+* bazel fixes
+
+* caching deps
+
+* fixing rbac on infra ui
+
+* bazel issues, ui updates
+
+* fixing tests and adding sample env
+
+* openspec update and tenant work
+
+* fixing tests
+
+* qodo suggestions
+
+* adding addl openspec, cleaning up linter warnings
+
+* Cleanup/poller removal (#2226)
+
+* poller removal
+
+* cleanup
+
+* cleanup
+
+* applying qodo suggestion
+
+* more cleanup of agent stuff, and poller removal
+
+* poller cleanup/removal
+
+* cleanup
+
+* wip cleanup/linting
+
+* cleanup
+
+* Update/enforce tenant schema isolation (#2228)
+
+* tenant schema isolation WIP
+
+* missing files
+
+* tenant schema isolation wip
+
+* tenant schema isolation wip
+
+* openspec task updates
+
+* integration testing work
+
+* k8s updates for srql-fixtures/testing
+
+* cleanup pollers, schema consolidation
+
+* openspec updates
+
+* bazel fixes
+
+* made call atomic
+
+* edge onboarding token work
+
+* updating tests
+
+* test fixes
+
+* made operation atomic
+
+* schema updates
+
+* updating openspec, fixing build
+
+* can login now
+
+* fixing tenant scope stuff
+
+* cleanup
+
+* cleanup public schema
+
+* fixing missing tables
+
+* schema fixes, agent update (#2229)
+
+* schema fixes, agent update
+
+* fixing agent gateway
+
+* doc update
+
+* use ash notifier
+
+* linter update
+
+* fixing integration source event publishing
+
+* adding event writer
+
+* tenant awareness
+
+* tenant aware schema stuff
+
+* Fix/agent gateway genserver (#2230)
+
+* Avoid blocking GenServer initialization during discovery
+
+* tenant/agent cleanup
+
+* agent gateway config cleanup
+
+* wiring up telemetry exporter
+
+* cleanup
+
+* Fix/ash oban tenant scheduler broken (#2231)
+
+* fixing tenant bootstrapping and  multi tenant schema stuff
+
+* agent discovery working again
+
+* agent config work
+
+* status processor updates
+
+* devices flowing through
+
+* srql update
+
+* applying qodo suggestions, fixing rust srql
+
+* linted
+
+* linted
+
+* fixing tests
+
+* Fix/analytics page (#2233)
+
+* analytics / srql updates
+
+* adding missing test
+
+* fixed analytics stats cards 50k devices showing
+
+* qodo fixes
+
+* Cleanup/services page (#2235)
+
+* wip sync service move to core from webng
+
+* wip sync ingestor / core-elx
+
+* sync ingestion work
+
+* wip sync updater
+
+* sync ingestor working
+
+* doc updates
+
+* adding tests
+
+* applying qodo suggestions
+
+* linted
+
+* arc updates (#2236)
+
+* Cleanup/nats internal events (#2238)
+
+* internal event tracking wip
+
+* internal event wip
+
+* Updates/log events work (#2239)
+
+* core promotion work
+
+* log promotion work
+
+* adding alert view
+
+* events wip
+
+* sync writer work, new openspecs
+
+* nats internal events openspec closeout
+
+* Feat/stateful alert rule eng (#2241)
+
+* backend work on events/cloudevent cleanup
+
+* restoring db event writer
+
+* logwriter updates
+
+* adding new openspec proposal
+
+* linted go
+
+* fixed rust linter issues
+
+* fixing rust issues
+
+* settings ui work (#2242)
+
+* Feat/rule builder UI (#2243)
+
+* wip react crap
+
+* wip, changing to es6
+
+* jdm loading now with css
+
+* editor updates
+
+* jdm editor updates, kv seeding stuff
+
+* zen rules showing up now
+
+* load jdm rules
+
+* Cleanup/serviceradar core removal (#2244)
+
+* cleanup
+
+* archiving openspec
+
+* bump
+
+* cleanup removed web (#2245)
+
+---------
+
+Co-authored-by: Claude Opus 4.5 <noreply@anthropic.com>"
+openspec,125,"RC v0.17.0 (#280)
+
+* Version bump
+
+* Feature/monorepo (#325)
+
+* Refactor dependency boundaries to prevent circular imports
+
+Add an automated circular-dependency gate and baseline artifacts so regressions fail fast while replacing cycle-prone type barrel links with scoped DTO contracts.
+
+* Cleanup
+
+* Bootstrap monorepo phase 0/1 workspace scaffolding
+
+* Finalize phase 2 shared-boundary extraction and root prune
+
+Move shared contracts, config, i18n, and shared lib modules into workspace packages and apps, then remove legacy root copies and rewire imports to package-scoped paths to keep ownership explicit during monorepo migration.
+
+* Complete phase 4 web relocation into apps/web
+
+Move root web folders into apps/web, rewire API and middleware imports to package entrypoints, and prune legacy paths so ownership is unambiguous before phase 5.
+
+* Complete phase 3 backend extraction and prune legacy server tree
+
+Move backend runtime ownership into package/app boundaries so phase gates can validate without dual-source ambiguity, and record phase-3 evidence/checkpoint updates in OpenSpec.
+
+* Complete phase 5 CI/runtime monorepo cutover
+
+Align CI, Docker, runtime paths, and docs with the apps/web + packages layout, and add a next-intl root request-config shim so the app boots correctly from the repo root.
+
+* Complete root hygiene hardening and archive monorepo OpenSpec changes
+
+* Fix loading of files
+
+* Remove unused packages
+
+* Update monorepo scripts
+
+* Move tests
+
+* Updating contributing guidelines and add vitest
+
+* Arhive openspec
+
+* Linter and tests
+
+* Delete MD files
+
+* Scaffold tooling workspace packages for migration phase A
+
+This moves shared lint, prettier, typescript, and tailwind config ownership into workspace packages so later phases can remove root-level tooling shims and dependencies safely.
+
+* Final migration steps
+
+* Fix monorepo cyclic dependency issues.
+Update type usages.
+Format & linting.
+
+* Archive openspec
+
+* Move root tooling and fix turbo configs
+
+* remove tsconfig.json from root
+
+* Remove unused vitest
+
+* Fix github tooling
+
+* Move safe hooks to shared lib
+
+* Move hooks to shared lib
+
+* Create shared-react package
+
+* Remove unused files
+
+* Fix build
+
+* Fix build add react-shared
+
+* Add Expo mobile starter with HeroUI Native theming
+
+* Move deps to catalog
+
+* Fix build
+
+* Prune packages
+
+* Add mobile app
+
+* fix(shared): remove stale react export surface tests
+
+* feat(mobile): integrate HeroUI Native Expo starter
+
+* Fix mobile styling
+
+* Update mobile
+
+* Mobile UI improvements + mac building
+
+* Update openspec
+
+* Remove old mobile
+
+* Move to sdk 55
+
+* Remove starter code
+Add recipe cards
+
+* Openspec archive
+
+* Implement native nav
+
+* Implement new homescreen layout
+
+* Proper native headers
+
+* Archive
+
+* Add ripple effect
+
+* Backend url screen
+
+* Implement backend URL and secure store storage
+
+* Add procedure to integrate tRPC into mobile app
+
+* Archive openspec
+
+* Add expo to auth plugin
+
+* Update better authh
+
+* Add api-key plugin
+
+* Update import
+
+* Initial auth impl
+
+* Downgrade node version for issue: https://github.com/better-auth/better-auth/issues/8194
+
+* Revert auth handler
+
+* Add registration screen
+
+* Cleanup mobile code.
+Fix login issues
+Fix black screen
+
+* Extract TRPC to its own package
+
+* Split trpc from api and create a shared-server package
+
+* Remove dev from test scripts
+
+* Integrate i18n mobile app
+
+* Use expo-ui and native context menu
+
+* Add native sheets fix navigation
+Add config hooks
+Fix folder structure
+
+* Prev commit
+
+* Recipe linking plan
+
+* Refactor config type usage
+
+* Make public procedures authed
+
+* Wire dashboard with actual recipe data
+
+* Update openspec plans
+
+* Implement recipe dashboard
+
+* Add shared styles
+
+* Wire up permission system
+
+* Fix auth providers and settings cog
+
+* Archive specs
+
+* Add translations
+
+* Add recipe translations
+
+* Recipe detail page
+
+* Fix openspec tooling
+
+* Openspec
+
+* Move hooks and contexts to shared hooks
+
+* Initial recipe setup design
+
+* Further implement recipe page
+
+* use tailwind
+
+* Fix seamless image
+
+* Implement videos and like animation
+
+* Timer formatting and text formatting recipes
+
+* Add inline timers
+
+* Cook mode
+
+* Fix cook mode animations
+
+* Recipe data implementation
+
+* Initial implementation recipe dashboard
+
+* Fix recipe actions menu
+
+* Archive openspec changes
+
+* Fix heroui
+
+* Fix dockerbuild
+
+* Fix docker
+
+* Improve tooling
+
+* Improve github workflow
+
+* Fix tooling
+
+* Tooling fixes
+
+* Fix tests
+
+* Disable typecheck for now in CI
+
+---------
+
+Co-authored-by: annawilmink <annawilmink@gmail.com>
+
+* Update repo files
+
+* Update repo files en versioning
+
+* Update agents.md and remove project.md
+
+* Fix tooling
+
+* Fix npmrc
+
+* Update dockerfile
+
+* Update hygiene script
+
+* Fix transpilation
+
+* Remove legacy
+
+* Remove unneeded expo
+
+* Update dockerfile
+
+* Fix circular deps and docker file
+
+* Remove unneeded checks
+
+* Format and lint"
+openspec,121,Archive 16 completed changes
+openspec,117,archive
+openspec,116,docs(openspec): archive completed changes
+openspec,115,"Initial release of wt-tools
+
+A toolkit for managing parallel AI agent development with git worktrees,
+a real-time GUI (Control Center), and spec-driven workflows.
+
+Features:
+- Control Center GUI (PySide6): always-on-top, real-time agent status,
+  API burn rate, context %, light/dark/high-contrast themes
+- CLI tools (bash): wt-new, wt-work, wt-close, wt-merge, wt-list,
+  wt-loop, wt-project, wt-status, wt-config, wt-focus, wt-usage
+- Ralph Loop: autonomous Claude Code agent execution with iteration
+  tracking and task completion checks
+- Team Sync: cross-machine coordination via wt-control git branch,
+  encrypted chat (NaCl Box), agent-to-agent messaging
+- MCP Server: exposes worktree/agent data to Claude Code
+- Claude Code skills: /wt:new, /wt:work, /wt:merge, /wt:msg, etc.
+- OpenSpec: spec-driven development workflow methodology"
+openspec,114,Latest and fully working flutter app and manual song add logic - still lacks background play feature in flutter dev app
+openspec,114,"feat(openspec): archive completed changes and sync delta specs to main specs
+
+Archive 4 completed OpenSpec changes with synced specs:
+- command-support: 10 specs (commands, cli-commands-*)
+- package-compatibility: 57 specs (cli-detect-*, cli-read-*, registry-*)
+- skills-alignment: 4 specs (cli-skills, cli-skills-*)
+- subagent-support: 13 specs (subagents, cli-subagents-*, workspace-reconciliation)
+
+Total: 84 specs moved to openspec/specs/ and archived to openspec/changes/archive/
+
+Also includes:
+- Add skill-content.ts and managed-marker-ops.ts for SKILL.md parsing
+- Update lockfile schema with skill tracking fields
+- Add preview flag tests for skill lifecycle commands"
+openspec,112,"Refactor and modularize web inbox, notifications, and SDK components (#26)
+
+Refactor for improved type safety, and functionality.
+
+Enhancing type safety, maintainability, and CI reliability. The most significant changes are the refactoring of Convex usage to use local wrapper hooks, updates to type safety guidelines and documentation, and enhancements to the CI workflow to better summarize and gate check results."
+openspec,111,"Initial import: repo baseline, maintainability setup, and privacy policy docs"
+openspec,108,Initial OpenSpec Desktop release
+openspec,107,"Add openspec and new autotests for CI (#161)
+
+* Add openspec and new autotests for CI
+
+* fix ci segfault issue
+
+* add Google Test tips
+
+* fix unit strings
+
+* Update proposal.md
+
+* add L2 tests
+
+* change design
+
+* sync commit
+
+* remove duplicated Cursor skill files
+
+Drop mirrored skill files under .cursor to reduce PR noise and keep a single source of truth in .github/skills.
+
+Made-with: Cursor
+
+* remove line-ending-only churn from L2 test import
+
+Revert files whose changes were only CRLF/LF normalization so the PR shows substantive changes only.
+
+Made-with: Cursor
+
+* refine autotests
+
+* refine tests, add blakenbach sanity test
+
+* remove CRLF-only churn in MDLIB files
+
+Restore files whose branch-vs-main differences were line-ending-only so PR diff reflects substantive changes.
+
+Made-with: Cursor
+
+* minimize diff churn in advection and solver files
+
+Reset these files to main-style formatting and keep only substantive bug fixes to avoid line-ending/format noise in PR.
+
+Made-with: Cursor
+
+* suffer a bit with steady state BlankenBench"
+openspec,107,feat: add waitlist route and admin layout with project workflow documentation
+openspec,106,Add v3 workspace skill context support
+openspec,103,"Migrate all claudboard artifacts: skills, evals, hooks, openspec, presentations, and plugin config from https://github.com/lukovicperisa/claudboard to BD-AI-SDLC organization"
+openspec,103,"initial commit, OSS landlord
+
+Signed-off-by: Lee Briggs <lee@leebriggs.co.uk>"
+openspec,101,Archive spec
+root_bare,466,first commit
+root_bare,299,init
+root_bare,276,"fix: PWA theme-color/manifest/favicon をサブページに横展開 #横展開
+
+privacy-policy.html, contact.html, terms.html, usage.html, disclaimer.html,
+privacy.html, faq.html に theme-color・manifest・apple-touch-icon・favicon を追加
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+speckit,673,Add all workspace files
+speckit,480,first commit
+speckit,378,"docs: backfill version snapshots 0.4.10–0.4.12 and 0.3.11; fix retention policy
+
+Snapshot four missing versions so the Docusaurus dropdown shows the full
+version history. Retention policy updated: keep 5 latest from current minor
+(0.4.x) + highest from the immediately preceding minor only; when 0.5.x
+ships, 0.3.x is dropped automatically.
+
+Signed-off-by: Sri Aradhyula <sraradhy@cisco.com>"
+speckit,215,"feat(source-company): SmartRecruiters company-source pipeline foundation (Spec 1375) + 217 SmartRecruiters company plugins (Specs 1376-1592, run #443)
+
+Opens a fourth deterministic company-direct pipeline — the SmartRecruiters
+sibling of the Greenhouse / Ashby (Spec 975) / Lever (Spec 1194) pipelines —
+diversifying the corpus onto large-enterprise brands hosted on SmartRecruiters
+(jobs.smartrecruiters.com/<Identifier>; public Posting API
+api.smartrecruiters.com/v1/companies/<Identifier>/postings).
+
+Foundation (all TypeScript, additive):
+- scripts/probe-smartrecruiters-company-source.ts — pure gateBoard/extractListings
+  over the {offset,limit,totalFound,content:[...]} envelope + bounded-concurrency
+  live probe. 15/15 unit tests.
+- scripts/scaffold-smartrecruiters-company-source.ts — pure per-descriptor emitter
+  of the registry-delegation plugin (resolve Site.SMARTRECRUITERS, delegate
+  scrape({...input, companySlug}), re-stamp sr-<id> -> <slug>-<id>) + fixture +
+  generic test + .specify spec/plan/tasks.
+- scripts/assemble-smartrecruiters-batch.ts — deterministic descriptor join with
+  digit-prefix + slug/enumKey collision rejection; slug != companySlug (Q-SR-2).
+- scripts/process-sr-discovery.ts — discovery-output marshaling + HTML-entity decode.
+- reuses backend-agnostic scripts/wire-company-source.ts unchanged.
+End-to-end smoke: scaffold -> wire -> jest 9/9 -> reverted.
+
+First batch (217 plugins, Specs 1376-1592): 14-agent parallel discovery
+web-found + live-verified 223 SmartRecruiters boards across 14 sectors;
+central deterministic probe re-gated to 220 survivors; assembler rejected 3
+(digit-prefix enumKey; accor / linkedin slug collisions) -> 217 landed. Each is
+a thin registry-delegation service inheriting every SmartRecruiters field fix.
+Wiring additive: +217 enum members, barrel imports, tsconfig aliases, jest mappers.
+
+Validation: 10 sampled plugin suites 90/90 jest green; models + full plugins
+barrel tsc --noEmit clean; zero duplicate enum keys/values. Docs: index.md
+pipeline row + footer; questions.md Q-SR-1/Q-SR-2 (defaults A).
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+speckit,212,"feat(source-company): Specs 976-1193 — 218 new Ashby company-direct source plugins (run #441)
+
+First batch off the new Ashby company-source pipeline (Spec 975). Lifts the
+Ashby-backed company-direct count from 2 to 220 and the total company-direct
+corpus to 1041, correcting the ~97%-Greenhouse backend skew.
+
+Discovery: a 12-agent parallel workflow web-discovered 270 candidate Ashby
+boards across 12 sectors (AI/ML, dev-tools/infra, fintech, crypto, data-infra,
+security, health/biotech, robotics/hardware, climate, B2B SaaS, e-commerce,
+aerospace/defense) and self-verified each against the public Ashby Posting API.
+Merged -> 229 unique (deduped vs existing corpus) -> re-probed centrally through
+scripts/probe-ashby-company-source.ts -> 222/229 survived (>=3 live roles) ->
+4 collision-rejected (1Password/0G Labs leading-digit enum keys; Etched/Mercor
+enumKey/module collisions) -> 218 clean descriptors scaffolded + wired.
+
+Each plugin is a thin registry-delegation service: resolve Site.ASHBY from the
+PluginRegistry, delegate scrape({ ...input, companySlug }), re-stamp identity
+(site/companyName/id ashby- -> <slug>-). No bespoke parsing; inherits every
+Ashby field fix. Descriptor carries companySlug (Ashby board slug) + slug
+(hyphen-free dir/enum/id prefix). Top boards: Airwallex (593), Renuity (407),
+Enpal (354), Crusoe (350), Harvey (321), Applied Intuition (248).
+
+Also: scaffold-ashby-company-source.ts now emits the spec/plan metadata tables
+(doc-lint requirement).
+
+Validation: tsc --noEmit clean for all 218 plugins + 4 wired files; 218 mocked
+unit suites / 1962 tests green; doc-lint clean (654 new spec files indexed).
+Enrichment prose is strictly factual, company-only (no competitor references);
+verified=false until authenticated.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+speckit,208,"chore(docs): migrate to spec-kit constitution and create architecture docs (#1001)
+
+* chore(docs): migrate to spec-kit constitution and create architecture docs
+
+- Migrate ADR docs from docs/docs/changes/ into docs/docs/specs/NNN-slug/
+  format with split architecture.md and spec.md files
+- Add dates to Docusaurus sidebar labels for all spec categories
+- Create architecture.md for specs 084-091 derived from codebase:
+  084 (cross-thread store), 085 (langgraph-redis persistence),
+  087 (live status indicator), 088 (share with everyone),
+  089 (admin audit logs), 090 (admin feedback NPS), 091 (task builder)
+- Mark 083-multi-agent-synthesis as ABANDONED
+- Mark 086-beads-github-sync as SUPERSEDED by spec-kit tasks
+- Add .specify/ spec-kit constitution templates and scripts
+- Add .cursor/commands/ and .claude/commands/ spec-kit commands
+- Update .gitignore to track .cursor/commands/, .cursor/rules/,
+  and .claude/commands/ while ignoring other IDE files
+- Fix MDX compilation errors (unescaped braces in spec content)
+- Update sidebars.ts and helm chart doc frontmatter
+
+Signed-off-by: Sri Aradhyula <sraradhy@cisco.com>
+Made-with: Cursor
+
+* chore: bump chart versions for langgraph-redis supervisor-agent
+
+* chore: bump chart versions for ai-platform-engineering
+
+---------
+
+Signed-off-by: Sri Aradhyula <sraradhy@cisco.com>
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+speckit,177,"feat(source-company): Lever company-source pipeline foundation (Spec 1194) + 180 Lever company plugins (Specs 1195-1374, run #442)
+
+Adds a third deterministic company-source pipeline — Lever-backed — as the
+sibling of the Greenhouse and Ashby (Spec 975) pipelines, diversifying the
+company-direct backend mix. The source-ats-lever plugin already shipped under
+Site.LEVER but no company-direct plugin delegated to it, leaving Lever-hosted
+companies (jobs.lever.co/<slug>) invisible to the Greenhouse/Ashby gates.
+
+Foundation (Spec 1194):
+- scripts/probe-lever-company-source.ts — public zero-auth Lever Postings API
+  probe (bare-array wire shape, MIN_JOBS=3 count gate, pure gateBoard/
+  extractListings, bounded-concurrency pool). 13/13 unit tests.
+- scripts/scaffold-lever-company-source.ts — pure file emitter for the full
+  source-company-<slug> package (registry-delegation service, Lever bare-array
+  fixture, generic mocked test) + .specify spec/plan/tasks. Resolves Site.LEVER
+  via PluginRegistry, delegates scrape({...input, companySlug}), re-stamps
+  site/companyName/id (lever-><slug>-).
+- reuses the backend-agnostic scripts/wire-company-source.ts unchanged.
+- End-to-end smoke (scaffold -> wire -> jest 9/9 -> revert) validated the
+  template before any real batch.
+
+First batch (Specs 1195-1374): 180 new Lever company-direct plugins. A parallel
+12-agent discovery workflow web-found 216 candidates across twelve sectors and
+self-verified each against the live Lever API; deduped + collision-checked to
+193; central deterministic re-probe kept 180/193 (>=3 live roles). Wiring is
+fully additive (+180 jest mappers, +180 tsconfig aliases, +360 enum lines,
++360 barrel lines, zero deletions). Company-direct plugins 1041 -> 1221.
+
+Verification: probe 13/13; 6-plugin sample (incl. edge slugs arcteryxcom,
+cscgeneration2, spearai) 54/54 green; docs-lint clean.
+
+Docs: index.md (+1194 pipeline row +180 plugin rows), log.md (run #442),
+questions.md (Q-LEVER-1/2), SOURCE_ADOPTION_BACKLOG.md."
+speckit,171,[Spec Kit] Add specification
+speckit,165,"feat(source-company): Specs 804-974 — 170 new Greenhouse company-direct source plugins (run #440)
+
+Largest single-run corpus expansion: 170 new Greenhouse-backed company-direct
+source plugins across 20 sectors (fintech, insurtech, digital health, biotech/
+gene-editing, climate/clean-energy, agtech/foodtech, robotics, aerospace/defense/
+space, e-commerce, logistics, gaming, cybersecurity, proptech/construction,
+edtech, legaltech/regtech/govtech, HR-tech, adtech/martech, mobility/EV, applied
+AI, hardware/semiconductors). Each board exposed >= 3 live roles at probe time.
+
+Discovery ran as a 20-agent parallel workflow (each agent web-discovered and
+self-verified candidate Greenhouse boards against the live public Job-Board API),
+then the merged set was deduped vs the existing 653-plugin corpus and re-probed
+centrally through scripts/probe-company-source.ts (175/175 survived), validated
+for brand-match and enumKey/className/moduleName/slug collisions. Five candidates
+rejected: 2u, 8451 (digit-leading enum members), gomotive (MOTIVE), workstream
+(WORKSTREAM), ziprecruiter (ZipRecruiterModule collides with source-ziprecruiter)
+— Spec 973 intentionally left unused. Enrichment prose generated deterministically
+and locally from verified board metadata (factual, no fabrication).
+
+Validation: full tsc --noEmit clean for all 170 plugins + the 4 wired files
+(only residual errors are pre-existing, unrelated cacheable/@keyv/redis decls in
+apps/api/src/cache). 12-plugin sample of generated mocked unit suites: 132 green.
+Docs updated: index.md (170 rows), log.md (run #440), COMPANY_SLUG_DIRECTORY.md
+(170 Greenhouse rows); doc-lint clean.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+speckit,158,init
+speckit,114,"feat(runtime): advance next api runtime spine
+
+Collapse the API-next runtime, field/form, CLI, docs, and Effect v4 cutover work into the main future line."
+specs_generic,751,docs: publish Ito coordination mirror
+specs_generic,235,first commit
+specs_generic,216,test(backend): enhance test suite coverage including offlineAiDisabled.test.js (85/85)
+specs_generic,214,"Add 'cczoo/agent-cc/core/' from commit '03606f37b06d919af12562502ac01b91bb7f216a'
+
+git-subtree-dir: cczoo/agent-cc/core
+git-subtree-mainline: d36fffe5cfa5bda45509490344beb685109b5393
+git-subtree-split: 03606f37b06d919af12562502ac01b91bb7f216a"
+specs_generic,171,preserve archived Cairn lifecycle records
+specs_generic,154,Merge commit '7c39b9cbfb8fd06bdb64d2249e40b7526766eb62' as 'referrences/OpenSpec'
+specs_generic,153,chore: publish OpenSpec as subproject under projects/OpenSpec
+specs_generic,149,"feat: integrate Asimov core skills, add MCP server configurations, and update environment settings"
+specs_generic,144,"chore: backfill date prefix on archived change folders
+
+specrunner/changes/archive/ 配下の日付なし dir 148 件に \`<YYYY-MM-DD>-<slug>\`
+形式の日付 prefix を付与。日付 source は各 change に対応する PR の merged_at
+(= GitHub API の \`pulls/<num>\` から取得) を使用し、archive 日と一致させた。
+
+PR 特定の経路:
+1. request.md の git log --follow から PR # 抽出 (= 123 件)
+2. main 限定の git log で squash commit から PR # 抽出 (= 10 件)
+3. request.md がない dir は design.md / proposal.md / tasks.md 等から取得 (= 14 件)
+4. PR 紐付け不能な 1 件 (phase1-managed-agents-poc) は PR #191 (= archive 配下に
+   移行された PR) の merge 日 2026-05-10 を採用
+
+既存日付付き 5 件 (= 2026-04-17-bootstrap-for-managed-agents 等) はそのまま保持。"
+specs_generic,139,chore(governance): execute shell-surface deletion and spec archive wave
+specs_generic,139,"refactor: merge knowledge-base/features/ into knowledge-base/project/ (#581)
+
+* docs: capture brainstorm and spec for feat-kb-flatten-features
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
+* docs: create plan and tasks for feat-kb-flatten-features
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
+* docs: apply review feedback to plan — simplify and fix tree diagram gap
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
+* refactor: move features/ contents into project/
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
+* refactor: update all path references features/ → project/
+
+28 files, 178 path replacements + 2 directory tree diagram rewrites.
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
+* docs: archive brainstorm, plan, and spec for feat-kb-flatten-features
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
+---------
+
+Co-authored-by: Claude Opus 4.6 <noreply@anthropic.com>"
+specs_generic,115,chore: archive completed openspec changes
+specweave,175,initial umbrella repo with specweave increments and docs
+specweave,123,"sync specweave increments, docs, and planning files"
