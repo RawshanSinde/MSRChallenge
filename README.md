@@ -98,6 +98,26 @@ python scripts/tfidf_spec_files.py \
   --output tfidf_spec_files_rows_150_300.csv
 ```
 
+To take a reproducible random sample from the full table:
+
+```bash
+python scripts/tfidf_spec_files.py \
+  --random-sample 150 \
+  --random-state 42 \
+  --language en \
+  --output tfidf_spec_files_random_150.csv
+```
+
+To compare the saved row-range runs:
+
+```bash
+python scripts/compare_tfidf_runs.py \
+  tfidf_spec_files_150.csv \
+  tfidf_spec_files_english_rows_150_300.csv \
+  tfidf_spec_files_english_rows_300_600.csv \
+  --output tfidf_range_comparison.csv
+```
+
 To keep only confidently detected English documents in the sample:
 
 ```bash

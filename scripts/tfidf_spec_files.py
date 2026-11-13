@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import gzip
 import json
+import random
 from pathlib import Path
 
 import pandas as pd
@@ -35,16 +36,102 @@ def load_rows(path: Path, start_row: int, end_row: int) -> pd.DataFrame:
             columns=METADATA_COLUMNS,
         )
         try:
-            return next(batches).slice(start_index, row_count).to_pandas()
+            metadata = next(batches).slice(start_index, row_count).to_pandas()
         except StopIteration as error:
             raise ValueError(f"No rows found in {path}") from error
+    else:
+        metadata = pd.read_csv(
+            path,
+            compression="infer",
+            skiprows=range(1, start_row) if start_row > 1 else None,
+            nrows=row_count,
+            usecols=METADATA_COLUMNS,
+        )
 
-    return pd.read_csv(
+    metadata.insert(
+        0,
+        "source_row_number",
+        range(start_row, start_row + len(metadata)),
+    )
+    return metadata
+
+
+def load_random_rows(path: Path, sample_size: int, random_state: int) -> pd.DataFrame:
+    generator = random.Random(random_state)
+
+    if path.suffix == ".parquet":
+        import pyarrow as arrow
+        import pyarrow.parquet as parquet
+
+        parquet_file = parquet.ParquetFile(path)
+        total_rows = parquet_file.metadata.num_rows
+        if sample_size > total_rows:
+            raise ValueError(
+                f"Requested {sample_size} rows, but {path} has only "
+                f"{total_rows} rows"
+            )
+
+        selected_rows = sorted(
+            generator.sample(range(1, total_rows + 1), sample_size)
+        )
+        selected_frames: list[pd.DataFrame] = []
+        row_group_start = 1
+
+        for row_group_index in range(parquet_file.num_row_groups):
+            row_group_rows = parquet_file.metadata.row_group(
+                row_group_index
+            ).num_rows
+            row_group_end = row_group_start + row_group_rows - 1
+            group_rows = [
+                row_number
+                for row_number in selected_rows
+                if row_group_start <= row_number <= row_group_end
+            ]
+
+            if group_rows:
+                table = parquet_file.read_row_group(
+                    row_group_index,
+                    columns=METADATA_COLUMNS,
+                )
+                local_indices = [
+                    row_number - row_group_start for row_number in group_rows
+                ]
+                metadata = table.take(arrow.array(local_indices)).to_pandas()
+                metadata.insert(0, "source_row_number", group_rows)
+                selected_frames.append(metadata)
+
+            row_group_start = row_group_end + 1
+
+        return pd.concat(selected_frames, ignore_index=True)
+
+    reservoir: list[dict[str, object]] = []
+    row_number = 0
+    for chunk in pd.read_csv(
         path,
         compression="infer",
-        skiprows=range(1, start_row) if start_row > 1 else None,
-        nrows=row_count,
         usecols=METADATA_COLUMNS,
+        chunksize=10_000,
+    ):
+        for values in chunk.itertuples(index=False, name=None):
+            row_number += 1
+            record = dict(zip(METADATA_COLUMNS, values))
+            record["source_row_number"] = row_number
+
+            if len(reservoir) < sample_size:
+                reservoir.append(record)
+                continue
+
+            replacement_index = generator.randrange(row_number)
+            if replacement_index < sample_size:
+                reservoir[replacement_index] = record
+
+    if len(reservoir) < sample_size:
+        raise ValueError(
+            f"Requested {sample_size} rows, but {path} has only {len(reservoir)} rows"
+        )
+
+    return pd.DataFrame(reservoir).sort_values("source_row_number").reset_index(
+        drop=True
     )
 
 
@@ -116,7 +203,6 @@ def build_output(
     texts: list[str],
     top_n: int,
     max_features: int | None,
-    row_number_start: int,
 ) -> pd.DataFrame:
     vectorizer = TfidfVectorizer(
         lowercase=True,
@@ -143,7 +229,7 @@ def build_output(
         for score_index in order:
             document_metadata = metadata.iloc[document_index]
             output_row = {
-                "row_number": row_number_start + document_index,
+                "row_number": document_metadata["source_row_number"],
                 "file_url_sha16": document_metadata["file_url_sha16"],
                 "repo_name": document_metadata["repo_name"],
                 "file_path": document_metadata["file_path"],
@@ -203,6 +289,18 @@ def parse_args() -> argparse.Namespace:
         help="last 1-based spec_files row to analyze, inclusive",
     )
     parser.add_argument(
+        "--random-sample",
+        type=int,
+        default=None,
+        help="randomly select this many rows from the full table",
+    )
+    parser.add_argument(
+        "--random-state",
+        type=int,
+        default=42,
+        help="seed used with --random-sample",
+    )
+    parser.add_argument(
         "--top-n",
         type=int,
         default=20,
@@ -245,6 +343,12 @@ def parse_args() -> argparse.Namespace:
         parser.error("--limit must be at least 1")
     if arguments.end_row is not None and arguments.end_row < arguments.start_row:
         parser.error("--end-row must be greater than or equal to --start-row")
+    if arguments.random_sample is not None and arguments.random_sample < 1:
+        parser.error("--random-sample must be at least 1")
+    if arguments.random_sample is not None and (
+        arguments.start_row != 1 or arguments.end_row is not None
+    ):
+        parser.error("--random-sample cannot be combined with a row range")
     if arguments.top_n < 1:
         parser.error("--top-n must be at least 1")
     if not 0 <= arguments.min_language_probability <= 1:
@@ -270,11 +374,18 @@ def main() -> None:
         if not input_path.exists():
             raise FileNotFoundError(f"Input file does not exist: {input_path}")
 
-    metadata = load_rows(
-        arguments.spec_files,
-        arguments.start_row,
-        arguments.end_row,
-    )
+    if arguments.random_sample is not None:
+        metadata = load_random_rows(
+            arguments.spec_files,
+            arguments.random_sample,
+            arguments.random_state,
+        )
+    else:
+        metadata = load_rows(
+            arguments.spec_files,
+            arguments.start_row,
+            arguments.end_row,
+        )
     file_ids = set(metadata["file_url_sha16"].dropna().astype(str))
     text_by_id = load_spec_texts(arguments.spec_text, file_ids)
     texts = [text_by_id.get(str(file_id), "") for file_id in metadata["file_url_sha16"]]
@@ -310,7 +421,6 @@ def main() -> None:
         texts=texts,
         top_n=arguments.top_n,
         max_features=arguments.max_features,
-        row_number_start=arguments.start_row,
     )
     output.to_csv(arguments.output, index=False)
 
